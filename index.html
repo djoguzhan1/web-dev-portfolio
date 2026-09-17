@@ -12,6 +12,7 @@
     :root {
       --bg: #0a0f1a;
       --surface: #111827;
+      --surface2: #1a2234;
       --border: #1f2937;
       --text: #f3f4f6;
       --muted: #9ca3af;
@@ -26,10 +27,15 @@
       color: var(--text);
       line-height: 1.6;
     }
-    .container { max-width: 960px; margin: 0 auto; padding: 0 1.25rem; }
+    .container { max-width: 1000px; margin: 0 auto; padding: 0 1.25rem; }
     header {
-      padding: 1.5rem 0;
+      padding: 1.25rem 0;
       border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      background: rgba(10, 15, 26, 0.92);
+      backdrop-filter: blur(12px);
+      z-index: 100;
     }
     header .container {
       display: flex;
@@ -40,6 +46,7 @@
     }
     .logo { font-weight: 700; font-size: 1.1rem; letter-spacing: -0.02em; }
     .logo span { color: var(--accent); }
+    .header-right { display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; }
     .badge {
       font-size: 0.75rem;
       background: rgba(34, 197, 94, 0.15);
@@ -47,22 +54,8 @@
       padding: 0.35rem 0.75rem;
       border-radius: 999px;
       font-weight: 600;
+      border: 1px solid rgba(34, 197, 94, 0.25);
     }
-    .hero { padding: 4rem 0 3rem; }
-    .hero h1 {
-      font-size: clamp(2rem, 5vw, 2.75rem);
-      font-weight: 700;
-      letter-spacing: -0.03em;
-      line-height: 1.15;
-      margin-bottom: 1rem;
-    }
-    .hero p {
-      font-size: 1.125rem;
-      color: var(--muted);
-      max-width: 540px;
-      margin-bottom: 2rem;
-    }
-    .cta-row { display: flex; gap: 0.75rem; flex-wrap: wrap; }
     .btn {
       display: inline-flex;
       align-items: center;
@@ -72,69 +65,309 @@
       font-weight: 600;
       font-size: 0.95rem;
       text-decoration: none;
-      transition: background 0.2s, transform 0.15s;
+      transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+      border: none;
+      cursor: pointer;
     }
-    .btn-primary { background: var(--accent); color: #fff; }
-    .btn-primary:hover { background: var(--accent-hover); transform: translateY(-1px); }
+    .btn:hover { transform: translateY(-1px); }
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+      box-shadow: 0 4px 14px rgba(59, 130, 246, 0.3);
+    }
+    .btn-primary:hover { background: var(--accent-hover); }
     .btn-ghost {
       background: transparent;
       color: var(--text);
       border: 1px solid var(--border);
     }
     .btn-ghost:hover { border-color: var(--muted); }
-    section { padding: 3rem 0; }
-    section h2 {
+    .btn-sm { padding: 0.55rem 1rem; font-size: 0.85rem; }
+    .hero {
+      padding: 4.5rem 0 3rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: -40%;
+      right: -20%;
+      width: 60%;
+      height: 120%;
+      background: radial-gradient(circle, rgba(59,130,246,0.12) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+      position: relative;
+    }
+    @media (max-width: 768px) {
+      .hero-grid { grid-template-columns: 1fr; gap: 2rem; }
+    }
+    .hero-tag {
+      display: inline-block;
       font-size: 0.8rem;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
+      font-weight: 600;
+      color: var(--accent);
+      background: rgba(59, 130, 246, 0.1);
+      border: 1px solid rgba(59, 130, 246, 0.25);
+      padding: 0.35rem 0.85rem;
+      border-radius: 999px;
+      margin-bottom: 1rem;
+    }
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 2.85rem);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1.12;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.1rem;
       color: var(--muted);
+      max-width: 480px;
       margin-bottom: 1.5rem;
     }
+    .hero-list {
+      list-style: none;
+      margin-bottom: 2rem;
+    }
+    .hero-list li {
+      padding: 0.3rem 0;
+      font-size: 0.95rem;
+      color: var(--muted);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .hero-list li::before {
+      content: "✓";
+      color: var(--green);
+      font-weight: 700;
+    }
+    .cta-row { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+    .hero-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.75rem;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+    }
+    .hero-card h3 {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+      margin-bottom: 1.25rem;
+    }
+    .stat-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    .stat-box {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.1rem;
+      text-align: center;
+    }
+    .stat-box strong {
+      display: block;
+      font-size: 1.5rem;
+      color: var(--text);
+      margin-bottom: 0.15rem;
+    }
+    .stat-box span { font-size: 0.78rem; color: var(--muted); }
+    .stats-bar {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      padding: 2rem 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      margin-top: 3rem;
+    }
+    @media (max-width: 640px) { .stats-bar { grid-template-columns: repeat(2, 1fr); } }
+    .stats-bar .item { text-align: center; }
+    .stats-bar strong { display: block; font-size: 1.35rem; color: var(--accent); }
+    .stats-bar span { font-size: 0.8rem; color: var(--muted); }
+    section { padding: 3.5rem 0; }
+    .section-head { margin-bottom: 2rem; }
+    .section-head h2 {
+      font-size: 1.65rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.4rem;
+    }
+    .section-head p { color: var(--muted); font-size: 0.95rem; }
     .services {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 1rem;
     }
     .card {
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: 12px;
-      padding: 1.5rem;
+      padding: 1.75rem;
+      transition: border-color 0.2s, transform 0.15s;
     }
+    .card:hover {
+      border-color: rgba(59, 130, 246, 0.4);
+      transform: translateY(-2px);
+    }
+    .card .icon { font-size: 1.75rem; margin-bottom: 0.75rem; }
     .card h3 { font-size: 1.05rem; margin-bottom: 0.5rem; }
-    .card p { color: var(--muted); font-size: 0.9rem; margin-bottom: 1rem; }
-    .price { font-weight: 700; color: var(--green); font-size: 1.1rem; }
-    .demos { display: grid; gap: 1.25rem; }
+    .card p { color: var(--muted); font-size: 0.9rem; margin-bottom: 1rem; line-height: 1.55; }
+    .price { font-weight: 700; color: var(--green); font-size: 1.15rem; }
+    .price span { font-size: 0.8rem; color: var(--muted); font-weight: 400; }
+    .demos { display: grid; gap: 1.5rem; }
     .demo-card {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1.1fr 1fr;
       gap: 0;
       background: var(--surface);
       border: 1px solid var(--border);
-      border-radius: 12px;
+      border-radius: 14px;
+      overflow: hidden;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .demo-card:hover {
+      border-color: rgba(59, 130, 246, 0.35);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.25);
+    }
+    @media (max-width: 700px) { .demo-card { grid-template-columns: 1fr; } }
+    .demo-preview {
+      min-height: 220px;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
       overflow: hidden;
     }
-    @media (max-width: 640px) { .demo-card { grid-template-columns: 1fr; } }
-    .demo-preview {
-      background: linear-gradient(135deg, #1e3a5f 0%, #0f172a 100%);
-      min-height: 180px;
+    .demo-preview.hvac {
+      background: linear-gradient(145deg, #0c4a6e 0%, #0369a1 60%, #0284c7 100%);
+    }
+    .demo-preview.plumbing {
+      background: linear-gradient(145deg, #1e3a5f 0%, #0d9488 100%);
+    }
+    .demo-preview .mock-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #fff;
+    }
+    .demo-preview .mock-btn {
+      background: #ea580c;
+      color: #fff;
+      padding: 0.3rem 0.65rem;
+      border-radius: 5px;
+      font-size: 0.65rem;
+    }
+    .demo-preview.plumbing .mock-btn { background: #0d9488; }
+    .demo-preview .mock-hero {
+      color: #fff;
+      margin-top: 1rem;
+    }
+    .demo-preview .mock-hero h4 {
+      font-size: 0.95rem;
+      font-weight: 800;
+      line-height: 1.25;
+      margin-bottom: 0.5rem;
+    }
+    .demo-preview .mock-hero .mock-cta {
+      display: inline-block;
+      background: #ea580c;
+      color: #fff;
+      padding: 0.4rem 0.8rem;
+      border-radius: 6px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      margin-top: 0.5rem;
+    }
+    .demo-preview.plumbing .mock-cta { background: #0d9488; }
+    .demo-preview .mock-stats {
+      display: flex;
+      gap: 0.75rem;
+      margin-top: 1rem;
+    }
+    .demo-preview .mock-stat {
+      background: rgba(255,255,255,0.12);
+      padding: 0.35rem 0.6rem;
+      border-radius: 6px;
+      font-size: 0.65rem;
+      color: #fff;
+      font-weight: 600;
+    }
+    .demo-info { padding: 1.75rem; display: flex; flex-direction: column; justify-content: center; }
+    .demo-info h3 { font-size: 1.1rem; margin-bottom: 0.5rem; }
+    .demo-info p { color: var(--muted); font-size: 0.9rem; margin-bottom: 1rem; line-height: 1.55; }
+    .tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1.25rem; }
+    .tag {
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 0.25rem 0.6rem;
+      border-radius: 999px;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      color: var(--muted);
+    }
+    .process {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .step {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    .step .num {
+      width: 36px;
+      height: 36px;
+      background: rgba(59, 130, 246, 0.15);
+      color: var(--accent);
+      border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 3rem;
+      font-weight: 700;
+      font-size: 0.9rem;
+      margin: 0 auto 0.75rem;
     }
-    .demo-info { padding: 1.5rem; }
-    .demo-info h3 { margin-bottom: 0.5rem; }
-    .demo-info p { color: var(--muted); font-size: 0.9rem; margin-bottom: 1rem; }
-    .trust {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.5rem;
-      padding: 2rem 0;
-      border-top: 1px solid var(--border);
+    .step h3 { font-size: 0.95rem; margin-bottom: 0.35rem; }
+    .step p { font-size: 0.85rem; color: var(--muted); }
+    .faq { max-width: 680px; }
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+      padding: 1.25rem 0;
     }
-    .trust-item { display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem; color: var(--muted); }
-    .trust-item strong { color: var(--text); }
+    .faq-item h3 { font-size: 0.95rem; margin-bottom: 0.35rem; }
+    .faq-item p { font-size: 0.88rem; color: var(--muted); }
+    .cta-band {
+      background: linear-gradient(135deg, #1d4ed8 0%, #3b82f6 100%);
+      border-radius: 16px;
+      padding: 3rem 2rem;
+      text-align: center;
+      margin: 0 1.25rem 3rem;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .cta-band h2 { font-size: 1.65rem; margin-bottom: 0.5rem; }
+    .cta-band p { color: rgba(255,255,255,0.85); margin-bottom: 1.5rem; font-size: 1rem; }
+    .cta-band .btn { background: #fff; color: #1d4ed8; }
+    .cta-band .btn:hover { background: #f0f9ff; }
     footer {
       padding: 2rem 0;
       border-top: 1px solid var(--border);
@@ -149,40 +382,86 @@
   <header>
     <div class="container">
       <div class="logo">Oğuzhan <span>Salatan</span></div>
-      <span class="badge">Available for hire</span>
+      <div class="header-right">
+        <span class="badge">● Available for hire</span>
+        <a class="btn btn-primary btn-sm" href="mailto:salatanoguzhan901@gmail.com?subject=Website%20Project%20Inquiry">Get a quote</a>
+      </div>
     </div>
   </header>
 
   <main>
     <section class="hero">
       <div class="container">
-        <h1>Websites that bring you customers — delivered in 48 hours.</h1>
-        <p>I build fast, mobile-friendly sites for local businesses. WordPress fixes, landing pages, and clean code. Upfront payment. Clear communication.</p>
-        <div class="cta-row">
-          <a class="btn btn-primary" href="mailto:salatanoguzhan901@gmail.com?subject=Website%20Project%20Inquiry">Get a free quote</a>
-          <a class="btn btn-ghost" href="#demos">View demo sites</a>
+        <div class="hero-grid">
+          <div>
+            <div class="hero-tag">Web Developer · Local Business Sites</div>
+            <h1>Websites that turn visitors into paying customers.</h1>
+            <p>I build fast, mobile-friendly sites for HVAC, plumbing, and local service businesses — delivered in 48 hours with clear communication.</p>
+            <ul class="hero-list">
+              <li>WordPress fixes, landing pages, spreadsheet cleanup</li>
+              <li>Live demos you can click before hiring</li>
+              <li>US & UK clients · English communication</li>
+            </ul>
+            <div class="cta-row">
+              <a class="btn btn-primary" href="mailto:salatanoguzhan901@gmail.com?subject=Website%20Project%20Inquiry">Get a free quote</a>
+              <a class="btn btn-ghost" href="#demos">View live demos</a>
+            </div>
+          </div>
+          <div class="hero-card">
+            <h3>At a glance</h3>
+            <div class="stat-grid">
+              <div class="stat-box">
+                <strong>48h</strong>
+                <span>Typical delivery</span>
+              </div>
+              <div class="stat-box">
+                <strong>2</strong>
+                <span>Live demo sites</span>
+              </div>
+              <div class="stat-box">
+                <strong>$49</strong>
+                <span>Starting price</span>
+              </div>
+              <div class="stat-box">
+                <strong>1hr</strong>
+                <span>Response time</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="stats-bar">
+          <div class="item"><strong>48h</strong><span>Delivery</span></div>
+          <div class="item"><strong>Mobile</strong><span>First design</span></div>
+          <div class="item"><strong>Clean</strong><span>Code</span></div>
+          <div class="item"><strong>English</strong><span>Communication</span></div>
         </div>
       </div>
     </section>
 
     <section>
       <div class="container">
-        <h2>Services & pricing</h2>
+        <div class="section-head">
+          <h2>Services & pricing</h2>
+          <p>Clear scope, upfront pricing, no surprises.</p>
+        </div>
         <div class="services">
           <div class="card">
+            <div class="icon">🔧</div>
             <h3>WordPress Bug / Speed Fix</h3>
-            <p>Broken layout, slow load, plugin conflicts, mobile issues. Fixed in 24–48 hours.</p>
-            <div class="price">From $79</div>
+            <p>Broken layout, slow load, plugin conflicts, mobile issues. Root-cause fix with speed check after.</p>
+            <div class="price">From $49 <span>/ project</span></div>
           </div>
           <div class="card">
+            <div class="icon">🌐</div>
             <h3>1-Page Landing Site</h3>
-            <p>Professional single-page site for HVAC, plumbing, auto repair, and local services.</p>
-            <div class="price">From $129</div>
+            <p>Professional single-page site for HVAC, plumbing, auto repair, and local services. Click-to-call, reviews, SEO.</p>
+            <div class="price">From $129 <span>/ site</span></div>
           </div>
           <div class="card">
+            <div class="icon">📊</div>
             <h3>Excel / Sheets Cleanup</h3>
-            <p>Data formatting, formulas, dashboards, and automation for small teams.</p>
-            <div class="price">From $49</div>
+            <p>Data formatting, formulas, dashboards, and automation for small teams. Delivered in 1–2 days.</p>
+            <div class="price">From $35 <span>/ file</span></div>
           </div>
         </div>
       </div>
@@ -190,21 +469,64 @@
 
     <section id="demos">
       <div class="container">
-        <h2>Live demo projects</h2>
+        <div class="section-head">
+          <h2>Live demo projects</h2>
+          <p>Click and explore — real sites, not mockups.</p>
+        </div>
         <div class="demos">
           <div class="demo-card">
-            <div class="demo-preview" style="background: linear-gradient(135deg, #1e40af, #0c4a6e);">❄️</div>
+            <div class="demo-preview hvac">
+              <div class="mock-nav">
+                <span>CoolAir HVAC</span>
+                <span class="mock-btn">📞 Call Now</span>
+              </div>
+              <div class="mock-hero">
+                <h4>AC Broken? We'll Fix It Today</h4>
+                <span class="mock-cta">Free Estimate</span>
+              </div>
+              <div class="mock-stats">
+                <span class="mock-stat">4.9★</span>
+                <span class="mock-stat">Same-Day</span>
+                <span class="mock-stat">Licensed</span>
+              </div>
+            </div>
             <div class="demo-info">
               <h3>CoolAir HVAC — Landing Page</h3>
-              <p>Modern one-page site for an HVAC company. Mobile-first, clear CTAs, trust badges, service areas.</p>
+              <p>Full conversion-focused site: split hero, stats bar, reviews, FAQ, service areas, and mobile call button.</p>
+              <div class="tags">
+                <span class="tag">Mobile-first</span>
+                <span class="tag">Click-to-call</span>
+                <span class="tag">Reviews</span>
+                <span class="tag">FAQ</span>
+              </div>
               <a class="btn btn-primary" href="demos/hvac-landing/" target="_blank">Open live demo →</a>
             </div>
           </div>
           <div class="demo-card">
-            <div class="demo-preview" style="background: linear-gradient(135deg, #b45309, #78350f);">🔧</div>
+            <div class="demo-preview plumbing">
+              <div class="mock-nav">
+                <span>ProFix Plumbing</span>
+                <span class="mock-btn">📞 Call Now</span>
+              </div>
+              <div class="mock-hero">
+                <h4>24/7 Emergency Plumber — 60 Min Response</h4>
+                <span class="mock-cta">Free Quote</span>
+              </div>
+              <div class="mock-stats">
+                <span class="mock-stat">4.9★</span>
+                <span class="mock-stat">24/7</span>
+                <span class="mock-stat">3,200+ Jobs</span>
+              </div>
+            </div>
             <div class="demo-info">
               <h3>ProFix Plumbing — Landing Page</h3>
-              <p>Clean local business site with emergency call button, reviews section, and service list.</p>
+              <p>Emergency plumbing site with red alert bar, sticky header, stats, reviews, service areas, and FAQ.</p>
+              <div class="tags">
+                <span class="tag">Emergency CTA</span>
+                <span class="tag">Sticky header</span>
+                <span class="tag">Stats bar</span>
+                <span class="tag">Reviews</span>
+              </div>
               <a class="btn btn-primary" href="demos/plumbing-landing/" target="_blank">Open live demo →</a>
             </div>
           </div>
@@ -214,19 +536,67 @@
 
     <section>
       <div class="container">
-        <div class="trust">
-          <div class="trust-item"><strong>48h</strong> typical delivery</div>
-          <div class="trust-item"><strong>100%</strong> upfront on small jobs</div>
-          <div class="trust-item"><strong>Payoneer</strong> / bank transfer</div>
-          <div class="trust-item"><strong>English</strong> communication</div>
+        <div class="section-head">
+          <h2>How I work</h2>
+          <p>Simple process, no agency runaround.</p>
+        </div>
+        <div class="process">
+          <div class="step">
+            <div class="num">1</div>
+            <h3>Message me</h3>
+            <p>Tell me your business type, goals, and timeline. I reply within 1 hour.</p>
+          </div>
+          <div class="step">
+            <div class="num">2</div>
+            <h3>Scope & quote</h3>
+            <p>Clear price and delivery date before any work starts. No hidden fees.</p>
+          </div>
+          <div class="step">
+            <div class="num">3</div>
+            <h3>Build & deliver</h3>
+            <p>First version in 48 hours. Revisions included per package.</p>
+          </div>
+          <div class="step">
+            <div class="num">4</div>
+            <h3>Launch support</h3>
+            <p>Files delivered + hosting setup guidance if you need it.</p>
+          </div>
         </div>
       </div>
     </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <h2>Common questions</h2>
+        </div>
+        <div class="faq">
+          <div class="faq-item">
+            <h3>Can I see examples before ordering?</h3>
+            <p>Yes — both demo sites above are live and clickable. They're built to the same standard I deliver to clients.</p>
+          </div>
+          <div class="faq-item">
+            <h3>How fast is delivery?</h3>
+            <p>WordPress fixes: 24–48 hours. Landing pages: 48 hours on standard orders. Excel cleanup: 1–2 days.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Do you provide hosting?</h3>
+            <p>I deliver the website files. I can guide you to free or low-cost hosting (Netlify, GitHub Pages) or install on your existing host.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="cta-band">
+      <h2>Ready to get your business online?</h2>
+      <p>Send me your project details — I'll reply with a quote within 1 hour.</p>
+      <a class="btn" href="mailto:salatanoguzhan901@gmail.com?subject=Website%20Project%20Inquiry">Get a free quote →</a>
+    </div>
   </main>
 
   <footer>
     <div class="container">
-      <p>© 2026 · <a href="mailto:salatanoguzhan901@gmail.com">salatanoguzhan901@gmail.com</a></p>
+      <p>© 2026 Oğuzhan Salatan · <a href="mailto:salatanoguzhan901@gmail.com">salatanoguzhan901@gmail.com</a></p>
     </div>
   </footer>
 </body>
