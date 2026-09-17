@@ -12,6 +12,7 @@
       --blue: #0369a1;
       --blue-dark: #0c4a6e;
       --orange: #ea580c;
+      --orange-dark: #c2410c;
       --text: #0f172a;
       --muted: #64748b;
       --light: #f0f9ff;
@@ -27,12 +28,20 @@
     }
     .demo-bar a { color: #38bdf8; }
     .top-bar {
-      background: var(--blue-dark);
+      background: var(--orange);
       color: #fff;
       text-align: center;
-      padding: 0.5rem;
+      padding: 0.55rem;
       font-size: 0.85rem;
-      font-weight: 500;
+      font-weight: 600;
+    }
+    .top-bar a { color: #fff; text-decoration: underline; }
+    header {
+      background: #fff;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 100;
     }
     nav {
       display: flex;
@@ -49,49 +58,142 @@
     .nav-phone {
       background: var(--orange);
       color: #fff;
-      padding: 0.6rem 1.2rem;
+      padding: 0.65rem 1.25rem;
       border-radius: 8px;
       text-decoration: none;
       font-weight: 700;
       font-size: 0.95rem;
+      transition: background 0.2s, transform 0.15s;
     }
+    .nav-phone:hover { background: var(--orange-dark); transform: translateY(-1px); }
     .hero {
-      background: linear-gradient(135deg, var(--blue-dark) 0%, var(--blue) 100%);
-      color: #fff;
-      padding: 4rem 1.5rem 5rem;
-      text-align: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      max-width: 1100px;
+      margin: 0 auto;
+      gap: 2.5rem;
+      padding: 3.5rem 1.5rem 4rem;
+      align-items: center;
+    }
+    @media (max-width: 768px) {
+      .hero { grid-template-columns: 1fr; text-align: center; padding-top: 2rem; }
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: #ecfdf5;
+      color: #047857;
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 0.35rem 0.85rem;
+      border-radius: 999px;
+      margin-bottom: 1rem;
+      border: 1px solid #a7f3d0;
     }
     .hero h1 {
-      font-size: clamp(1.75rem, 5vw, 2.75rem);
+      font-size: clamp(1.85rem, 4vw, 2.65rem);
       font-weight: 800;
-      max-width: 700px;
-      margin: 0 auto 1rem;
-      line-height: 1.2;
+      line-height: 1.15;
+      margin-bottom: 1rem;
+      color: var(--blue-dark);
     }
-    .hero p { font-size: 1.1rem; opacity: 0.9; max-width: 520px; margin: 0 auto 2rem; }
-    .hero-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .hero p { color: var(--muted); font-size: 1.05rem; margin-bottom: 1.25rem; }
+    .hero-features { list-style: none; margin-bottom: 1.75rem; }
+    .hero-features li {
+      padding: 0.3rem 0;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.95rem;
+    }
+    @media (max-width: 768px) { .hero-features li { justify-content: center; } }
+    .hero-features li::before { content: "✓"; color: var(--orange); font-weight: 800; }
+    .hero-btns { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+    @media (max-width: 768px) { .hero-btns { justify-content: center; } }
     .btn {
       display: inline-block;
-      padding: 0.85rem 1.75rem;
+      padding: 0.9rem 1.6rem;
       border-radius: 8px;
       font-weight: 700;
       text-decoration: none;
       font-size: 1rem;
+      transition: transform 0.15s, box-shadow 0.2s;
     }
-    .btn-primary { background: var(--orange); color: #fff; }
-    .btn-outline { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,0.5); }
-    .trust-row {
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary {
+      background: var(--orange);
+      color: #fff;
+      box-shadow: 0 4px 14px rgba(234, 88, 12, 0.35);
+    }
+    .btn-primary:hover { background: var(--orange-dark); }
+    .btn-outline {
+      background: #fff;
+      color: var(--blue-dark);
+      border: 2px solid #e2e8f0;
+    }
+    .hero-visual {
+      background: linear-gradient(145deg, var(--blue-dark) 0%, var(--blue) 60%, #0284c7 100%);
+      border-radius: 16px;
+      aspect-ratio: 4/3;
       display: flex;
+      flex-direction: column;
+      align-items: center;
       justify-content: center;
-      gap: 2rem;
-      flex-wrap: wrap;
-      margin-top: 2.5rem;
-      font-size: 0.85rem;
-      opacity: 0.85;
+      color: #fff;
+      box-shadow: 0 24px 48px rgba(3, 105, 161, 0.3);
+      position: relative;
+      overflow: hidden;
     }
+    .hero-visual::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 30% 20%, rgba(255,255,255,0.12), transparent 50%);
+    }
+    .hero-visual .icon { font-size: 4.5rem; margin-bottom: 0.5rem; position: relative; }
+    .hero-visual .rating {
+      position: relative;
+      background: rgba(255,255,255,0.15);
+      backdrop-filter: blur(8px);
+      padding: 0.75rem 1.25rem;
+      border-radius: 12px;
+      text-align: center;
+      margin-top: 0.5rem;
+    }
+    .hero-visual .rating strong { font-size: 1.5rem; display: block; }
+    .hero-visual .rating span { font-size: 0.8rem; opacity: 0.9; }
+    .stats {
+      background: var(--blue-dark);
+      color: #fff;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      text-align: center;
+      padding: 2rem 1.5rem;
+    }
+    @media (max-width: 640px) { .stats { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; } }
+    .stat-num { font-size: 1.85rem; font-weight: 800; color: #fdba74; }
+    .stat-label { font-size: 0.8rem; opacity: 0.85; margin-top: 0.2rem; }
     .section { padding: 4rem 1.5rem; max-width: 1100px; margin: 0 auto; }
-    .section h2 { font-size: 1.75rem; font-weight: 800; text-align: center; margin-bottom: 0.5rem; }
+    .section h2 { font-size: 1.75rem; font-weight: 800; text-align: center; margin-bottom: 0.5rem; color: var(--blue-dark); }
     .section .sub { text-align: center; color: var(--muted); margin-bottom: 2.5rem; }
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.25rem;
+      margin-bottom: 1rem;
+    }
+    .why-card {
+      text-align: center;
+      padding: 1.75rem 1.25rem;
+      border-radius: 12px;
+      border: 1px solid #e2e8f0;
+      background: #fff;
+    }
+    .why-card .icon { font-size: 2.25rem; margin-bottom: 0.75rem; }
+    .why-card h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .why-card p { color: var(--muted); font-size: 0.88rem; }
     .services-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -102,7 +204,9 @@
       border-radius: 12px;
       padding: 1.75rem;
       border: 1px solid #e0f2fe;
+      transition: box-shadow 0.2s, transform 0.15s;
     }
+    .service-card:hover { box-shadow: 0 8px 24px rgba(3,105,161,0.12); transform: translateY(-2px); }
     .service-card .icon { font-size: 2rem; margin-bottom: 0.75rem; }
     .service-card h3 { font-size: 1.1rem; margin-bottom: 0.5rem; }
     .service-card p { color: var(--muted); font-size: 0.9rem; }
@@ -110,6 +214,21 @@
       background: #f8fafc;
       padding: 4rem 1.5rem;
     }
+    .google-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin: 0 auto 2rem;
+      display: flex;
+      width: fit-content;
+    }
+    .google-badge .g { color: #4285f4; font-weight: 800; font-size: 1.1rem; }
     .review-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -121,19 +240,51 @@
       background: #fff;
       padding: 1.5rem;
       border-radius: 12px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      border: 1px solid #f1f5f9;
     }
-    .stars { color: #fbbf24; margin-bottom: 0.5rem; }
-    .review p { font-size: 0.95rem; color: var(--muted); margin-bottom: 0.75rem; }
+    .stars { color: #fbbf24; margin-bottom: 0.5rem; letter-spacing: 1px; }
+    .review p { font-size: 0.95rem; color: var(--muted); margin-bottom: 0.75rem; font-style: italic; }
     .review .name { font-weight: 600; font-size: 0.9rem; }
+    .areas {
+      background: var(--light);
+      padding: 3rem 1.5rem;
+      text-align: center;
+    }
+    .areas h2 { font-size: 1.4rem; font-weight: 800; color: var(--blue-dark); margin-bottom: 0.5rem; }
+    .areas p { color: var(--muted); }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-top: 1.25rem;
+    }
+    .tag {
+      background: #fff;
+      border: 1px solid #bae6fd;
+      padding: 0.4rem 0.9rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--blue-dark);
+    }
+    .faq { max-width: 700px; margin: 0 auto; }
+    .faq-item {
+      border-bottom: 1px solid #e2e8f0;
+      padding: 1.25rem 0;
+    }
+    .faq-item h3 { font-size: 1rem; margin-bottom: 0.4rem; color: var(--blue-dark); }
+    .faq-item p { color: var(--muted); font-size: 0.9rem; }
     .cta-band {
-      background: var(--orange);
+      background: linear-gradient(135deg, var(--orange) 0%, var(--orange-dark) 100%);
       color: #fff;
       text-align: center;
-      padding: 3rem 1.5rem;
+      padding: 3.5rem 1.5rem;
     }
-    .cta-band h2 { font-size: 1.75rem; margin-bottom: 0.75rem; }
-    .cta-band p { margin-bottom: 1.5rem; opacity: 0.95; }
+    .cta-band h2 { font-size: 1.85rem; margin-bottom: 0.75rem; font-weight: 800; }
+    .cta-band p { margin-bottom: 1.5rem; opacity: 0.95; font-size: 1.05rem; }
+    .cta-band .btn { background: #fff; color: var(--orange); box-shadow: 0 4px 20px rgba(0,0,0,0.15); }
     footer {
       background: var(--blue-dark);
       color: rgba(255,255,255,0.7);
@@ -141,28 +292,97 @@
       padding: 2rem 1.5rem;
       font-size: 0.85rem;
     }
+    .float-call {
+      display: none;
+      position: fixed;
+      bottom: 1.25rem;
+      right: 1.25rem;
+      background: var(--orange);
+      color: #fff;
+      padding: 0.85rem 1.25rem;
+      border-radius: 999px;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 4px 20px rgba(234,88,12,0.45);
+      z-index: 200;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 768px) { .float-call { display: block; } }
   </style>
 </head>
 <body>
   <div class="demo-bar">Portfolio demo · <a href="../../index.html">Back to portfolio</a></div>
-  <div class="top-bar">⚡ Same-day emergency AC repair available — Call now!</div>
+  <div class="top-bar">⚡ Same-day emergency AC repair — <a href="tel:+12145550198">Call (214) 555-0198</a></div>
 
-  <nav>
-    <div class="brand">Cool<span>Air</span> HVAC</div>
-    <a class="nav-phone" href="tel:+12145550198">📞 (214) 555-0198</a>
-  </nav>
+  <header>
+    <nav>
+      <div class="brand">Cool<span>Air</span> HVAC</div>
+      <a class="nav-phone" href="tel:+12145550198">📞 (214) 555-0198</a>
+    </nav>
+  </header>
 
   <section class="hero">
-    <h1>Dallas's Trusted HVAC Experts — Fast, Licensed, Affordable</h1>
-    <p>AC repair, installation, and maintenance. Free estimates. 24/7 emergency service. Serving Dallas & surrounding areas since 2012.</p>
-    <div class="hero-btns">
-      <a class="btn btn-primary" href="tel:+12145550198">Call for Free Estimate</a>
-      <a class="btn btn-outline" href="#services">Our Services</a>
+    <div>
+      <div class="hero-badge">★ 4.9 Google Rating · 500+ Reviews</div>
+      <h1>AC Broken? We'll Fix It Today — Dallas's Most Trusted HVAC Team</h1>
+      <p>Licensed technicians on-site in hours, not days. Free estimates, upfront pricing, and a 100% satisfaction guarantee on every job.</p>
+      <ul class="hero-features">
+        <li>Same-day & 24/7 emergency service</li>
+        <li>All brands — repair, install, maintain</li>
+        <li>Financing available on new systems</li>
+      </ul>
+      <div class="hero-btns">
+        <a class="btn btn-primary" href="tel:+12145550198">Call for Free Estimate</a>
+        <a class="btn btn-outline" href="#services">View Services</a>
+      </div>
     </div>
-    <div class="trust-row">
-      <span>✓ Licensed & Insured</span>
-      <span>✓ 500+ 5-Star Reviews</span>
-      <span>✓ Same-Day Service</span>
+    <div class="hero-visual">
+      <div class="icon">❄️</div>
+      <div class="rating">
+        <strong>4.9 ★★★★★</strong>
+        <span>Trusted by 500+ Dallas homeowners</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="stats">
+    <div>
+      <div class="stat-num">14+</div>
+      <div class="stat-label">Years Experience</div>
+    </div>
+    <div>
+      <div class="stat-num">4.9★</div>
+      <div class="stat-label">Google Rating</div>
+    </div>
+    <div>
+      <div class="stat-num">2hr</div>
+      <div class="stat-label">Avg. Response Time</div>
+    </div>
+    <div>
+      <div class="stat-num">100%</div>
+      <div class="stat-label">Satisfaction Guarantee</div>
+    </div>
+  </div>
+
+  <section class="section">
+    <h2>Why Dallas Homeowners Choose CoolAir</h2>
+    <p class="sub">Licensed, insured, and committed to getting your home comfortable fast</p>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="icon">⚡</div>
+        <h3>Same-Day Service</h3>
+        <p>Most repairs completed the day you call. Emergency slots available 24/7.</p>
+      </div>
+      <div class="why-card">
+        <div class="icon">💰</div>
+        <h3>Upfront Pricing</h3>
+        <p>Free estimates before work starts. No hidden fees or surprise charges.</p>
+      </div>
+      <div class="why-card">
+        <div class="icon">🛡️</div>
+        <h3>Licensed & Insured</h3>
+        <p>Texas-licensed technicians. Full liability coverage on every job site.</p>
+      </div>
     </div>
   </section>
 
@@ -188,7 +408,7 @@
       <div class="service-card">
         <div class="icon">🛠️</div>
         <h3>Maintenance Plans</h3>
-        <p>Annual tune-ups to prevent breakdowns and lower energy bills.</p>
+        <p>Annual tune-ups to prevent breakdowns and lower energy bills up to 20%.</p>
       </div>
     </div>
   </section>
@@ -196,7 +416,8 @@
   <section class="reviews">
     <div class="section" style="padding-top:0;">
       <h2>What Our Customers Say</h2>
-      <p class="sub">Real reviews from Dallas homeowners</p>
+      <p class="sub">Real reviews from Dallas-area homeowners</p>
+      <div class="google-badge"><span class="g">G</span> 4.9 · 500+ Google Reviews</div>
       <div class="review-grid">
         <div class="review">
           <div class="stars">★★★★★</div>
@@ -217,15 +438,49 @@
     </div>
   </section>
 
+  <section class="areas">
+    <h2>Service Areas</h2>
+    <p>Proudly serving Dallas and surrounding communities</p>
+    <div class="tags">
+      <span class="tag">Dallas</span>
+      <span class="tag">Plano</span>
+      <span class="tag">Irving</span>
+      <span class="tag">Frisco</span>
+      <span class="tag">Garland</span>
+      <span class="tag">Richardson</span>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Common Questions</h2>
+    <p class="sub">Quick answers before you call</p>
+    <div class="faq">
+      <div class="faq-item">
+        <h3>How fast can you get here?</h3>
+        <p>Same-day appointments for most calls. Emergency service available 24/7 with typical arrival within 2 hours.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Do you offer free estimates?</h3>
+        <p>Yes — every job starts with a free, no-obligation estimate. You'll know the cost before we begin work.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What brands do you service?</h3>
+        <p>All major brands including Carrier, Trane, Lennox, Goodman, Rheem, and more.</p>
+      </div>
+    </div>
+  </section>
+
   <section class="cta-band">
-    <h2>Need AC Help Today?</h2>
-    <p>Free estimates · No hidden fees · Licensed technicians</p>
-    <a class="btn btn-outline" href="tel:+12145550198" style="background:#fff;color:var(--orange);border:none;">Call (214) 555-0198</a>
+    <h2>Don't Sweat It — Call CoolAir Today</h2>
+    <p>Free estimates · No hidden fees · Licensed technicians on every job</p>
+    <a class="btn" href="tel:+12145550198">📞 Call (214) 555-0198</a>
   </section>
 
   <footer>
     <p>© 2026 CoolAir HVAC · Dallas, TX · Licensed #HVAC-8842</p>
     <p style="margin-top:0.5rem;">Demo site for portfolio purposes only</p>
   </footer>
+
+  <a class="float-call" href="tel:+12145550198">📞 Call Now</a>
 </body>
 </html>

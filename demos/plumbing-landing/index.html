@@ -40,7 +40,7 @@
       box-shadow: 0 1px 3px rgba(0,0,0,0.08);
       position: sticky;
       top: 0;
-      z-index: 10;
+      z-index: 100;
     }
     nav {
       display: flex;
@@ -62,8 +62,9 @@
       text-decoration: none;
       font-weight: 700;
       font-size: 0.95rem;
+      transition: background 0.2s, transform 0.15s;
     }
-    .call-btn:hover { background: var(--teal-dark); }
+    .call-btn:hover { background: var(--teal-dark); transform: translateY(-1px); }
     .hero {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -77,6 +78,19 @@
     @media (max-width: 768px) {
       .hero { grid-template-columns: 1fr; text-align: center; }
     }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: #fef2f2;
+      color: #b91c1c;
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 0.35rem 0.85rem;
+      border-radius: 999px;
+      margin-bottom: 1rem;
+      border: 1px solid #fecaca;
+    }
     .hero h1 {
       font-size: clamp(1.75rem, 4vw, 2.5rem);
       font-weight: 800;
@@ -84,7 +98,7 @@
       margin-bottom: 1rem;
       color: var(--navy);
     }
-    .hero p { color: var(--muted); margin-bottom: 1.5rem; font-size: 1.05rem; }
+    .hero p { color: var(--muted); margin-bottom: 1.25rem; font-size: 1.05rem; }
     .hero-features { list-style: none; margin-bottom: 1.5rem; }
     .hero-features li {
       padding: 0.35rem 0;
@@ -100,24 +114,46 @@
       border-radius: 16px;
       aspect-ratio: 4/3;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
       font-size: 5rem;
       box-shadow: 0 20px 40px rgba(13, 148, 136, 0.25);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-visual::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 70% 30%, rgba(255,255,255,0.1), transparent 50%);
+    }
+    .hero-visual .badge {
+      position: relative;
+      background: rgba(255,255,255,0.15);
+      backdrop-filter: blur(8px);
+      color: #fff;
+      padding: 0.65rem 1.1rem;
+      border-radius: 10px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-top: 0.75rem;
+      text-align: center;
     }
     .stats {
       background: var(--navy);
       color: #fff;
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       text-align: center;
       padding: 2rem 1.5rem;
     }
-    @media (max-width: 500px) { .stats { grid-template-columns: 1fr; gap: 1.5rem; } }
+    @media (max-width: 640px) { .stats { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; } }
     .stat-num { font-size: 2rem; font-weight: 800; color: #2dd4bf; }
     .stat-label { font-size: 0.85rem; opacity: 0.8; margin-top: 0.25rem; }
     .section { padding: 4rem 1.5rem; max-width: 1100px; margin: 0 auto; }
-    .section h2 { font-size: 1.65rem; font-weight: 800; text-align: center; margin-bottom: 2rem; color: var(--navy); }
+    .section h2 { font-size: 1.65rem; font-weight: 800; text-align: center; margin-bottom: 0.5rem; color: var(--navy); }
+    .section .sub { text-align: center; color: var(--muted); margin-bottom: 2rem; }
     .services {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -128,19 +164,55 @@
       border-radius: 12px;
       padding: 1.5rem;
       text-align: center;
-      transition: box-shadow 0.2s;
+      transition: box-shadow 0.2s, transform 0.15s;
     }
-    .svc:hover { box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+    .svc:hover { box-shadow: 0 8px 24px rgba(0,0,0,0.08); transform: translateY(-2px); }
     .svc .icon { font-size: 2.25rem; margin-bottom: 0.75rem; }
     .svc h3 { font-size: 1rem; margin-bottom: 0.35rem; }
     .svc p { font-size: 0.85rem; color: var(--muted); }
+    .reviews {
+      background: #f8fafc;
+      padding: 4rem 1.5rem;
+    }
+    .google-badge {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin: 0 auto 2rem;
+      width: fit-content;
+    }
+    .google-badge .g { color: #4285f4; font-weight: 800; font-size: 1.1rem; }
+    .review-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.25rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .review {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      border: 1px solid #f1f5f9;
+    }
+    .stars { color: #fbbf24; margin-bottom: 0.5rem; }
+    .review p { font-size: 0.95rem; color: var(--muted); margin-bottom: 0.75rem; font-style: italic; }
+    .review .name { font-weight: 600; font-size: 0.9rem; }
     .areas {
       background: #f0fdfa;
       padding: 3rem 1.5rem;
       text-align: center;
     }
+    .areas h2 { font-size: 1.4rem; font-weight: 800; color: var(--navy); margin-bottom: 0.75rem; }
     .areas p { color: var(--muted); max-width: 600px; margin: 0 auto; }
-    .areas .tags {
+    .tags {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -155,6 +227,29 @@
       font-size: 0.85rem;
       font-weight: 500;
     }
+    .faq { max-width: 700px; margin: 0 auto; }
+    .faq-item {
+      border-bottom: 1px solid #e2e8f0;
+      padding: 1.25rem 0;
+    }
+    .faq-item h3 { font-size: 1rem; margin-bottom: 0.4rem; color: var(--navy); }
+    .faq-item p { color: var(--muted); font-size: 0.9rem; }
+    .cta-band {
+      background: linear-gradient(135deg, var(--teal) 0%, var(--teal-dark) 100%);
+      color: #fff;
+      text-align: center;
+      padding: 3.5rem 1.5rem;
+    }
+    .cta-band h2 { font-size: 1.85rem; margin-bottom: 0.75rem; font-weight: 800; }
+    .cta-band p { margin-bottom: 1.5rem; opacity: 0.95; }
+    .cta-band .call-btn {
+      display: inline-block;
+      background: #fff;
+      color: var(--teal-dark);
+      font-size: 1.05rem;
+      padding: 0.9rem 1.75rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    }
     footer {
       background: var(--navy);
       color: rgba(255,255,255,0.75);
@@ -162,6 +257,22 @@
       padding: 2rem 1.5rem;
       font-size: 0.85rem;
     }
+    .float-call {
+      display: none;
+      position: fixed;
+      bottom: 1.25rem;
+      right: 1.25rem;
+      background: var(--teal);
+      color: #fff;
+      padding: 0.85rem 1.25rem;
+      border-radius: 999px;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 4px 20px rgba(13,148,136,0.45);
+      z-index: 200;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 768px) { .float-call { display: block; } }
   </style>
 </head>
 <body>
@@ -177,16 +288,20 @@
 
   <section class="hero">
     <div>
-      <h1>Phoenix's #1 Rated Emergency Plumber</h1>
-      <p>Leaks, clogs, water heaters, and pipe repairs. Licensed, insured, and on-site in 60 minutes or less.</p>
+      <div class="hero-badge">🚨 Emergency Plumber Available Now</div>
+      <h1>Phoenix's #1 Rated Emergency Plumber — On-Site in 60 Minutes</h1>
+      <p>Leaks, clogs, water heaters, and burst pipes. Licensed, insured, and ready to fix it today — not next week.</p>
       <ul class="hero-features">
-        <li>Upfront pricing — no surprises</li>
+        <li>Upfront pricing — no surprise bills</li>
         <li>Available 24 hours, 7 days a week</li>
         <li>100% satisfaction guarantee</li>
       </ul>
       <a class="call-btn" href="tel:+16025550147" style="display:inline-block;">Get a Free Quote</a>
     </div>
-    <div class="hero-visual">🔧</div>
+    <div class="hero-visual">
+      🔧
+      <div class="badge">On-site in 60 min · Phoenix metro</div>
+    </div>
   </section>
 
   <div class="stats">
@@ -202,10 +317,15 @@
       <div class="stat-num">60min</div>
       <div class="stat-label">Average Response</div>
     </div>
+    <div>
+      <div class="stat-num">3,200+</div>
+      <div class="stat-label">Jobs Completed</div>
+    </div>
   </div>
 
   <section class="section">
     <h2>Plumbing Services We Offer</h2>
+    <p class="sub">Residential and commercial — fixed right the first time</p>
     <div class="services">
       <div class="svc">
         <div class="icon">💧</div>
@@ -240,8 +360,33 @@
     </div>
   </section>
 
+  <section class="reviews">
+    <div class="section" style="padding-top:0;padding-bottom:0;">
+      <h2>What Phoenix Homeowners Say</h2>
+      <p class="sub">Trusted by thousands across the metro area</p>
+      <div class="google-badge"><span class="g">G</span> 4.9 · 380+ Google Reviews</div>
+      <div class="review-grid">
+        <div class="review">
+          <div class="stars">★★★★★</div>
+          <p>"Called at midnight with a burst pipe. They were here in 45 minutes and had it fixed before sunrise. Lifesavers."</p>
+          <div class="name">— Robert M., Scottsdale</div>
+        </div>
+        <div class="review">
+          <div class="stars">★★★★★</div>
+          <p>"Honest pricing, no upselling. Fixed our water heater same day. Already recommended to two neighbors."</p>
+          <div class="name">— Sarah L., Tempe</div>
+        </div>
+        <div class="review">
+          <div class="stars">★★★★★</div>
+          <p>"Professional crew, cleaned up after the job. Best plumber we've used in 10 years of owning our home."</p>
+          <div class="name">— David K., Mesa</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="areas">
-    <h2 style="font-size:1.4rem;font-weight:800;color:var(--navy);margin-bottom:0.75rem;">Service Areas</h2>
+    <h2>Service Areas</h2>
     <p>Proudly serving Phoenix and the greater metro area</p>
     <div class="tags">
       <span class="tag">Phoenix</span>
@@ -253,9 +398,36 @@
     </div>
   </section>
 
+  <section class="section">
+    <h2>Common Questions</h2>
+    <p class="sub">Quick answers before you call</p>
+    <div class="faq">
+      <div class="faq-item">
+        <h3>Do you charge extra for emergency calls?</h3>
+        <p>We offer upfront pricing on every job. You'll know the cost before we start — no hidden emergency fees.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How fast can you arrive?</h3>
+        <p>Average response time is 60 minutes across the Phoenix metro. True emergencies get priority dispatch.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Are you licensed and insured?</h3>
+        <p>Yes — fully licensed (ROC #PLB-3391) and insured. All work meets Arizona code requirements.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <h2>Plumbing Emergency? We're Ready 24/7</h2>
+    <p>Free quotes · Upfront pricing · Licensed plumbers on every call</p>
+    <a class="call-btn" href="tel:+16025550147">📞 Call (602) 555-0147</a>
+  </section>
+
   <footer>
     <p>© 2026 ProFix Plumbing · Phoenix, AZ · ROC #PLB-3391</p>
     <p style="margin-top:0.5rem;">Demo site for portfolio purposes only</p>
   </footer>
+
+  <a class="float-call" href="tel:+16025550147">📞 Call Now</a>
 </body>
 </html>
