@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoolAir HVAC | AC Repair & Installation — Dallas, TX</title>
+  <meta name="description" content="Licensed HVAC repair and installation in Dallas. Same-day service. Free estimates. Call (214) 555-0198.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --blue: #0369a1;
+      --blue-dark: #0c4a6e;
+      --orange: #ea580c;
+      --text: #0f172a;
+      --muted: #64748b;
+      --light: #f0f9ff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Inter, system-ui, sans-serif; color: var(--text); line-height: 1.6; }
+    .demo-bar {
+      background: #1e293b;
+      color: #94a3b8;
+      text-align: center;
+      padding: 0.5rem;
+      font-size: 0.8rem;
+    }
+    .demo-bar a { color: #38bdf8; }
+    .top-bar {
+      background: var(--blue-dark);
+      color: #fff;
+      text-align: center;
+      padding: 0.5rem;
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 1.5rem;
+      max-width: 1100px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .brand { font-weight: 800; font-size: 1.35rem; color: var(--blue-dark); }
+    .brand span { color: var(--orange); }
+    .nav-phone {
+      background: var(--orange);
+      color: #fff;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+    .hero {
+      background: linear-gradient(135deg, var(--blue-dark) 0%, var(--blue) 100%);
+      color: #fff;
+      padding: 4rem 1.5rem 5rem;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: clamp(1.75rem, 5vw, 2.75rem);
+      font-weight: 800;
+      max-width: 700px;
+      margin: 0 auto 1rem;
+      line-height: 1.2;
+    }
+    .hero p { font-size: 1.1rem; opacity: 0.9; max-width: 520px; margin: 0 auto 2rem; }
+    .hero-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .btn {
+      display: inline-block;
+      padding: 0.85rem 1.75rem;
+      border-radius: 8px;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+    .btn-primary { background: var(--orange); color: #fff; }
+    .btn-outline { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,0.5); }
+    .trust-row {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-top: 2.5rem;
+      font-size: 0.85rem;
+      opacity: 0.85;
+    }
+    .section { padding: 4rem 1.5rem; max-width: 1100px; margin: 0 auto; }
+    .section h2 { font-size: 1.75rem; font-weight: 800; text-align: center; margin-bottom: 0.5rem; }
+    .section .sub { text-align: center; color: var(--muted); margin-bottom: 2.5rem; }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.25rem;
+    }
+    .service-card {
+      background: var(--light);
+      border-radius: 12px;
+      padding: 1.75rem;
+      border: 1px solid #e0f2fe;
+    }
+    .service-card .icon { font-size: 2rem; margin-bottom: 0.75rem; }
+    .service-card h3 { font-size: 1.1rem; margin-bottom: 0.5rem; }
+    .service-card p { color: var(--muted); font-size: 0.9rem; }
+    .reviews {
+      background: #f8fafc;
+      padding: 4rem 1.5rem;
+    }
+    .review-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.25rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .review {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+    .stars { color: #fbbf24; margin-bottom: 0.5rem; }
+    .review p { font-size: 0.95rem; color: var(--muted); margin-bottom: 0.75rem; }
+    .review .name { font-weight: 600; font-size: 0.9rem; }
+    .cta-band {
+      background: var(--orange);
+      color: #fff;
+      text-align: center;
+      padding: 3rem 1.5rem;
+    }
+    .cta-band h2 { font-size: 1.75rem; margin-bottom: 0.75rem; }
+    .cta-band p { margin-bottom: 1.5rem; opacity: 0.95; }
+    footer {
+      background: var(--blue-dark);
+      color: rgba(255,255,255,0.7);
+      text-align: center;
+      padding: 2rem 1.5rem;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="demo-bar">Portfolio demo · <a href="../../index.html">Back to portfolio</a></div>
+  <div class="top-bar">⚡ Same-day emergency AC repair available — Call now!</div>
+
+  <nav>
+    <div class="brand">Cool<span>Air</span> HVAC</div>
+    <a class="nav-phone" href="tel:+12145550198">📞 (214) 555-0198</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Dallas's Trusted HVAC Experts — Fast, Licensed, Affordable</h1>
+    <p>AC repair, installation, and maintenance. Free estimates. 24/7 emergency service. Serving Dallas & surrounding areas since 2012.</p>
+    <div class="hero-btns">
+      <a class="btn btn-primary" href="tel:+12145550198">Call for Free Estimate</a>
+      <a class="btn btn-outline" href="#services">Our Services</a>
+    </div>
+    <div class="trust-row">
+      <span>✓ Licensed & Insured</span>
+      <span>✓ 500+ 5-Star Reviews</span>
+      <span>✓ Same-Day Service</span>
+    </div>
+  </section>
+
+  <section class="section" id="services">
+    <h2>Our Services</h2>
+    <p class="sub">Complete heating and cooling solutions for homes and businesses</p>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="icon">❄️</div>
+        <h3>AC Repair</h3>
+        <p>Fast diagnosis and repair for all brands. Most jobs completed same day.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">🔥</div>
+        <h3>Furnace Repair</h3>
+        <p>Keep your home warm all winter. Emergency furnace service available.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">🏠</div>
+        <h3>New Installation</h3>
+        <p>Energy-efficient systems installed by certified technicians. Financing available.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">🛠️</div>
+        <h3>Maintenance Plans</h3>
+        <p>Annual tune-ups to prevent breakdowns and lower energy bills.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews">
+    <div class="section" style="padding-top:0;">
+      <h2>What Our Customers Say</h2>
+      <p class="sub">Real reviews from Dallas homeowners</p>
+      <div class="review-grid">
+        <div class="review">
+          <div class="stars">★★★★★</div>
+          <p>"Technician arrived within 2 hours on a Saturday. Fixed our AC and saved us from a miserable weekend. Highly recommend!"</p>
+          <div class="name">— Maria G., Plano TX</div>
+        </div>
+        <div class="review">
+          <div class="stars">★★★★★</div>
+          <p>"Fair pricing, no upselling. They explained everything clearly. Our new unit runs quieter and our bill dropped 20%."</p>
+          <div class="name">— James T., Dallas TX</div>
+        </div>
+        <div class="review">
+          <div class="stars">★★★★★</div>
+          <p>"Best HVAC company in Dallas. Professional, on time, and they cleaned up after themselves. Will use again."</p>
+          <div class="name">— Linda K., Irving TX</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <h2>Need AC Help Today?</h2>
+    <p>Free estimates · No hidden fees · Licensed technicians</p>
+    <a class="btn btn-outline" href="tel:+12145550198" style="background:#fff;color:var(--orange);border:none;">Call (214) 555-0198</a>
+  </section>
+
+  <footer>
+    <p>© 2026 CoolAir HVAC · Dallas, TX · Licensed #HVAC-8842</p>
+    <p style="margin-top:0.5rem;">Demo site for portfolio purposes only</p>
+  </footer>
+</body>
+</html>

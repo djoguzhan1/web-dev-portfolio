@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProFix Plumbing | 24/7 Emergency Plumber — Phoenix, AZ</title>
+  <meta name="description" content="Emergency plumbing in Phoenix. Leaks, drains, water heaters. Licensed plumbers. Call (602) 555-0147 — available 24/7.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #1e3a5f;
+      --teal: #0d9488;
+      --teal-dark: #0f766e;
+      --amber: #d97706;
+      --text: #1e293b;
+      --muted: #64748b;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Inter, system-ui, sans-serif; color: var(--text); line-height: 1.6; }
+    .demo-bar {
+      background: #1e293b;
+      color: #94a3b8;
+      text-align: center;
+      padding: 0.5rem;
+      font-size: 0.8rem;
+    }
+    .demo-bar a { color: #2dd4bf; }
+    .emergency-bar {
+      background: #dc2626;
+      color: #fff;
+      text-align: center;
+      padding: 0.6rem;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+    .emergency-bar a { color: #fff; text-decoration: underline; }
+    header {
+      background: #fff;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 1.5rem;
+      max-width: 1100px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .brand { font-weight: 800; font-size: 1.3rem; color: var(--navy); }
+    .brand span { color: var(--teal); }
+    .call-btn {
+      background: var(--teal);
+      color: #fff;
+      padding: 0.65rem 1.25rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+    .call-btn:hover { background: var(--teal-dark); }
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 480px;
+      max-width: 1100px;
+      margin: 0 auto;
+      gap: 2rem;
+      padding: 3rem 1.5rem;
+      align-items: center;
+    }
+    @media (max-width: 768px) {
+      .hero { grid-template-columns: 1fr; text-align: center; }
+    }
+    .hero h1 {
+      font-size: clamp(1.75rem, 4vw, 2.5rem);
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+      color: var(--navy);
+    }
+    .hero p { color: var(--muted); margin-bottom: 1.5rem; font-size: 1.05rem; }
+    .hero-features { list-style: none; margin-bottom: 1.5rem; }
+    .hero-features li {
+      padding: 0.35rem 0;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    @media (max-width: 768px) { .hero-features li { justify-content: center; } }
+    .hero-features li::before { content: "✓"; color: var(--teal); font-weight: 700; }
+    .hero-visual {
+      background: linear-gradient(160deg, var(--navy), var(--teal));
+      border-radius: 16px;
+      aspect-ratio: 4/3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 5rem;
+      box-shadow: 0 20px 40px rgba(13, 148, 136, 0.25);
+    }
+    .stats {
+      background: var(--navy);
+      color: #fff;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      text-align: center;
+      padding: 2rem 1.5rem;
+    }
+    @media (max-width: 500px) { .stats { grid-template-columns: 1fr; gap: 1.5rem; } }
+    .stat-num { font-size: 2rem; font-weight: 800; color: #2dd4bf; }
+    .stat-label { font-size: 0.85rem; opacity: 0.8; margin-top: 0.25rem; }
+    .section { padding: 4rem 1.5rem; max-width: 1100px; margin: 0 auto; }
+    .section h2 { font-size: 1.65rem; font-weight: 800; text-align: center; margin-bottom: 2rem; color: var(--navy); }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .svc {
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: center;
+      transition: box-shadow 0.2s;
+    }
+    .svc:hover { box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+    .svc .icon { font-size: 2.25rem; margin-bottom: 0.75rem; }
+    .svc h3 { font-size: 1rem; margin-bottom: 0.35rem; }
+    .svc p { font-size: 0.85rem; color: var(--muted); }
+    .areas {
+      background: #f0fdfa;
+      padding: 3rem 1.5rem;
+      text-align: center;
+    }
+    .areas p { color: var(--muted); max-width: 600px; margin: 0 auto; }
+    .areas .tags {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-top: 1.25rem;
+    }
+    .tag {
+      background: #fff;
+      border: 1px solid #99f6e4;
+      padding: 0.4rem 0.9rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+    footer {
+      background: var(--navy);
+      color: rgba(255,255,255,0.75);
+      text-align: center;
+      padding: 2rem 1.5rem;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="demo-bar">Portfolio demo · <a href="../../index.html">Back to portfolio</a></div>
+  <div class="emergency-bar">🚨 24/7 Emergency Service — <a href="tel:+16025550147">Call (602) 555-0147 now</a></div>
+
+  <header>
+    <nav>
+      <div class="brand">Pro<span>Fix</span> Plumbing</div>
+      <a class="call-btn" href="tel:+16025550147">📞 (602) 555-0147</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h1>Phoenix's #1 Rated Emergency Plumber</h1>
+      <p>Leaks, clogs, water heaters, and pipe repairs. Licensed, insured, and on-site in 60 minutes or less.</p>
+      <ul class="hero-features">
+        <li>Upfront pricing — no surprises</li>
+        <li>Available 24 hours, 7 days a week</li>
+        <li>100% satisfaction guarantee</li>
+      </ul>
+      <a class="call-btn" href="tel:+16025550147" style="display:inline-block;">Get a Free Quote</a>
+    </div>
+    <div class="hero-visual">🔧</div>
+  </section>
+
+  <div class="stats">
+    <div>
+      <div class="stat-num">15+</div>
+      <div class="stat-label">Years in Business</div>
+    </div>
+    <div>
+      <div class="stat-num">4.9★</div>
+      <div class="stat-label">Google Rating</div>
+    </div>
+    <div>
+      <div class="stat-num">60min</div>
+      <div class="stat-label">Average Response</div>
+    </div>
+  </div>
+
+  <section class="section">
+    <h2>Plumbing Services We Offer</h2>
+    <div class="services">
+      <div class="svc">
+        <div class="icon">💧</div>
+        <h3>Leak Repair</h3>
+        <p>Fast detection and permanent fixes</p>
+      </div>
+      <div class="svc">
+        <div class="icon">🚿</div>
+        <h3>Drain Cleaning</h3>
+        <p>Clogged sinks, showers, and sewers</p>
+      </div>
+      <div class="svc">
+        <div class="icon">🔥</div>
+        <h3>Water Heaters</h3>
+        <p>Repair and replacement all brands</p>
+      </div>
+      <div class="svc">
+        <div class="icon">🚽</div>
+        <h3>Toilet Repair</h3>
+        <p>Running, clogged, or broken toilets</p>
+      </div>
+      <div class="svc">
+        <div class="icon">🏗️</div>
+        <h3>Pipe Replacement</h3>
+        <p>Copper, PVC, and repiping services</p>
+      </div>
+      <div class="svc">
+        <div class="icon">🏠</div>
+        <h3>Commercial</h3>
+        <p>Restaurants, offices, and retail</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="areas">
+    <h2 style="font-size:1.4rem;font-weight:800;color:var(--navy);margin-bottom:0.75rem;">Service Areas</h2>
+    <p>Proudly serving Phoenix and the greater metro area</p>
+    <div class="tags">
+      <span class="tag">Phoenix</span>
+      <span class="tag">Scottsdale</span>
+      <span class="tag">Tempe</span>
+      <span class="tag">Mesa</span>
+      <span class="tag">Glendale</span>
+      <span class="tag">Chandler</span>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 ProFix Plumbing · Phoenix, AZ · ROC #PLB-3391</p>
+    <p style="margin-top:0.5rem;">Demo site for portfolio purposes only</p>
+  </footer>
+</body>
+</html>
