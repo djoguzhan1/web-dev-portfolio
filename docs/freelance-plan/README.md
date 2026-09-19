@@ -13,6 +13,7 @@ Başka bir chat'te devam etmek için önce **`00-YENI-CHAT-BURADAN-BASLA.md`** d
 | [03-ADIM-2-PLATFORM-METINLERI.txt](./03-ADIM-2-PLATFORM-METINLERI.txt) | Fiverr, Zinn Hub, Hubstaff, goLance, Guru, Postwork, Open Lance |
 | [04-GUNLUK-RUTIN-VE-CHECKLIST.md](./04-GUNLUK-RUTIN-VE-CHECKLIST.md) | Günlük işler, $0 risk kuralları, 30 gün takvimi |
 | [05-FIVERR-SESIYON-TAM-OZET.md](./05-FIVERR-SESIYON-TAM-OZET.md) | **Fiverr sohbeti tam özet** — gig ayarları, rakip analizi, nerede kaldık |
+| [06-PLANLAMA-SOHBETI-TAM-OZET.md](./06-PLANLAMA-SOHBETI-TAM-OZET.md) | **Planlama sohbeti tam özet** — strateji, araştırma, Adım 1–2, 10 kanal |
 
 ## Platform setup (repo kökü)
 
