@@ -1,0 +1,101 @@
+FIVERR GIG 2 — EXCEL / GOOGLE SHEETS
+======================================
+
+GIG TITLE (max 80 karakter):
+I will clean up and fix your Excel or Google Sheets spreadsheet fast
+
+CATEGORY:
+Programming & Tech → Data → Data Processing
+(Alternatif: Business → Data Entry → Excel)
+
+SEARCH TAGS (5 adet):
+excel
+google sheets
+spreadsheet
+data cleaning
+excel formula
+
+--- DESCRIPTION ---
+
+Messy spreadsheet? Broken formulas? Need a clean dashboard?
+
+I organize, fix, and improve Excel and Google Sheets files — fast and accurately.
+
+WHAT I CAN DO:
+✓ Clean messy data (duplicates, formatting, blank rows)
+✓ Fix broken formulas (VLOOKUP, IF, SUMIFS, INDEX/MATCH)
+✓ Create simple dashboards and summary tabs
+✓ Format for printing or presentation
+✓ Convert between Excel ↔ Google Sheets
+✓ Add data validation and dropdown lists
+✓ Basic charts and conditional formatting
+✓ Automate repetitive tasks (where possible)
+
+PERFECT FOR:
+• Small business owners
+• Freelancers tracking income/expenses
+• Inventory lists
+• Simple CRM / contact lists
+• Report cleanup before a meeting
+
+WHAT I NEED FROM YOU:
+1. Your file (Excel .xlsx or Google Sheets link with edit access)
+2. Clear description of what you want
+3. Example of desired output if you have one
+
+DELIVERY: Usually 1–2 days depending on complexity.
+
+Portfolio: https://djoguzhan1.github.io/web-dev-portfolio/
+
+Message me with your file description before ordering if unsure about scope.
+
+--- PACKAGES ---
+
+BASIC — $35
+Title: Quick cleanup
+• Up to 500 rows, 1 sheet
+• Formatting + duplicate removal
+• 1 revision
+Delivery: 1 day
+
+STANDARD — $65  ★ MOST POPULAR
+Title: Formulas + cleanup
+• Up to 2,000 rows, up to 3 sheets
+• Fix/create formulas
+• Basic charts or summary tab
+• 2 revisions
+Delivery: 2 days
+
+PREMIUM — $99
+Title: Dashboard or multi-sheet project
+• Up to 5,000 rows, up to 5 sheets
+• Dashboard or report layout
+• Data validation + documentation tab
+• 3 revisions
+Delivery: 3 days
+
+--- FAQ ---
+
+Q: Google Sheets or Excel?
+A: Both. Send Excel file or share Google Sheet with edit access.
+
+Q: Is my data confidential?
+A: Yes. I don't share your data. Delete files after project unless you ask to keep for follow-up.
+
+Q: Can you build a full accounting system?
+A: Basic tracking yes. Complex accounting software — message me for custom quote.
+
+Q: What if my file is huge (50,000+ rows)?
+A: Message me first — may need custom pricing.
+
+--- BUYER REQUIREMENTS ---
+
+1. Upload Excel file OR share Google Sheets link with edit access (required)
+2. Describe what you need done (required)
+3. Sample of expected result if available (optional)
+
+--- GIG IMAGE TEXT (Canva) ---
+Line 1: Excel & Google Sheets
+Line 2: Clean • Fix Formulas • Dashboards
+Line 3: 1–2 Day Delivery
+Colors: Green + white

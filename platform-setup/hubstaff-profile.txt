@@ -1,0 +1,175 @@
+HUBSTAFF TALENT — FULL PROFILE SETUP
+=====================================
+Site: https://talent.hubstaff.com
+Kayıt: Start a profile → Freelancer
+
+ONAY: 1–2 iş günü — sabırlı ol, reddedilirse düzelt ve tekrar gönder
+
+--- CRITICAL SETTINGS ---
+
+PROFILE VISIBILITY: Everyone
+(Private seçersen iş başvurusu YAPAMAZSIN)
+
+--- SPECIALTY (required — tek pozisyon, net olsun) ---
+
+Web Developer — WordPress & Landing Pages for Small Business
+
+(Alternatif kabul edilirse: Front-End Web Developer)
+
+--- ABOUT ME (required — ~200–400 kelime, aşağıyı kullan) ---
+
+I'm a web developer specializing in fast, practical websites for small businesses.
+
+Most of my work falls into three areas:
+
+1. WordPress fixes — When a site breaks after an update, plugins conflict, or pages load too slowly, I diagnose and fix the issue quickly. Typical turnaround: 24–48 hours.
+
+2. Landing pages — I build clean, mobile-first one-page websites for local service businesses: HVAC, plumbing, electricians, auto repair, and similar trades. Every page is designed to drive phone calls and quote requests — not just look pretty.
+
+3. Spreadsheet work — Excel and Google Sheets cleanup, formula fixes, and simple dashboards for small teams who need organized data without hiring a full analyst.
+
+Why clients work with me:
+• Fast delivery — 48 hours on most web projects
+• Live portfolio with clickable demos (not mockups)
+• Clear English communication
+• Fixed pricing — you know the cost before we start
+• Available across US/EU time zones (GMT+3, flexible hours)
+
+Live portfolio:
+https://djoguzhan1.github.io/web-dev-portfolio/
+
+Demo landing pages:
+https://djoguzhan1.github.io/web-dev-portfolio/demos/hvac-landing/
+https://djoguzhan1.github.io/web-dev-portfolio/demos/plumbing-landing/
+
+I'm looking for project-based and ongoing maintenance work with small businesses and agencies who need reliable, fast web support.
+
+Open to: fixed-price projects, part-time remote work, website maintenance retainers.
+
+--- SKILLS (MAX 10 — Hubstaff reddeder fazlasını) ---
+
+1. WordPress
+2. HTML
+3. CSS
+4. JavaScript
+5. Landing Page Design
+6. Website Maintenance
+7. Bug Fixes
+8. Responsive Web Design
+9. Excel
+10. Google Sheets
+
+--- EXPERIENCE (Experience section — 1–2 entry) ---
+
+Job Title: Freelance Web Developer
+Company: Self-employed
+Duration: 2024 – Present
+Description:
+Building landing pages and fixing WordPress sites for small business clients. Deliver mobile-responsive HTML/CSS sites and WordPress maintenance. Average project delivery: 48 hours.
+
+Job Title: Web Developer
+Company: Independent / Projects
+Duration: 2022 – Present
+Description:
+Front-end development, spreadsheet automation, and business website projects for international clients. Portfolio: djoguzhan1.github.io/web-dev-portfolio/
+
+--- PAY RATE ---
+
+Hourly rate: $28 USD/hour
+(Fixed projects also welcome — rate is for Hubstaff search filters)
+
+Minimum hours: N/A (project-based OK)
+
+--- AVAILABILITY ---
+
+Full-time or Part-time: Part-time (20–30 hrs/week)
+Available hours: Flexible — overlap with US morning (EST 9am–1pm) when needed
+
+--- LANGUAGES ---
+
+English — Fluent
+Turkish — Native
+
+--- PORTFOLIO ITEMS (upload / link) ---
+
+Item 1:
+Title: HVAC Business Landing Page
+URL: https://djoguzhan1.github.io/web-dev-portfolio/demos/hvac-landing/
+Description: Single-page site for HVAC company. Mobile-first, service sections, reviews, CTAs.
+
+Item 2:
+Title: Plumbing Business Landing Page
+URL: https://djoguzhan1.github.io/web-dev-portfolio/demos/plumbing-landing/
+Description: Emergency plumber landing page with stats bar and service areas.
+
+Item 3:
+Title: Web Development Portfolio
+URL: https://djoguzhan1.github.io/web-dev-portfolio/
+Description: Services hub — WordPress fixes, landing pages, Excel work.
+
+--- RESUME (PDF — highly recommended) ---
+
+Canva veya Google Docs'ta 1 sayfa CV:
+• Name: Oğuzhan Salatan
+• Title: Web Developer | WordPress & Landing Pages
+• Skills list (10 madde)
+• Portfolio URL
+• 2 demo links
+• "Available for remote project work — 48h delivery"
+
+PDF yükle — onay şansını artırır.
+
+--- PROFILE PHOTO ---
+
+• Professional headshot OR clean avatar
+• No sunglasses, no group photos
+• Plain background
+• Reddedilme sebebi #1: kötü fotoğraf
+
+--- JOB APPLICATION TEMPLATE (Apply to job — max 30/month) ---
+
+Use profile: Freelancer profile
+
+Application text:
+
+Hi,
+
+I'm interested in this role/project. I'm a web developer focused on WordPress fixes and business landing pages.
+
+Quick links to my work:
+• Portfolio: https://djoguzhan1.github.io/web-dev-portfolio/
+• HVAC landing demo: https://djoguzhan1.github.io/web-dev-portfolio/demos/hvac-landing/
+
+For this project specifically, I would [1 sentence about THEIR job post — customize each time].
+
+I deliver in 48 hours on standard scope and communicate clearly throughout.
+
+Available to start immediately.
+
+Best,
+Oğuzhan Salatan
+
+--- JOB SEARCH KEYWORDS (Hubstaff'ta ara) ---
+
+wordpress
+landing page
+website fix
+front end
+html css
+small business website
+web maintenance
+excel
+
+--- LIMITS ---
+
+• 3 applications per hour max
+• 30 applications per 30 days
+→ Haftada 7 başvuru — kaliteli seç, spam yapma
+
+--- RED FLAGS (profil reddedilir) ---
+
+✗ 10+ skill listesi
+✗ About me çok kısa (1 cümle)
+✗ Profile visibility: Private
+✗ Resume yok
+✗ Email/phone in resume (Hubstaff strips — Message Center kullan)

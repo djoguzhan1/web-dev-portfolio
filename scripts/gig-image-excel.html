@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Excel Gig Image</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 1280px; height: 769px; overflow: hidden; }
+    .card {
+      width: 1280px;
+      height: 769px;
+      background: linear-gradient(135deg, #064e3b 0%, #047857 50%, #10b981 100%);
+      font-family: Inter, system-ui, sans-serif;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 80px;
+      position: relative;
+    }
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 80% 20%, rgba(255,255,255,0.1), transparent 40%);
+    }
+    .icon { font-size: 4rem; margin-bottom: 1.5rem; position: relative; }
+    h1 {
+      font-size: 3.5rem;
+      font-weight: 800;
+      line-height: 1.1;
+      margin-bottom: 1rem;
+      position: relative;
+      max-width: 900px;
+    }
+    .sub {
+      font-size: 1.75rem;
+      font-weight: 600;
+      opacity: 0.95;
+      margin-bottom: 2rem;
+      position: relative;
+    }
+    .tags {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      position: relative;
+    }
+    .tag {
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.3);
+      padding: 0.6rem 1.2rem;
+      border-radius: 999px;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+    .delivery {
+      position: absolute;
+      bottom: 60px;
+      right: 80px;
+      background: #fff;
+      color: #047857;
+      padding: 0.75rem 1.5rem;
+      border-radius: 10px;
+      font-weight: 800;
+      font-size: 1.25rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="icon">📊</div>
+    <h1>Excel & Google Sheets</h1>
+    <p class="sub">Clean • Fix Formulas • Dashboards</p>
+    <div class="tags">
+      <span class="tag">Data Cleanup</span>
+      <span class="tag">VLOOKUP & SUMIF</span>
+      <span class="tag">Reports</span>
+    </div>
+    <div class="delivery">1–2 Day Delivery</div>
+  </div>
+</body>
+</html>

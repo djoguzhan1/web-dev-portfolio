@@ -1,0 +1,309 @@
+================================================================================
+MASTER ACTION PLAN — Rakiplerin ÜSTÜNE çıkmak için TÜM yapılacaklar
+Kullanıcı: oguzhan_webstud | oguzhan_webstud
+Portföy: https://djoguzhan1.github.io/web-dev-portfolio/
+Hazırlanma: 2026-09-18
+================================================================================
+KULLANIM: Yukarıdan aşağı sırayla yap. □ kutularını işaretle.
+Rakip referansları: Aaliyaan, Fahad, Shahrozzali, Layus, Elementorexpert, Codefixings
+================================================================================
+
+
+████████████████████████████████████████████████████████████████████████████████
+BÖLÜM A — RAKİP BOŞLUK ANALİZİ (ne eksik, ne yapacağız)
+████████████████████████████████████████████████████████████████████████████████
+
+┌─────────────────────────┬──────────────┬──────────────┬─────────────────────────┐
+│ Alan                    │ Rakipler     │ Biz (şimdi)  │ Hedef (üstüne çık)      │
+├─────────────────────────┼──────────────┼──────────────┼─────────────────────────┤
+│ Fiverr review           │ 171–10.524   │ 0            │ İlk 10 review (60 gün)  │
+│ Gig video               │ %80+ var     │ Yok          │ 3 gig'e video           │
+│ Profil fotoğrafı        │ Var          │ Yok          │ Profesyonel foto        │
+│ Gig gallery (3 görsel)  │ Dolu         │ Boş          │ 9 görsel (3×3)          │
+│ Sipariş öncesi inceleme │ Ücretsiz     │ Yok          │ Description'da vurgula  │
+│ Post-delivery support   │ 3–7 gün      │ Premium'da   │ Tüm premium'larda       │
+│ Canlı demo link         │ Az var       │ 2 demo ✓     │ 3–4 demo + case study   │
+│ Demo tasarım kalitesi   │ 6–7/10       │ 8/10 ✓       │ 9/10 (foto+maps)        │
+│ WordPress teslim        │ Evet         │ Belirsiz     │ Premium = WP net yaz    │
+│ Local SEO (schema/GMB)  │ Layus/Shah   │ Yok          │ Premium pakete ekle     │
+│ Google Maps embed       │ Var          │ Yok          │ 3 demo'ya ekle          │
+│ Trade fotoğrafları      │ Var          │ Yok/generic  │ Unsplash/Pexels gerçek  │
+│ Before/after kanıt      │ Var          │ Yok          │ 1 PageSpeed case study  │
+│ Fiverr CTA portföyde    │ Bazıları     │ Yok          │ Buton ekle              │
+│ Fiyat tutarlılığı       │ Tutarlı      │ $79 vs $45   │ Düzelt                  │
+│ Excel gig görselleri    │ Screenshot   │ Yok          │ Özel Excel gallery      │
+│ Response time           │ 1 saat       │ ?            │ 1 saat içinde           │
+│ 3 aktif gig             │ 3–10 gig     │ 0 yayında    │ 3 gig ACTIVE            │
+│ About / süreç bölümü    │ Var          │ Yok          │ How I Work 3 adım       │
+│ Sticky mobile CTA       │ Var          │ Kısmen       │ Call Now bar            │
+└─────────────────────────┴──────────────┴──────────────┴─────────────────────────┘
+
+
+████████████████████████████████████████████████████████████████████████████████
+BÖLÜM B — FAZ 0: BUGÜN (Gig 1 bitir · 30 dk)
+████████████████████████████████████████████████████████████████████████████████
+
+□ GIG 1 GALLERY — 3 görsel yükle:
+  1. wordpress-gig-image-portfolio-1280x769.png (THUMBNAIL)
+  2. landing-gig-image-1-hvac-1280x769.png
+  3. 02-mobile-view veya mobil uyumluluk screenshot
+
+□ GIG 1 PUBLISH — ACTIVE yap
+
+□ Description'da bu satır OLSUN (rakiplerin #1 dönüşüm taktiği):
+  "Message me your site URL before ordering — I'll review your issue for free."
+
+□ AI insan fotoğrafı YÜKLEME — sadece gerçek iş screenshot
+
+
+████████████████████████████████████████████████████████████████████████████████
+BÖLÜM C — FAZ 1: İLK 48 SAAT (Fiverr tam kurulum · algoritma testi)
+████████████████████████████████████████████████████████████████████████████████
+
+─── FIVERR PROFİL ───
+□ Profil fotoğrafı yükle (temiz arka plan, yüz net, gülümseme)
+□ Profil description: yıl deneyim + local business niche + portföy linki
+□ Skills: WordPress, HTML/CSS, Landing Pages, Excel, Responsive Design
+□ Languages: English (Fluent), Turkish (Native)
+□ Education ekle (varsa)
+□ Professional website: djoguzhan1.github.io/web-dev-portfolio/
+
+─── GIG 2 — EXCEL (2. gig · en kolay ilk sipariş) ───
+□ Category: Programming & Tech → Data → Data Processing
+□ Title: clean up and fix your Excel or Google Sheets spreadsheet fast
+□ Tags: excel cleanup | google sheets | spreadsheet | data cleaning | excel formulas
+□ Fiyat: $35 / $59 ★ / $99
+□ Requirements: 2 soru (dosya + ne yapılacak)
+□ FAQ: 5 soru (confidential, formulas, large files, Excel vs Sheets, accounting)
+□ Gallery: excel-gig-image + 2 Excel before/after screenshot
+□ PUBLISH
+
+─── GIG 3 — LANDING PAGE (3. gig · en yüksek gelir) ───
+□ Category: Website Development → Landing Pages
+□ Title: build a professional one page business landing website in 48 hours
+□ Tags: landing page | business website | one page website | responsive website | html css
+□ Fiyat: $79 / $129 ★ / $199
+□ Description: CANLI DEMO LİNKLERİ ilk paragrafta
+□ Requirements: 2–3 soru (business name + phone/services/city + logo optional)
+□ FAQ: 6 soru (demos, hosting, WP vs HTML, mobile, content, copy competitor)
+□ Gallery: HVAC + Plumbing + portfolio hub screenshot
+□ PUBLISH
+
+─── 3 GIG ORTAK ───
+□ Her gig: 3 paket + Standard "Most Popular"
+□ Her gig: min 4 FAQ
+□ Her gig: min 2 extra (rush + revision)
+□ Her gig: 2 requirement (Fiverr kuralı + conversion)
+□ Seller Plus / Milestone workflow ATLA
+
+─── AKTİVİTE (72 saat kritik) ───
+□ Fiverr mobil app açık tut (mümkünse)
+□ Her mesaja 1 saat içinde cevap
+□ Buyer Requests'te 3–5 niş brief'e kişisel teklif (kopyala-yapıştır değil)
+□ Gig'leri sosyal medyada paylaş (LinkedIn, Twitter — Fiverr linki)
+
+
+████████████████████████████████████████████████████████████████████████████████
+BÖLÜM D — FAZ 2: İLK HAFTA (Güven sıçraması · rakipleri geçen görsel)
+████████████████████████████████████████████████████████████████████████████████
+
+─── GIG VİDEOLARI (her gig CTR +%20–40) ───
+□ GIG 1 video (30 sn): Portföy aç → WP fix metni → demo scroll
+□ GIG 2 video (25 sn): Excel before/after → formula fix → "1 day delivery"
+□ GIG 3 video (45 sn): HVAC demo scroll → Plumbing demo scroll → "48h · From $79"
+  Kurallar: 75 sn max, 50MB max, MP4, ekranda email/URL YASAK
+
+─── PORTFÖY HUB DÜZELTMELERİ (djoguzhan1.github.io/web-dev-portfolio/) ───
+□ Fiyat düzelt:
+  - WordPress Fix: From $45 (Fiverr Basic ile eşle)
+  - Landing Page: From $79 (Fiverr Basic ile eşle)
+  - Excel: From $35 (Fiverr Basic ile eşle)
+□ "Order on Fiverr" butonu — hero + her hizmet kartında
+  Link: https://www.fiverr.com/oguzhan_webstud
+□ "How I Work" bölümü (3 adım):
+  1. Share your brief (URL, file, or business info)
+  2. I confirm scope within 1 hour
+  3. Deliver, test together, revise if needed
+□ About bölümü: kısa bio + "local business specialist" + yıl deneyim
+□ Trust bar güncelle: "3 live demos" | "48h delivery" | "Fiverr verified seller"
+□ Payoneer/bank transfer satırını kaldır veya küçült (Fiverr odaklı ol)
+
+─── DEMO SİTE İYİLEŞTİRMELERİ (HVAC + Plumbing) ───
+□ Gerçek trade fotoğrafları (Unsplash/Pexels — AI yüz YOK)
+  - HVAC: teknisyen, AC unit, ev içi
+  - Plumbing: musluk, boru, su kaçağı
+□ Google Maps embed (service areas bölümüne)
+□ Sticky mobile "Call Now" bar (alt sabit, tıklanabilir tel:)
+□ PageSpeed test çalıştır → 90+ ise badge ekle hero'ya
+□ favicon.ico her demo'ya (marka hissi)
+□ meta description + Open Graph tags (SEO + paylaşım)
+
+─── 3. DEMO — Auto Repair veya Roofing (Shahrozzali 10 sektör → biz 3 yeter) ───
+□ Yeni demo: /demos/auto-repair-landing/ veya roofing
+□ Aynı yapı: hero, stats, services, reviews, areas, FAQ, CTA
+□ Portföy hub'a 3. kart ekle
+□ Fiverr portfolio'ya 4. proje (opsiyonel, max 20 proje var)
+
+
+████████████████████████████████████████████████████████████████████████████████
+BÖLÜM E — FAZ 3: 2–4 HAFTA (Fark yaratan · orta segmenti geç)
+████████████████████████████████████████████████████████████████████████████████
+
+─── CASE STUDY / KANIT (Layus "local SEO" iddiasına karşı) ───
+□ 1 adet "Performance Case Study" kartı portföyde:
+  - Demo site PageSpeed: Before 62 → After 94 (gerçek Lighthouse sonucu)
+  - Mobile responsive: screenshot karşılaştırma
+  - Label: "Demo Project — representative of client delivery"
+□ Gig gallery PDF (opsiyonel): 1 sayfa case study — Fiverr PDF slot
+
+─── LANDING GIG PAKET GÜÇLENDİRME (Layus/Shahrozzali seviyesi) ───
+□ STANDARD pakete ekle (description + features):
+  - SEO meta tags (title, description)
+  - Schema markup (LocalBusiness)
+  - Click-to-call + contact form
+□ PREMIUM pakete ekle:
+  - WordPress + Elementor teslim (net yaz)
+  - Google Maps embed
+  - 7-day post-delivery support
+  - Basic on-page SEO setup
+□ Extra ekle: "Google Business Profile setup guide" +$25
+□ Extra ekle: "Monthly maintenance" +$49
+
+─── WORDPRESS FIX GIG GÜÇLENDİRME (Aaliyaan/Codefixings seviyesi) ───
+□ Description'a sorun listesi ekle (rakip formatı):
+  - White screen / 500 error
+  - Plugin conflict after update
+  - Mobile layout broken
+  - Slow loading / PageSpeed
+  - WooCommerce checkout display
+  - Contact form not sending
+□ Premium: "7-day follow-up for same issue" (zaten planlı — description'da vurgula)
+□ Premium: "3-day free support after delivery" (Codefixings taktiği)
+□ FAQ ekle: "Do you fix Elementor issues?" → Yes, in scope
+
+─── EXCEL GIG GÜÇLENDİRME (Amazing_yogi hacmine karşı kalite) ───
+□ Gallery: before/after messy → clean spreadsheet screenshot
+□ Gallery: dashboard örneği (conditional formatting + chart)
+□ Description: satır limitleri net (500 / 2000 / 5000)
+□ FAQ: "Do you document formulas?" → Yes
+
+─── PORTFÖY GELİŞMİŞ ───
+□ Testimonials bölümü (demo review'lar — "Demo feedback" label ile dürüst)
+□ Tech stack badges: HTML5, CSS3, WordPress, Elementor, Excel
+□ Sektör chip'leri: HVAC, Plumbing, Auto, Roofing, Cleaning, Electrician
+□ Footer: Fiverr link + GitHub + copyright
+
+
+████████████████████████████████████████████████████████████████████████████████
+BÖLÜM F — FAZ 4: 30–60 GÜN (Review biriktir · sıralama)
+████████████████████████████████████████████████████████████████████████████████
+
+─── İLK 10 REVIEW STRATEJİSİ (review swap YASAK — ban riski) ───
+□ Tanıdık küçük işletme: gerçek iş → Fiverr üzerinden sipariş
+□ LinkedIn/network: "launching on Fiverr, first 3 clients 20% off" (Fiverr içi mesaj)
+□ Buyer Requests: günlük 2–3 kişisel teklif
+□ Excel gig'den başla (en kolay kapanır) → WP Fix → Landing
+□ Her teslimat sonrası: nazik review isteği (Fiverr mesajı)
+
+─── FİYAT AYARI (review sonrası) ───
+□ 5 review sonrası: WP $45→$55, Landing $79→$99 değerlendir
+□ 10 review sonrası: MASTER fiyatlara geç ($49/$89/$149 WP)
+□ Asla $5–15'a inme — ucuz alıcı = kötü review riski
+
+─── ANALİTİK ───
+□ Fiverr dashboard: impression, click, conversion (haftalık)
+□ CTR düşükse → gig görseli değiştir
+□ Click var sipariş yok → description/fiyat ayarla
+□ Hangi gig en çok impression → o gig'e video + gallery güçlendir
+
+─── BUYER BRIEF TEMPLATE (requirements kolaylaştır · rakiplerden iyi UX) ───
+□ WP Fix için PDF veya mesaj template:
+  - Site URL:
+  - Issue description:
+  - When started:
+  - Recent plugin changes:
+  - Access method (wp-admin / FTP):
+
+
+████████████████████████████████████████████████████████████████████████████████
+BÖLÜM G — YAPMA LİSTESİ (ban / güven kaybı)
+████████████████████████████████████████████████████████████████████████████████
+
+✗ Review swap / sahte sipariş (Fiverr ban)
+✗ AI insan yüzü gig görselinde
+✗ Gig görselinde email, telefon, WhatsApp, dış URL
+✗ $5 fiyat (şüpheli alıcı)
+✗ 4+ requirement sorusu (conversion düşer)
+✗ Website Development kategorisinde WP Fix ($80 min)
+✗ Rakip gig görseli kopyalama
+✗ Portföyde sahte müşteri iddiası (demo = demo yaz)
+✗ Seller Plus'a para verme (şimdilik gereksiz)
+✗ Milestone workflow (Basic $100+ gerekir)
+
+
+████████████████████████████████████████████████████████████████████████████████
+BÖLÜM H — ÖNCELİK MATRİSİ (etki × efor)
+████████████████████████████████████████████████████████████████████████████████
+
+P0 — BUGÜN, YÜKSEK ETKİ:
+  1. Gig 1 publish + 3 gallery görsel
+  2. 3 gig'i 48 saat içinde yayınla
+  3. Portföy fiyat tutarlılığı
+  4. Fiverr butonu portföyde
+  5. 72 saat 1 saat response
+
+P1 — BU HAFTA, YÜKSEK ETKİ:
+  6. Profil fotoğrafı
+  7. 3 gig video
+  8. Demo'lara trade foto + Maps
+  9. "Free pre-order review" description'da
+  10. İlk 2–3 gerçek review
+
+P2 — 2–4 HAFTA, ORTA ETKİ:
+  11. 3. demo (auto/roofing)
+  12. PageSpeed case study
+  13. Landing Premium = WordPress + SEO
+  14. Sticky mobile CTA
+  15. Excel gallery screenshots
+
+P3 — 30–60 GÜN, UZUN VADE:
+  16. 4. demo sektör
+  17. PDF case study
+  18. Buyer brief template
+  19. Fiyat artışı (review sonrası)
+  20. Monthly maintenance extra
+
+
+████████████████████████████████████████████████████████████████████████████████
+BÖLÜM I — BAŞARI METRİKLERİ (rakipleri geçtiğimizi nasıl ölçeriz)
+████████████████████████████████████████████████████████████████████████████████
+
+30 gün:
+  □ 3 gig ACTIVE
+  □ 3+ review (min 4.8★)
+  □ 5+ sipariş tamamlanmış
+  □ Gig CTR > %2 (sektör ortalaması ~%1.5)
+  □ Response rate %100, avg < 1 saat
+
+60 gün:
+  □ 10+ review
+  □ Landing gig haftada 1+ sipariş
+  □ Top Rated'e yakın metrikler (response, completion, rating)
+  □ Portföy 3 demo + case study
+  □ Rakip Layus/Shahrozzali ile görsel kalite eşit veya üstü
+
+90 gün:
+  □ 20+ review
+  □ Aylık $500+ gelir
+  □ Level 1 Seller
+  □ Fiyat artışı uygulanmış
+
+
+================================================================================
+DOSYA REFERANSLARI
+================================================================================
+Gig metinleri:     fiverr-gigs-MASTER.txt
+Kararlar/hatırlatıcı: FIVERR-HATIRLATICI.txt
+Screenshots:       fiverr-screenshots\ (gig-gallery, 1-hvac, 2-plumbing, 3-portfolio-hub)
+Bu plan:           MASTER-ACTION-PLAN.txt
+================================================================================

@@ -1,0 +1,665 @@
+================================================================================
+ADIM 2 — PLATFORM METİNLERİ (Oğuzhan Salatan)
+Portföy: https://djoguzhan1.github.io/web-dev-portfolio/
+Demo HVAC: https://djoguzhan1.github.io/web-dev-portfolio/demos/hvac-landing/
+Demo Plumbing: https://djoguzhan1.github.io/web-dev-portfolio/demos/plumbing-landing/
+Email (Fiverr dışı): salatanoguzhan901@gmail.com
+================================================================================
+SIRAYLA DOLDUR: 2A Fiverr → 2B Zinn Hub → 2C Hubstaff → 2D goLance → 2E Guru → 2F Postwork → 2G Open Lance
+Her platformda AYNI metni kopyalama — her biri farklı yazıldı.
+================================================================================
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2A — FIVERR (önce Seller Profile, sonra 3 Gig)
+Site: fiverr.com/join → Become a Seller
+Username önerisi: oguzhan_webdev veya oguzhan_salatan (müsait olanı al)
+Saat dilimi: GMT+3
+Profil foto: yüzün net görünsün, arka plan sade
+================================================================================
+
+--- FIVERR SELLER PROFILE ---
+
+Display Name:
+Oğuzhan S
+
+Description (max 600 char — kopyala):
+I build fast, mobile-friendly websites for local businesses in the US and UK. WordPress fixes, one-page landing sites, and spreadsheet cleanup — delivered in 24–48 hours with clear communication.
+
+What I do best:
+• Fix WordPress bugs, speed, and mobile layout issues
+• Build professional landing pages for HVAC, plumbing, and service businesses
+• Clean up Excel / Google Sheets data and formulas
+
+Portfolio: djoguzhan1.github.io/web-dev-portfolio
+
+Message me before ordering — I reply within 1 hour.
+
+Languages:
+Turkish (Native)
+English (Fluent)
+
+Skills (Fiverr listesinden seç):
+WordPress, Website Development, Landing Page, HTML, CSS, JavaScript, Web Design, Data Entry, Google Sheets, Bug Fixes
+
+Education (varsa ekle, yoksa atla)
+
+Certifications (varsa ekle, yoksa atla)
+
+
+--- GIG 1: WORDPRESS FIX ---
+
+Category: Programming & Tech → WordPress → Bug Fixes
+Service type: FIX WORDPRESS ISSUES (veya en yakın eşleşme)
+
+Title (I will... sonrası):
+fix WordPress bugs, speed issues, and mobile layout problems
+
+Search tags (5 adet, max 20 char):
+wordpress fix
+wordpress speed
+wp bug fix
+website repair
+mobile responsive
+
+Gig metadata / 5 keywords (varsa):
+wordpress
+bug fix
+speed optimization
+mobile fix
+plugin error
+
+Description (kopyala):
+Fix your WordPress site fast — broken layout, slow loading, plugin conflicts, white screen, or mobile display issues. I diagnose the problem, fix it cleanly, and hand back a working site.
+
+WHAT YOU GET:
+• Root-cause fix (not a band-aid)
+• Speed check after repair
+• Mobile layout verified
+• Brief summary of what was changed
+
+PERFECT FOR:
+Small business sites, blogs, WooCommerce stores with one specific issue — not full redesigns.
+
+MY PROCESS:
+1. You share site URL + describe the issue
+2. I review and confirm scope within 1 hour
+3. Fix delivered in 24–48 hours
+4. You test — I adjust if something was missed in scope
+
+WHY ME:
+I focus on local business websites. See my work: djoguzhan1.github.io/web-dev-portfolio
+
+Message me before ordering with your site URL. Faster reply = faster fix.
+
+Packages:
+|          | BASIC $49  | STANDARD $89  | PREMIUM $149  |
+|----------|------------|---------------|---------------|
+| Name     | Quick Fix  | Full Fix      | Fix + Speed   |
+| Desc     | 1 issue    | Up to 3 issues| Fix + cache   |
+| Delivery | 2 days     | 2 days        | 3 days        |
+| Revisions| 1          | 2             | 2             |
+
+Extras (optional):
+• Extra fast delivery 24h: +$25
+• Extra revision: +$10
+• Speed optimization add-on: +$30
+
+FAQ:
+Q: Do you need wp-admin access?
+A: Yes, for most fixes I need temporary admin access. I never change passwords.
+
+Q: Can you fix WooCommerce issues?
+A: Yes, if it's a layout, plugin conflict, or checkout display issue within scope.
+
+Q: What if you can't fix it?
+A: I'll tell you before starting. No charge if we agree scope isn't a fit.
+
+Requirements (buyer fills):
+1. WordPress site URL
+2. Describe the issue (screenshot helps)
+3. wp-admin login (temporary) OR FTP/cPanel access
+4. When did the problem start?
+
+Gallery:
+- Image 1: Screenshot of HVAC demo site (before/after style)
+- Image 2: Text graphic "24-48h Delivery | WordPress Fix"
+- Image 3: Screenshot plumbing demo mobile view
+NOT: email, phone, Payoneer in image
+
+
+--- GIG 2: EXCEL / GOOGLE SHEETS ---
+
+Category: Data → Data Processing (veya Business → Virtual Assistant → Data Entry)
+Title:
+clean and organize your Excel or Google Sheets data
+
+Tags:
+excel cleanup
+google sheets
+spreadsheet
+data formatting
+excel formulas
+
+Description:
+Messy spreadsheet? Duplicate rows, broken formulas, inconsistent formatting, or a file nobody can read? I'll clean it up and make it usable for your team.
+
+WHAT YOU GET:
+• Clean, organized sheet structure
+• Working formulas (VLOOKUP, SUMIF, pivot basics)
+• Consistent formatting and headers
+• Optional: simple summary tab
+
+PERFECT FOR:
+Small business inventory lists, customer data, simple reports, exported CSV cleanup.
+
+NOT INCLUDED:
+Complex financial modeling, macros/VBA, or 50+ sheet enterprise work.
+
+PROCESS:
+1. Share file (Google Sheets link or Excel)
+2. Tell me what outcome you need
+3. Delivery in 1–2 days
+4. One round of revisions included
+
+See my portfolio: djoguzhan1.github.io/web-dev-portfolio
+
+Packages:
+|          | BASIC $35  | STANDARD $59  | PREMIUM $99   |
+|----------|------------|---------------|---------------|
+| Name     | Basic Clean | Pro Clean    | Clean + Report|
+| Desc     | 1 sheet    | Up to 3 sheets| + summary dash|
+| Delivery | 2 days     | 3 days        | 3 days        |
+| Revisions| 1          | 2             | 2             |
+
+FAQ:
+Q: Google Sheets or Excel?
+A: Both. Share a Google link or upload .xlsx.
+
+Q: Will you keep my data private?
+A: Yes. I don't store or share client files after delivery.
+
+Requirements:
+1. Upload file or share Google Sheets link (edit access)
+2. Describe what's wrong or what you want
+3. Sample of desired output (if you have one)
+
+
+--- GIG 3: LANDING PAGE ---
+
+Category: Programming & Tech → Website Development → Landing Pages
+Title:
+build a professional one page landing website for your business
+
+Tags:
+landing page
+business website
+one page website
+responsive website
+html css
+
+Description:
+Need a clean, mobile-friendly one-page site for your local business? I build professional landing pages that load fast and turn visitors into calls and leads.
+
+WHAT YOU GET:
+• 1 responsive landing page (HTML/CSS or WordPress — we agree before start)
+• Mobile + desktop tested
+• Contact / call button section
+• Services + trust section structure
+• 48-hour delivery on standard orders
+
+BUILT FOR:
+HVAC, plumbing, auto repair, cleaning, landscaping, and local service businesses.
+
+LIVE DEMOS:
+• HVAC: djoguzhan1.github.io/web-dev-portfolio/demos/hvac-landing/
+• Plumbing: djoguzhan1.github.io/web-dev-portfolio/demos/plumbing-landing/
+
+PROCESS:
+1. Tell me your business name, services, and city
+2. I send layout direction within 12 hours
+3. First version in 48 hours
+4. Revisions until you're happy (per package)
+
+Message me your business type before ordering.
+
+Packages:
+|          | BASIC $79   | STANDARD $129 | PREMIUM $199  |
+|----------|-------------|---------------|---------------|
+| Name     | Starter Page| Business Page | Pro Page      |
+| Desc     | 4 sections  | 6 sections    | 8 + SEO basic |
+| Delivery | 3 days      | 2 days        | 3 days        |
+| Revisions| 2           | 3             | 3             |
+
+FAQ:
+Q: Do you provide hosting?
+A: I deliver files or install on your hosting. Domain/hosting is yours (I can guide setup).
+
+Q: Can I see examples?
+A: Yes — links in description above.
+
+Q: WordPress or HTML?
+A: Your choice. HTML is faster; WordPress if you need to edit text yourself later.
+
+Requirements:
+1. Business name and what you do
+2. Phone number and city for the page
+3. List of services (bullet points OK)
+4. Logo (if you have one) or color preference
+5. Hosting/domain status (have it / need guidance)
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2B — ZINN HUB
+Site: zinnhub.com → Become a Freelancer (Zinner)
+ÖNEMLİ: "Available Now" seç | İlk $500 komisyon %0
+================================================================================
+
+Username: oguzhan-salatan (veya müsait olan)
+
+Headline:
+WordPress Fix & Landing Pages for Local Businesses — 48h Delivery
+
+Primary Category:
+Web Development (veya en yakın: Website Development)
+
+Additional Categories (5'e kadar):
+Web Design
+WordPress
+Landing Pages
+Front-End Development
+Business Websites
+
+Skills (platform listesinden, max 20 — sadece gerçekten yapabildiklerin):
+WordPress
+HTML
+CSS
+JavaScript
+Responsive Web Design
+Landing Page Design
+Website Development
+Web Design
+Google Sheets
+Excel
+Bug Fixing
+PHP
+UI Design
+SEO Basics
+
+Hourly Rate: $28
+Project Rate Min: $79
+Project Rate Max: $499
+Availability: Available Now
+
+Bio (kopyala — ~900 char):
+I help local service businesses get online fast — with WordPress fixes, one-page landing sites, and spreadsheet cleanup.
+
+Most of my clients are HVAC companies, plumbers, auto shops, and small teams who need something done right the first time, not a 6-week agency process.
+
+What I deliver:
+→ WordPress bug fixes, speed issues, mobile layout problems — usually within 24–48 hours
+→ Single-page landing sites built for calls and leads, not just "looking pretty"
+→ Excel / Google Sheets cleanup — formulas, formatting, usable structure
+
+How I work:
+Clear scope before I start. Upfront payment on smaller jobs. Updates in plain English. No disappearing mid-project.
+
+Portfolio:
+https://djoguzhan1.github.io/web-dev-portfolio
+
+Demo sites:
+HVAC — https://djoguzhan1.github.io/web-dev-portfolio/demos/hvac-landing/
+Plumbing — https://djoguzhan1.github.io/web-dev-portfolio/demos/plumbing-landing/
+
+Based in Turkey, working with US/UK clients. Message me with your project — I reply within an hour.
+
+Portfolio Entry 1:
+Title: CoolAir HVAC Landing Page
+URL: https://djoguzhan1.github.io/web-dev-portfolio/demos/hvac-landing/
+Description: One-page HVAC business site. Mobile-first, emergency CTA, services grid, reviews section. Built for local lead generation.
+
+Portfolio Entry 2:
+Title: ProFix Plumbing Landing Page
+URL: https://djoguzhan1.github.io/web-dev-portfolio/demos/plumbing-landing/
+Description: Plumbing company landing page with 24/7 emergency bar, service areas, stats section, and click-to-call buttons.
+
+Portfolio Entry 3:
+Title: Business Web Portfolio
+URL: https://djoguzhan1.github.io/web-dev-portfolio/
+Description: Multi-service developer portfolio showcasing WordPress fixes, landing pages, and spreadsheet services for small businesses.
+
+--- ZINN LISTING 1 (WordPress Fix) ---
+Title: WordPress Bug & Speed Fix — 24–48 Hour Delivery
+Price from: $79
+Delivery: 2 days
+Description: Fix broken layouts, slow load times, plugin conflicts, and mobile display issues. Scope confirmed before work starts. One portfolio demo: [HVAC link]
+
+--- ZINN LISTING 2 (Landing Page) ---
+Title: One-Page Landing Site for Local Businesses
+Price from: $129
+Delivery: 2 days
+Description: Professional responsive landing page for service businesses. Includes hero, services, trust/reviews, CTA. See live demos on my portfolio.
+
+--- ZINN LISTING 3 (Excel) ---
+Title: Excel / Google Sheets Cleanup & Formatting
+Price from: $49
+Delivery: 2 days
+Description: Organize messy spreadsheets, fix formulas, standardize formatting. 1–3 sheets per order depending on complexity.
+
+--- ZINN PROJECT PROPOSAL ŞABLONU (her işe özelleştir) ---
+Cover letter:
+Hi [Name] — I read your post about [SPECIFIC THING FROM THEIR POST].
+
+I've done similar work for local business sites — here's a live example: [RELEVANT DEMO LINK]
+
+For your project I'd deliver:
+• [Deliverable 1 from their post]
+• [Deliverable 2]
+• Timeline: [X] working days
+
+Fixed price: $[AMOUNT] — happy to clarify scope in messages before we start.
+
+One question: [SPECIFIC QUESTION about their project]?
+
+— Oğuzhan
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2C — HUBSTAFF TALENT
+Site: talent.hubstaff.com → Start a profile
+Onay: 1–2 iş günü | Profil visibility: Everyone
+Max 10 skill | Max 30 başvuru/ay
+================================================================================
+
+Specialty (required — tek pozisyon):
+Web Developer — WordPress & Business Landing Pages
+
+About Me (required — ~350 kelime, kopyala):
+I'm a web developer focused on practical results for small businesses — not agency fluff.
+
+I specialize in three things clients actually need fast:
+
+WordPress troubleshooting. When your site breaks, slows down, or looks wrong on mobile, you need someone who finds the root cause and fixes it without breaking something else. I handle plugin conflicts, layout issues, speed basics, and mobile responsiveness.
+
+One-page landing sites. Local businesses — HVAC, plumbing, auto repair, cleaning — need sites that make the phone ring. I build clean, mobile-first pages with clear service sections, trust signals, and strong call-to-action buttons.
+
+Spreadsheet cleanup. Excel and Google Sheets that have grown messy over the years — broken formulas, duplicate rows, inconsistent formatting — organized into something your team can actually use.
+
+My approach is simple: confirm scope before starting, communicate in plain English, deliver on time. I work with clients in the US and UK from Turkey (GMT+3) with overlap for US morning hours.
+
+Portfolio:
+https://djoguzhan1.github.io/web-dev-portfolio
+
+Recent samples:
+• HVAC landing page demo
+• Plumbing company landing page demo
+
+Available for fixed-price projects and quick turnaround work. Hourly available for ongoing support.
+
+Skills (5–10 only — platform reddeder 10+):
+WordPress
+HTML
+CSS
+JavaScript
+Website Development
+Landing Pages
+Responsive Design
+Web Design
+PHP
+Google Sheets
+
+Hourly Rate: $30/hr
+
+Experience Entry 1:
+Title: Freelance Web Developer
+Company: Self-employed
+Period: 2023 – Present
+Description: WordPress fixes, landing pages, and spreadsheet projects for small business clients. Average delivery 24–48 hours on fixed-scope work.
+
+Experience Entry 2:
+Title: Web Developer
+Company: Independent projects
+Period: 2021 – 2023
+Description: Built responsive websites and internal tools using HTML, CSS, JavaScript, and WordPress.
+
+Portfolio Item 1:
+Title: HVAC Business Landing Page
+URL: https://djoguzhan1.github.io/web-dev-portfolio/demos/hvac-landing/
+Description: Single-page site for HVAC company with services, reviews, and call CTA.
+
+Portfolio Item 2:
+Title: Plumbing Business Landing Page
+URL: https://djoguzhan1.github.io/web-dev-portfolio/demos/plumbing-landing/
+Description: Emergency-focused plumbing landing page with service areas and stats.
+
+Portfolio Item 3:
+Title: Developer Portfolio
+URL: https://djoguzhan1.github.io/web-dev-portfolio/
+Description: Business web development services showcase.
+
+Resume (PDF oluştur — 1 sayfa, İngilizce):
+- Yukarıdaki About Me kısalt
+- Skills listesi
+- 2 experience entry
+- Portfolio linkleri
+- Eğitim (varsa)
+NOT: Resume'den email strip edebilirler — sorun değil, Hubstaff mesajla ulaşır
+
+Job Application Template (max 3/saat, 30/ay):
+---
+Hello,
+
+I'm interested in [JOB TITLE]. I have experience with [SKILL FROM POST] and recently built similar work for local service businesses.
+
+Relevant sample: [DEMO LINK]
+
+I can start immediately and deliver within [TIMEFRAME]. Happy to discuss scope and rate.
+
+Best,
+Oğuzhan Salatan
+---
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2D — GOLANCE
+Site: golance.com → Sign up as Freelancer
+%80 profil şart — teklif vermek için | Sınırsız ücretsiz başvuru
+================================================================================
+
+Professional Title:
+WordPress Developer & Landing Page Specialist
+
+Hourly Rate: $30
+Availability: Full-time / More than 30 hrs/week (veya Part-time — tutarlı ol)
+
+Summary (kopyala):
+Web developer helping local businesses fix WordPress problems and launch professional landing pages — fast.
+
+Core services:
+• WordPress bug fixes, speed optimization, mobile layout repairs
+• One-page landing sites for HVAC, plumbing, and service companies
+• Excel / Google Sheets data cleanup and formatting
+
+I communicate clearly, confirm scope before starting, and deliver on agreed timelines. Based in Turkey, experienced working with US and international clients.
+
+Portfolio: https://djoguzhan1.github.io/web-dev-portfolio
+
+Skills (seç):
+WordPress, HTML, CSS, JavaScript, Web Development, Landing Pages, Responsive Design, PHP, Web Design, Data Entry
+
+Categories:
+Web Development
+Web Design
+
+Portfolio 1:
+Title: HVAC Landing Page
+URL: https://djoguzhan1.github.io/web-dev-portfolio/demos/hvac-landing/
+
+Portfolio 2:
+Title: Plumbing Landing Page
+URL: https://djoguzhan1.github.io/web-dev-portfolio/demos/plumbing-landing/
+
+Portfolio 3:
+Title: Business Web Portfolio
+URL: https://djoguzhan1.github.io/web-dev-portfolio/
+
+Work Experience:
+Freelance Web Developer | 2022–Present
+WordPress fixes and landing page projects for small business clients.
+
+Proposal Template (150–300 kelime):
+---
+Hi [Client name],
+
+I reviewed your project for [specific need from post]. This is exactly the type of work I do for local business clients.
+
+Similar work: [demo link]
+
+My plan:
+1. [Step 1 matched to their post]
+2. [Step 2]
+3. Delivery in [X] days with revisions included
+
+Rate: $[fixed] / [or $30/hr estimated X hours]
+
+Ready to start immediately. Can we clarify [one question]?
+
+— Oğuzhan
+---
+
+Extra: Cultural Assessment + 1 skill test (HTML veya WordPress) — profil güveni artırır
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2E — GURU.COM
+Site: guru.com → Create Freelancer Account
+Ücretsiz: 10 teklif/ay | Komisyon: %9
+================================================================================
+
+Tagline:
+WordPress Fix & Landing Page Developer — Fast Delivery for Local Businesses
+
+Hourly Rate: $30
+
+About (kopyala):
+I build and fix websites for small businesses that need results quickly — not a 3-month agency timeline.
+
+Services:
+1. WordPress repair — bugs, speed, mobile issues, plugin conflicts
+2. One-page landing sites for local service companies
+3. Excel / Google Sheets organization and formula fixes
+
+Clients appreciate that I confirm scope upfront, respond fast, and deliver clean work on deadline.
+
+Portfolio: https://djoguzhan1.github.io/web-dev-portfolio
+
+Service Listing 1:
+Title: WordPress Bug Fix & Speed Optimization
+Description: Diagnose and fix WordPress issues — layout breaks, slow pages, mobile problems, plugin errors. 24–48h turnaround. Temporary admin access required.
+Rate: From $79 | Delivery: 2 days
+
+Service Listing 2:
+Title: One-Page Business Landing Website
+Description: Mobile-responsive landing page for local businesses. Hero, services, reviews/trust, contact CTA. Live demos on portfolio.
+Rate: From $129 | Delivery: 2 days
+
+Service Listing 3:
+Title: Excel / Google Sheets Cleanup
+Description: Fix messy spreadsheets — formatting, formulas, duplicates, simple reports. 1–3 sheets.
+Rate: From $49 | Delivery: 2 days
+
+Portfolio: 3 demo link yükle (yukarıdaki URL'ler)
+
+Quote Template (teklif verirken):
+---
+Hello,
+
+I can help with [their project title]. I've reviewed your requirements for [specific detail].
+
+Approach:
+- [How you'll solve it — 2-3 bullets]
+- Delivery: [X] days
+- Price: $[amount]
+
+Relevant sample: [portfolio demo link]
+
+I am available to start immediately. Let me know if you'd like to discuss scope.
+
+Regards,
+Oğuzhan Salatan
+---
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2F — POSTWORK
+Site: postwork.ai/sign-up → Freelancer
+Anında onay | %0 komisyon | LinkedIn import var
+================================================================================
+
+Headline:
+WordPress Developer | Landing Pages & Site Fixes — 48h Delivery
+
+Bio (Postwork tonu — kısa, net):
+Fast, reliable web developer for small businesses.
+
+• WordPress bug fixes & speed
+• One-page landing sites (HVAC, plumbing, local services)
+• Excel / Google Sheets cleanup
+
+Portfolio: djoguzhan1.github.io/web-dev-portfolio
+
+Skills: WordPress, HTML, CSS, JavaScript, Landing Pages, Web Design, Google Sheets
+
+Hourly: $30 | Project min: $49
+
+Import LinkedIn if you have it — otherwise manual fill + portfolio links
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2G — OPEN LANCE
+Site: openlance.io → Register as freelancer
+%0 freelancer komisyon | Escrow | Flat bid
+================================================================================
+
+Tagline:
+WordPress & Landing Page Developer — Local Business Specialist
+
+Bio:
+I fix WordPress sites and build one-page landing pages for service businesses. Clear scope, fast delivery, escrow-friendly milestones.
+
+Portfolio:
+https://djoguzhan1.github.io/web-dev-portfolio
+
+Services to list:
+• WordPress fix — from $79
+• Landing page — from $129
+• Spreadsheet cleanup — from $49
+
+Proposal (Open Lance — milestone odaklı):
+---
+I can deliver [scope] as one milestone:
+
+Milestone 1 ($[X]): [Deliverable] — [X] days
+Includes: [list]
+Portfolio sample: [link]
+
+Ready when escrow is funded.
+---
+
+
+================================================================================
+ADIM 2 TAMAMLAMA CHECKLIST
+================================================================================
+□ Fiverr seller profile live
+□ Fiverr gig 1 published (WordPress)
+□ Fiverr gig 2 published (Excel)
+□ Fiverr gig 3 published (Landing)
+□ Zinn Hub profile 100% + Available Now + 3 portfolio + 3 Zinn
+□ Hubstaff profile submitted (waiting approval OK)
+□ goLance profile 80%+ 
+□ Guru profile + 3 services + portfolio
+□ Postwork profile live
+□ Open Lance profile live
+
+Hepsi bitince yaz: ADIM 2 BİTTİ
+================================================================================

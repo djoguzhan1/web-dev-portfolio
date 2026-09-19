@@ -1,0 +1,169 @@
+================================================================================
+FIVERR KURULUM — KALICI HATIRLATICI (araştırma + kararlar)
+Kullanıcı: oguzhan_webstud | Portföy: djoguzhan1.github.io/web-dev-portfolio/
+Son güncelleme: 2026-09-18
+================================================================================
+BU DOSYAYI SONRAKİ GIG'LERDE REFERANS AL — EKSİKSİZ UYGULA
+================================================================================
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+GENEL STRATEJİ (max iş, acele etme)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+• Niche: local business websites (WordPress fix, landing page, Excel)
+• İlk review kritik — algoritma review'sız hesabı geride tutar
+• Yayın sonrası 72 saat: 1 saat içinde cevap ver
+• $5 fiyat YAPMA — ucuz = şüpheli alıcı + düşük kalite algısı
+• Güven tabanı Basic: $40–50 (WordPress fix için Combo 3: $45 kabul edildi)
+• Standard paket = "Most Popular" işaretle — çoğu alıcı ortayı seçer
+• Seller Plus'a para verme — kırmızı ! genelde reklam, hata değil
+• Milestone workflow: Basic $100+ gerekir — şimdilik ATLA
+• Gig sırası: 1 WordPress Fix → 2 Excel → 3 Landing Page
+• Portföy linki description'da OK | Gig görselinde email/telefon YASAK
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PORTFÖY (3 proje — TAMAMLANDI ✓)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Görseller AYRI klasörlerden — masaüstüne üst üste kopyalama (aynı isim çakışır):
+
+  1-hvac-portfolio\     → HVAC (mavi CoolAir)
+  2-plumbing-portfolio\ → Plumbing (kırmızı ProFix)
+  3-portfolio-hub\      → Ana portföy (koyu tema)
+
+Boyut: 1024×768 (4:3) | İlk dosya = thumbnail
+Industry: Construction + Marketing & Advertising (+ Technology)
+Project cost: $129 (landing standard ile uyumlu)
+Categories: Website Development, Landing Pages, Web Design, Business Websites
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+GIG 1 — WORDPRESS FIX (DEVAM EDİYOR / Gallery → Publish)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+KATEGORİ:
+  Programming & Tech → WordPress → Bug Fixes
+  (alternatif: Website Maintenance)
+  YAPMA: Website Development / Full Website Creation ($80 minimum zorlar)
+
+BAŞLIK:
+  fix WordPress bugs, speed issues, and mobile layout problems
+
+SEARCH TAGS (5 pill, Enter ile ayrı):
+  wordpress fix | wordpress speed | wp bug fix | website repair | mobile responsive
+
+POSITIVE KEYWORDS (sadece dropdown'dan seç, serbest yazma):
+  wordpress, bug fix, website maintenance (varsa)
+
+METADATA:
+  Website Type: Business, Blog, E-Commerce, Landing page, Brochure
+  Platform: WordPress (+ WooCommerce varsa)
+  Programming Language: PHP, HTML, CSS, JavaScript, SQL
+
+FİYAT — KOMBINASYON 3 (Fiverr kabul etti):
+  Basic    $45  | 2 days | 1 revision | Quick Fix
+  Standard $75  | 2 days | 2 revisions | Full Fix  ★
+  Premium  $115 | 3 days | 2 revisions | Fix + Speed Boost
+
+  Oran: 1 : 1.67 : 2.56 — dengeli ✓
+  ($49/$89/$149 reddedildi — kategori minimumu veya sistem kuralı)
+
+EXTRAS:
+  Fast delivery: Basic 1 day +$10 | Standard 1 day +$25 | Premium 1 day +$35
+  (Rush SÜRE normalden KISA olmalı — 2 gün rush anlamsız)
+  Additional revision +$10
+  Full speed optimization +$35
+  WooCommerce checkout fix +$40
+
+REQUIREMENTS — 2 SORU (Fiverr resmi: "keep short, too many frustrates")
+  1. What is your WordPress site URL? (Required, Free Text)
+  2. Describe the issue + wp-admin OR FTP/cPanel access (Required, Free Text)
+  4 soru YAPMA — kanıt: help.fiverr.com Creating a Gig
+
+FAQ (5 soru): wp-admin, WooCommerce, can't fix, delivery speed, data safe
+
+GALLERY:
+  fiverr-screenshots\gig-gallery\wordpress-gig-image-portfolio-1280x769.png
+  Boyut: 1280×769 (5:3)
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+GIG 2 — EXCEL / SHEETS (sonra)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+KATEGORİ: Programming & Tech → Data → Data Processing
+
+BAŞLIK: clean up and fix your Excel or Google Sheets spreadsheet fast
+
+TAGS: excel cleanup | google sheets | spreadsheet | data cleaning | excel formulas
+
+FİYAT:
+  Basic $35 | Standard $59 ★ | Premium $99
+
+REQUIREMENTS — 2 SORU:
+  1. Upload Excel file OR Google Sheets link with edit access (Required)
+  2. Describe what you need done (Required)
+
+GALLERY: gig-gallery\excel-gig-image-1280x769.png
+
+Tam metin: fiverr-gigs-MASTER.txt → GIG 2
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+GIG 3 — LANDING PAGE (en son — en yüksek gelir)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+KATEGORİ: Programming & Tech → Website Development → Landing Pages
+
+BAŞLIK: build a professional one page business landing website in 48 hours
+
+TAGS: landing page | business website | one page website | responsive website | html css
+
+FİYAT:
+  Basic $79 | Standard $129 ★ | Premium $199
+
+DESCRIPTION'da CANLI DEMO LİNKLERİ ŞART:
+  .../demos/hvac-landing/
+  .../demos/plumbing-landing/
+
+REQUIREMENTS — 2–3 SORU:
+  1. Business name (Required)
+  2. Phone number + list of services + city (Required, tek soruda birleştirilebilir)
+  3. Logo / colors (Optional)
+
+GALLERY:
+  landing-gig-image-1-hvac-1280x769.png
+  landing-gig-image-2-plumbing-1280x769.png
+
+Tam metin: fiverr-gigs-MASTER.txt → GIG 3
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ARAŞTIRMA KANITLARI (unutma)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Fiverr Help: "Keep requirements short — too many questions frustrate clients"
+2. Fiverr Help: WordPress Full Website Creation min $80 — Bug Fix'te değil
+3. Kırmızı ! fiyat yanında = Seller Plus reklamı (orantısız fiyat uyarısı DEĞİL)
+4. Fiyat oranı ideal: Basic:Standard:Premium ≈ 1:2:3.5
+5. Alıcı güven tabanı WordPress fix: $40–50 (altı şüphe)
+6. Positive keywords = Fiverr listesinden seç, serbest tag değil
+7. Search tags = 5 ayrı pill (Enter ile)
+8. Top WP sellers FAQ'da 3 bilgi: URL + sorun + erişim (4. soru yok)
+9. 15 soru önerisi = post-order Success Score, WP fix için değil
+10. İlk 72h aktif ol + 1 saat response = algoritma testi
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+DOSYA YOLLARI
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Screenshots: portfolio\fiverr-screenshots\
+Gig metinleri: portfolio\platform-setup\fiverr-gigs-MASTER.txt
+Gig 2 detay:  portfolio\platform-setup\fiverr-gig-2-excel.txt
+Gig 3 detay:  portfolio\platform-setup\fiverr-gig-3-landing.txt
+Yeniden screenshot: cd portfolio && npm run screenshots
+
+================================================================================

@@ -1,0 +1,36 @@
+FIVERR SCREENSHOT KLASÖRÜ — YÜKLEME REHBERİ
+============================================
+
+Her klasördeki dosyaları SIRAYLA yükle. 01 = thumbnail (ilk görünen).
+
+PORTFÖY PROJE 1 — HVAC
+Klasör: 1-hvac-portfolio/
+  01-THUMBNAIL-desktop-hero-1024x768.png  → İlk yükle (kapak)
+  02-mobile-view-1024x768.png
+  03-stats-section-1024x768.png
+
+PORTFÖY PROJE 2 — Plumbing
+Klasör: 2-plumbing-portfolio/
+  01-THUMBNAIL-desktop-hero-1024x768.png
+  02-mobile-view-1024x768.png
+  03-stats-services-1024x768.png
+
+PORTFÖY PROJE 3 — Portfolio Hub
+Klasör: 3-portfolio-hub/
+  01-THUMBNAIL-desktop-hero-1024x768.png
+  02-live-demos-section-1024x768.png
+  03-mobile-view-1024x768.png
+
+GIG GALERİ (Gig oluştururken)
+Klasör: gig-gallery/
+  landing-gig-image-1-hvac-1280x769.png      → Landing Page gig görsel 1
+  landing-gig-image-2-plumbing-1280x769.png  → Landing Page gig görsel 2
+  wordpress-gig-image-portfolio-1280x769.png → WordPress gig görsel 1
+
+Boyutlar Fiverr kurallarına uygun:
+  Portföy: 1024×768 (4:3)
+  Gig: 1280×769 (5:3)
+
+Yeniden çekmek için:
+  cd portfolio
+  npm run screenshots

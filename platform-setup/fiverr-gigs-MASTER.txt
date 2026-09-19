@@ -1,0 +1,406 @@
+================================================================================
+FIVERR 3 GIG — MASTER KURULUM (2026 · maksimum satış)
+Kullanıcı: oguzhan_webstud
+Portföy: https://djoguzhan1.github.io/web-dev-portfolio/
+================================================================================
+ARAŞTIRMA ÖZETİ (ne işe yarıyor):
+• Başlık = arama kelimesi (buyer ne yazarsa onu kullan)
+• 3 paket ŞART — çoğu alıcı STANDARD seçer, onu "en iyi değer" yap
+• İlk görsel = tıklama oranı (CTR) — en güçlü screenshot
+• FAQ = itirazları öldürür, sipariş öncesi mesaj azalır
+• Requirements = kötü siparişi filtreler
+• Extras = ortalama sipariş tutarını artırır
+• Yayın sonrası 48–72 saat: 1 saat içinde cevap ver (algoritma test ediyor)
+• $5 fiyat YAPMA — ucuz = sorunlu alıcı + düşük kalite algısı
+================================================================================
+GIG OLUŞTURMA YOLU:
+https://www.fiverr.com/seller_dashboard → Gigs → Create a new Gig
+================================================================================
+
+
+████████████████████████████████████████████████████████████████████████████████
+GIG 1 — WORDPRESS FIX (önce bunu yayınla · en kolay ilk sipariş)
+████████████████████████████████████████████████████████████████████████████████
+
+─── ADIM 1: OVERVIEW ───
+
+Category:
+  Programming & Tech → WordPress → Bug Fixes
+
+Service type (varsa):
+  FIX WORDPRESS ISSUES
+
+Gig title ("I will" sonrası — aynen kopyala):
+  fix WordPress bugs, speed issues, and mobile layout problems
+
+Search tags (5 adet):
+  wordpress fix
+  wordpress speed
+  wp bug fix
+  website repair
+  mobile responsive
+
+Positive keywords (varsa, 5 adet):
+  wordpress
+  bug fix
+  speed optimization
+  plugin conflict
+  mobile fix
+
+
+─── ADIM 2: PRICING (Offer packages: ON) ───
+
+| Alan          | BASIC        | STANDARD ★   | PREMIUM       |
+|---------------|--------------|--------------|---------------|
+| Package name  | Quick Fix    | Full Fix     | Fix + Speed   |
+| Short desc    | 1 issue fix  | Up to 3 issues| Fix + speed boost|
+| Delivery      | 2 days       | 2 days       | 3 days        |
+| Revisions     | 1            | 2            | 2             |
+| Price         | $49          | $89          | $149          |
+
+STANDARD paketi "Most Popular" / önerilen olarak işaretle (varsa).
+
+Package features (her pakete ekle — Fiverr checkbox/list):
+BASIC:
+  • 1 WordPress issue diagnosed and fixed
+  • Mobile layout check
+  • Brief fix summary
+
+STANDARD:
+  • Up to 3 related issues fixed
+  • Plugin conflict check
+  • Speed check after repair
+  • Mobile + desktop tested
+
+PREMIUM:
+  • Everything in Standard
+  • Basic speed optimization (cache, image compression guidance)
+  • Security plugin check
+  • 7-day follow-up for same issue
+
+GIG EXTRAS (ekle):
+  • Extra fast 24h delivery — $25
+  • Additional revision — $10
+  • Full speed optimization add-on — $35
+  • WooCommerce checkout fix — $40
+
+
+─── ADIM 3: DESCRIPTION (max ~1200 karakter) ───
+
+Fix your WordPress site fast — broken layout, slow loading, plugin conflicts, white screen of death, or mobile display issues. I find the root cause, fix it properly, and hand back a working site.
+
+✅ WHAT YOU GET:
+• Root-cause fix (not a temporary patch)
+• Speed check after every repair
+• Mobile layout verified on real devices
+• Clear summary of what was changed
+
+✅ PERFECT FOR:
+Small business sites, blogs, and WooCommerce stores with ONE specific problem — not full redesigns.
+
+✅ MY PROCESS:
+1. Share your site URL + describe the issue
+2. I confirm scope within 1 hour
+3. Fix delivered in 24–48 hours
+4. You test — I adjust if something was missed in scope
+
+✅ WHY ME:
+I build and fix local business websites every day. See live demos: djoguzhan1.github.io/web-dev-portfolio
+
+⚠️ Message me your site URL before ordering — I'll confirm I can fix it before you pay.
+
+
+─── ADIM 4: FAQ (en az 4 soru) ───
+
+Q: Do you need wp-admin access?
+A: Yes — for most fixes I need temporary admin access. I never change your password and you can remove my account after delivery.
+
+Q: Can you fix WooCommerce / checkout issues?
+A: Yes, if it's a layout, plugin conflict, or display issue within scope. Message me first for complex checkout problems.
+
+Q: What if you can't fix my issue?
+A: I'll tell you honestly before starting. If we agree the issue is outside my scope, you won't be charged.
+
+Q: How fast can you deliver?
+A: Most single-issue fixes in 24–48 hours. Rush 24h delivery available as an extra.
+
+Q: Do you offer ongoing support?
+A: Premium includes 7-day follow-up for the same issue. New work = new order or custom offer.
+
+
+─── ADIM 5: REQUIREMENTS (buyer doldurur — sipariş öncesi) ───
+
+1. WordPress site URL (required)
+2. Describe the issue in detail — screenshot helps (required)
+3. wp-admin login OR FTP/cPanel access (required)
+4. When did the problem start? (optional)
+5. List of recently installed/updated plugins (optional)
+
+
+─── ADIM 6: GALLERY ───
+
+Görsel 1 (THUMBNAIL — en önemli):
+  fiverr-screenshots\gig-gallery\wordpress-gig-image-portfolio-1280x769.png
+
+Görsel 2:
+  fiverr-screenshots\gig-gallery\landing-gig-image-1-hvac-1280x769.png
+  (veya HVAC hero — "I fix sites like this" mesajı)
+
+Görsel 3:
+  fiverr-screenshots\1-hvac-portfolio\02-mobile-view-1024x768.png
+  (mobil uyumluluk kanıtı — 1280x769'e crop edebilirsin)
+
+Görselde YASAK: email, telefon, WhatsApp, Payoneer, "contact outside Fiverr"
+
+Video (opsiyonel, +sıralama):
+  20–30 sn: portföy sitesini aç, demo sitelere tıkla, scroll yap. Ses şart değil.
+
+
+████████████████████████████████████████████████████████████████████████████████
+GIG 2 — EXCEL / GOOGLE SHEETS (2. gig · hızlı sipariş, düşük rekabet)
+████████████████████████████████████████████████████████████████████████████████
+
+─── ADIM 1: OVERVIEW ───
+
+Category:
+  Programming & Tech → Data → Data Processing
+  (yoksa: Business → Data Entry)
+
+Gig title:
+  clean up and fix your Excel or Google Sheets spreadsheet fast
+
+Search tags:
+  excel cleanup
+  google sheets
+  spreadsheet
+  data cleaning
+  excel formulas
+
+
+─── ADIM 2: PRICING ───
+
+| Alan          | BASIC        | STANDARD ★   | PREMIUM       |
+|---------------|--------------|--------------|---------------|
+| Package name  | Quick Clean  | Pro Clean    | Dashboard     |
+| Short desc    | 1 sheet tidy | 3 sheets + formulas | Report + dashboard |
+| Delivery      | 1 day        | 2 days       | 3 days        |
+| Revisions     | 1            | 2            | 3             |
+| Price         | $35          | $59          | $99           |
+
+BASIC: up to 500 rows, 1 sheet, formatting + duplicates
+STANDARD: up to 2,000 rows, 3 sheets, formulas + charts
+PREMIUM: up to 5,000 rows, 5 sheets, dashboard + validation
+
+EXTRAS:
+  • Extra sheet — $15
+  • 24h rush delivery — $20
+  • Extra revision — $10
+  • PDF export formatted report — $15
+
+
+─── ADIM 3: DESCRIPTION ───
+
+Messy spreadsheet? Broken formulas? Duplicate rows, inconsistent formatting, or a file your team can't use?
+
+I'll clean, fix, and organize your Excel or Google Sheets file — fast and accurately.
+
+✅ WHAT I DO:
+• Remove duplicates, blank rows, messy formatting
+• Fix broken formulas (VLOOKUP, IF, SUMIFS, INDEX/MATCH)
+• Create summary tabs and simple dashboards
+• Add dropdowns, data validation, conditional formatting
+• Convert Excel ↔ Google Sheets
+• Basic charts for reports and presentations
+
+✅ PERFECT FOR:
+Inventory lists, customer data, income/expense tracking, exported CSV cleanup, pre-meeting reports.
+
+❌ NOT INCLUDED:
+Complex financial modeling, VBA macros, or 50+ sheet enterprise systems.
+
+✅ PROCESS:
+1. Share file (upload .xlsx or Google Sheets link with edit access)
+2. Tell me the outcome you need
+3. Delivery in 1–2 days
+4. Revisions per your package
+
+Message me before ordering if your file is very large (10,000+ rows).
+
+
+─── ADIM 4: FAQ ───
+
+Q: Excel or Google Sheets?
+A: Both. Upload .xlsx or share a Google Sheets link with edit access.
+
+Q: Is my data confidential?
+A: Yes. I don't share your data. Files deleted after delivery unless you ask me to keep for follow-up.
+
+Q: Can you build a full accounting system?
+A: Basic income/expense tracking yes. Full accounting software — message me for custom quote.
+
+Q: What if my file has 50,000+ rows?
+A: Message me first — may need custom pricing.
+
+Q: Do you write formulas I can reuse?
+A: Yes — I document key formulas so your team can maintain the sheet.
+
+
+─── ADIM 5: REQUIREMENTS ───
+
+1. Upload Excel file OR Google Sheets link with edit access (required)
+2. Describe what you need done (required)
+3. Sample of desired output if you have one (optional)
+
+
+─── ADIM 6: GALLERY ───
+
+Görsel 1:
+  fiverr-screenshots\gig-gallery\excel-gig-image-1280x769.png
+
+Görsel 2–3: Canva'da yeşil tema metin grafik veya Excel screenshot
+  Satır 1: Excel & Google Sheets
+  Satır 2: Clean • Fix Formulas • Dashboards
+  Satır 3: 1–2 Day Delivery
+
+
+████████████████████████████████████████████████████████████████████████████████
+GIG 3 — LANDING PAGE (3. gig · en yüksek gelir potansiyeli)
+████████████████████████████████████████████████████████████████████████████████
+
+─── ADIM 1: OVERVIEW ───
+
+Category:
+  Programming & Tech → Website Development → Landing Pages
+
+Gig title:
+  build a professional one page business landing website in 48 hours
+
+Search tags:
+  landing page
+  business website
+  one page website
+  responsive website
+  html css
+
+
+─── ADIM 2: PRICING ───
+
+| Alan          | BASIC        | STANDARD ★   | PREMIUM       |
+|---------------|--------------|--------------|---------------|
+| Package name  | Starter Page | Business Page| Pro Page      |
+| Short desc    | 4 sections   | 6 sections + SEO | WordPress + form |
+| Delivery      | 2 days       | 2 days       | 3 days        |
+| Revisions     | 2            | 3            | 3             |
+| Price         | $79          | $129         | $199          |
+
+BASIC: Hero, Services, About/Reviews, Contact — HTML
+STANDARD: + Stats, Service areas, click-to-call, SEO meta — HTML
+PREMIUM: WordPress OR advanced HTML, contact form, Maps, 7-day support
+
+EXTRAS:
+  • Extra page — $50
+  • 24h rush delivery — $35
+  • Logo design (simple text logo) — $25
+  • Monthly maintenance — $49
+  • Extra revision — $15
+
+
+─── ADIM 3: DESCRIPTION ───
+
+Need a professional website for your local business — fast?
+
+I build clean, mobile-friendly 1-page landing sites that turn visitors into phone calls and leads.
+
+🔴 LIVE DEMOS — CLICK BEFORE YOU ORDER:
+• HVAC: djoguzhan1.github.io/web-dev-portfolio/demos/hvac-landing/
+• Plumbing: djoguzhan1.github.io/web-dev-portfolio/demos/plumbing-landing/
+• Portfolio: djoguzhan1.github.io/web-dev-portfolio/
+
+✅ WHAT'S INCLUDED:
+• Mobile-responsive design (looks great on phones)
+• Click-to-call buttons and clear CTAs
+• Services, reviews/trust, and contact sections
+• Fast-loading clean code
+• Professional copy written for your business
+• Source files included
+
+✅ BUILT FOR:
+HVAC, plumbing, electricians, auto repair, cleaning, landscaping, and local service businesses.
+
+✅ PROCESS:
+1. Tell me business name, services, city, and phone number
+2. I confirm layout direction within 12 hours
+3. First version in 48 hours
+4. Revisions until you're happy (per package)
+
+Message me your business type before ordering — I'll confirm timeline and scope.
+
+
+─── ADIM 4: FAQ ───
+
+Q: Can I see examples of your work?
+A: Yes — click the live demo links above. Those are the same quality I deliver to clients.
+
+Q: Do you provide hosting?
+A: I deliver website files. I guide you to free/cheap hosting (Netlify, GitHub Pages) or install on your existing host. Hosting is usually $0–10/month.
+
+Q: WordPress or HTML?
+A: HTML is faster and included in Basic/Standard. WordPress available in Premium if you need to edit text yourself.
+
+Q: Will it work on mobile?
+A: Yes — all designs are mobile-first. Every demo is fully responsive.
+
+Q: Do you write the content?
+A: Yes — professional copy based on your business info. You can edit before or after delivery.
+
+Q: Can you copy my competitor's site?
+A: No — I create original designs inspired by your industry, not exact copies.
+
+
+─── ADIM 5: REQUIREMENTS ───
+
+1. Business name (required)
+2. Phone number for Call button (required)
+3. List of services — 3 to 6 items (required)
+4. City / service area (required)
+5. Logo file if available (optional)
+6. Color preferences or reference site (optional)
+
+
+─── ADIM 6: GALLERY ───
+
+Görsel 1 (THUMBNAIL):
+  fiverr-screenshots\gig-gallery\landing-gig-image-1-hvac-1280x769.png
+
+Görsel 2:
+  fiverr-screenshots\gig-gallery\landing-gig-image-2-plumbing-1280x769.png
+
+Görsel 3:
+  fiverr-screenshots\3-portfolio-hub\02-live-demos-section-1024x768.png
+
+Video (önerilir — bu gig için en çok fark eder):
+  30 sn ekran kaydı: HVAC demo aç → scroll → Plumbing demo aç → scroll
+  Son kare: "48h Delivery · From $79"
+
+
+================================================================================
+YAYIN SONRASI CHECKLIST (3 gig için)
+================================================================================
+□ 3 gig ACTIVE (yeşil) durumda
+□ Her gig'de 3 paket + en az 2 extra
+□ Her gig'de 4+ FAQ
+□ Profil fotoğrafı yüklü
+□ Portfolio 3 proje yayında
+□ İlk 72 saat: Fiverr'ı açık tut, 1 saat içinde cevap
+□ Tanıdığa / küçük işletmeye "Fiverr'dan sipariş ver" de (ilk review için)
+□ 1 hafta sonra: impression/click verilerine bak, başlık/görsel ayarla
+
+================================================================================
+HANGİ GIG ÖNCE SATAR?
+================================================================================
+1. Excel — en hızlı, en az teknik tartışma
+2. WordPress Fix — çok aranan, net scope
+3. Landing Page — en pahalı ama review'sız zor; demo linkler güçlü avantaj
+
+İlk review'u aldıktan sonra Landing gig'i öne çıkar (en çok para).
+================================================================================

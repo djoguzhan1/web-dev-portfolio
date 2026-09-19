@@ -1,0 +1,118 @@
+FIVERR GIG 3 — 1-PAGE LANDING SITE
+====================================
+
+GIG TITLE (max 80 karakter):
+I will build a professional 1 page business landing website in 48 hours
+
+CATEGORY:
+Programming & Tech → Website Development → Landing Page
+(Alternatif: WordPress → Landing Page)
+
+SEARCH TAGS (5 adet):
+landing page
+business website
+one page website
+html css
+small business
+
+--- DESCRIPTION ---
+
+Need a professional website for your local business — fast?
+
+I build clean, mobile-friendly 1-page landing sites that turn visitors into phone calls and leads.
+
+LIVE DEMOS — CLICK AND SEE:
+• HVAC example: https://djoguzhan1.github.io/web-dev-portfolio/demos/hvac-landing/
+• Plumbing example: https://djoguzhan1.github.io/web-dev-portfolio/demos/plumbing-landing/
+• Full portfolio: https://djoguzhan1.github.io/web-dev-portfolio/
+
+PERFECT FOR:
+✓ HVAC, plumbing, electricians, roofers
+✓ Auto repair, cleaning services, landscapers
+✓ Consultants, coaches, local shops
+✓ Any business that needs online presence fast
+
+WHAT'S INCLUDED:
+✓ Mobile-responsive design (looks great on phones)
+✓ Clear call-to-action (Call Now / Get Quote buttons)
+✓ Services section
+✓ Trust elements (reviews area, badges, stats)
+✓ Contact section
+✓ Fast loading, clean code
+✓ Delivered as HTML files OR WordPress (Premium)
+
+WHAT I NEED FROM YOU:
+1. Business name and phone number
+2. List of services (3–6 items)
+3. Service area / city
+4. Logo if you have one (optional)
+5. Any color preferences (optional)
+
+48-hour delivery on Basic and Standard for standard scope.
+
+--- PACKAGES ---
+
+BASIC — $79
+Title: Starter landing page
+• 1-page HTML site
+• Up to 4 sections (Hero, Services, About/Reviews, Contact)
+• Mobile responsive
+• 1 revision
+• Source files included
+Delivery: 2 days
+
+STANDARD — $129  ★ MOST POPULAR
+Title: Full business landing page
+• 1-page HTML site
+• Up to 6 sections (Hero, Services, Reviews, Stats, Areas, Contact)
+• Click-to-call phone buttons
+• SEO-friendly title + meta description
+• 2 revisions
+• Source files + deployment help
+Delivery: 2 days
+
+PREMIUM — $199
+Title: WordPress landing OR multi-section custom
+• WordPress 1-page site OR advanced HTML layout
+• Contact form setup
+• Google Maps embed (if needed)
+• 3 revisions
+• 7-day post-delivery support for small tweaks
+Delivery: 3 days
+
+--- FAQ ---
+
+Q: Do you provide hosting?
+A: I deliver the website files. I can guide you to free/cheap hosting (Netlify, GitHub Pages) or your existing host. Hosting cost is separate and usually $0–10/month.
+
+Q: Can I edit the site myself later?
+A: WordPress Premium — yes easily. HTML — basic text changes I can show you, or hire me for updates.
+
+Q: Will it work on mobile?
+A: Yes — all designs are mobile-first.
+
+Q: Can you copy my competitor's site?
+A: I create original designs inspired by your industry — not exact copies.
+
+Q: Do you write the text content?
+A: Yes — I write professional placeholder copy based on your business info. You can edit before or after delivery.
+
+--- BUYER REQUIREMENTS ---
+
+1. Business name (required)
+2. Phone number for Call button (required)
+3. List of services you offer (required)
+4. City / service area (required)
+5. Logo file if available (optional)
+6. Preferred colors or reference website (optional)
+
+--- GIG IMAGE TEXT (Canva) ---
+Line 1: 1-Page Business Website
+Line 2: 48-Hour Delivery
+Line 3: Mobile • Call Buttons • Professional
+Colors: Orange/navy (match demo sites)
+Tip: Canva'da demo sitenden screenshot koy — conversion artar
+
+--- GIG VIDEO (opsiyonel ama + sıralama):
+15–30 sn ekran kaydı: portföyde demo sitelere tıkla, scroll yap
+Telefon sesi yok, sadece site göster — Fiverr'da "Gig video" yükle

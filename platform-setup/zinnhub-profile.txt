@@ -1,0 +1,154 @@
+ZINN HUB — FULL PROFILE SETUP
+==============================
+Site: https://zinnhub.com
+Kayıt: Sign up → Freelancer / Independent
+
+--- ACCOUNT BASICS ---
+
+FULL NAME:
+Oğuzhan Salatan
+
+USERNAME (URL):
+oguzhan-webdev
+(veya: oguzhan-salatan — kısa ve profesyonel)
+
+LOCATION:
+Turkey
+(Time zone: GMT+3 — Available for US/EU clients)
+
+LANGUAGES:
+English (Fluent)
+Turkish (Native)
+
+--- HEADLINE / TITLE ---
+
+WordPress Developer & Landing Page Specialist | 48h Delivery
+
+--- BIO / ABOUT (Profil özeti) ---
+
+I help small businesses fix websites and get online fast.
+
+Most of my clients are local service businesses — HVAC, plumbing, auto repair, cleaning — who need a professional web presence without waiting weeks or paying agency prices.
+
+Services:
+• WordPress bug fixes, speed optimization, plugin conflicts
+• 1-page landing sites (mobile-first, click-to-call)
+• Excel & Google Sheets cleanup, formulas, simple dashboards
+
+What working with me looks like:
+→ Clear scope before we start
+→ Updates within 24 hours
+→ Delivery in 48 hours on most projects
+→ Live portfolio you can review before hiring
+
+Portfolio: https://djoguzhan1.github.io/web-dev-portfolio/
+
+Demo sites:
+https://djoguzhan1.github.io/web-dev-portfolio/demos/hvac-landing/
+https://djoguzhan1.github.io/web-dev-portfolio/demos/plumbing-landing/
+
+Available for fixed-price projects. Message me with your URL or file and I'll reply with an honest quote.
+
+--- SKILLS (seç / ekle) ---
+
+WordPress
+Web Development
+Landing Pages
+HTML/CSS
+JavaScript
+Bug Fixes
+Excel
+Google Sheets
+Website Maintenance
+Responsive Design
+
+--- SERVICES TO LIST (Zinn Hub'da "Services" veya portfolio projects) ---
+
+SERVICE 1:
+Title: WordPress Bug Fix — 24–48 Hours
+Price: Starting at $79
+Description: Fix errors, broken layouts, plugin conflicts, slow load, mobile issues. Includes testing and summary of changes.
+Delivery: 2 days
+Tags: wordpress, bug fix, website
+
+SERVICE 2:
+Title: 1-Page Business Landing Site
+Price: Starting at $129
+Description: Professional mobile landing page for local businesses. Hero, services, reviews, contact. Live demos in portfolio.
+Delivery: 2 days
+Tags: landing page, business website, html
+
+SERVICE 3:
+Title: Excel / Google Sheets Cleanup
+Price: Starting at $49
+Description: Data cleaning, formula fixes, formatting, simple dashboards. Excel or Google Sheets.
+Delivery: 1–2 days
+Tags: excel, spreadsheet, data
+
+--- PORTFOLIO PROJECTS (3 proje ekle — link olarak) ---
+
+Project 1:
+Title: CoolAir HVAC Landing Page
+URL: https://djoguzhan1.github.io/web-dev-portfolio/demos/hvac-landing/
+Description: One-page HVAC business site — mobile-first, CTAs, reviews section.
+Role: Design & Development
+
+Project 2:
+Title: ProFix Plumbing Landing Page
+URL: https://djoguzhan1.github.io/web-dev-portfolio/demos/plumbing-landing/
+Description: Emergency plumber landing page with stats, services, service areas.
+Role: Design & Development
+
+Project 3:
+Title: Web Developer Portfolio Hub
+URL: https://djoguzhan1.github.io/web-dev-portfolio/
+Description: Portfolio showcasing business web development services and pricing.
+Role: Design & Development
+
+--- AVAILABILITY ---
+
+Available for new projects: YES
+Hours per week: 20–30
+Response time: Within 24 hours (usually same day)
+
+--- HOURLY RATE (sorulursa) ---
+
+$25–35/hour
+(Fixed-price preferred for client clarity — recommend project-based quotes)
+
+--- ZINN HUB PROPOSAL TEMPLATE (İlanlara teklif verirken) ---
+
+Hi [Client name],
+
+I can help with [specific thing from their job post].
+
+Relevant experience:
+• I build landing pages for local businesses — here are live demos:
+  HVAC: https://djoguzhan1.github.io/web-dev-portfolio/demos/hvac-landing/
+• WordPress fixes delivered in 24–48h
+• Clear communication, fixed price, no surprises
+
+For your project I'd approach it by:
+1. [Step specific to their post]
+2. [Step 2]
+3. Test on mobile + desktop before delivery
+
+Timeline: [X days]
+Budget: $[amount] fixed
+
+Happy to answer questions before we start.
+
+— Oğuzhan
+Portfolio: https://djoguzhan1.github.io/web-dev-portfolio/
+
+--- ZINN HUB AVANTAJ (ilk $500) ---
+
+İlk $500 satışta %0 komisyon — fiyatları biraz agresif tutabilirsin:
+WP fix: $69–79
+Landing: $119–129
+Excel: $45–55
+
+--- HAFTALIK KOTA ---
+
+Ayda 25 ücretsiz teklif → haftada max 6 kaliteli teklif
+Salı günleri Zinn Hub'a odaklan (plan rotasyonu)
