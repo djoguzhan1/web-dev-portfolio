@@ -1,433 +1,540 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ProFix Plumbing | 24/7 Emergency Plumber — Phoenix, AZ</title>
-  <meta name="description" content="Emergency plumbing in Phoenix. Leaks, drains, water heaters. Licensed plumbers. Call (602) 555-0147 — available 24/7.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --navy: #1e3a5f;
-      --teal: #0d9488;
-      --teal-dark: #0f766e;
-      --amber: #d97706;
-      --text: #1e293b;
-      --muted: #64748b;
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: Inter, system-ui, sans-serif; color: var(--text); line-height: 1.6; }
-    .demo-bar {
-      background: #1e293b;
-      color: #94a3b8;
-      text-align: center;
-      padding: 0.5rem;
-      font-size: 0.8rem;
-    }
-    .demo-bar a { color: #2dd4bf; }
-    .emergency-bar {
-      background: #dc2626;
-      color: #fff;
-      text-align: center;
-      padding: 0.6rem;
-      font-weight: 600;
-      font-size: 0.9rem;
-    }
-    .emergency-bar a { color: #fff; text-decoration: underline; }
-    header {
-      background: #fff;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 1.5rem;
-      max-width: 1100px;
-      margin: 0 auto;
-      flex-wrap: wrap;
-      gap: 1rem;
-    }
-    .brand { font-weight: 800; font-size: 1.3rem; color: var(--navy); }
-    .brand span { color: var(--teal); }
-    .call-btn {
-      background: var(--teal);
-      color: #fff;
-      padding: 0.65rem 1.25rem;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 700;
-      font-size: 0.95rem;
-      transition: background 0.2s, transform 0.15s;
-    }
-    .call-btn:hover { background: var(--teal-dark); transform: translateY(-1px); }
-    .hero {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      min-height: 480px;
-      max-width: 1100px;
-      margin: 0 auto;
-      gap: 2rem;
-      padding: 3rem 1.5rem;
-      align-items: center;
-    }
-    @media (max-width: 768px) {
-      .hero { grid-template-columns: 1fr; text-align: center; }
-    }
-    .hero-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      background: #fef2f2;
-      color: #b91c1c;
-      font-size: 0.8rem;
-      font-weight: 600;
-      padding: 0.35rem 0.85rem;
-      border-radius: 999px;
-      margin-bottom: 1rem;
-      border: 1px solid #fecaca;
-    }
-    .hero h1 {
-      font-size: clamp(1.75rem, 4vw, 2.5rem);
-      font-weight: 800;
-      line-height: 1.2;
-      margin-bottom: 1rem;
-      color: var(--navy);
-    }
-    .hero p { color: var(--muted); margin-bottom: 1.25rem; font-size: 1.05rem; }
-    .hero-features { list-style: none; margin-bottom: 1.5rem; }
-    .hero-features li {
-      padding: 0.35rem 0;
-      font-weight: 500;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-    @media (max-width: 768px) { .hero-features li { justify-content: center; } }
-    .hero-features li::before { content: "✓"; color: var(--teal); font-weight: 700; }
-    .hero-visual {
-      background: linear-gradient(160deg, var(--navy), var(--teal));
-      border-radius: 16px;
-      aspect-ratio: 4/3;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      font-size: 5rem;
-      box-shadow: 0 20px 40px rgba(13, 148, 136, 0.25);
-      position: relative;
-      overflow: hidden;
-    }
-    .hero-visual::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(circle at 70% 30%, rgba(255,255,255,0.1), transparent 50%);
-    }
-    .hero-visual .badge {
-      position: relative;
-      background: rgba(255,255,255,0.15);
-      backdrop-filter: blur(8px);
-      color: #fff;
-      padding: 0.65rem 1.1rem;
-      border-radius: 10px;
-      font-size: 0.85rem;
-      font-weight: 600;
-      margin-top: 0.75rem;
-      text-align: center;
-    }
-    .stats {
-      background: var(--navy);
-      color: #fff;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      text-align: center;
-      padding: 2rem 1.5rem;
-    }
-    @media (max-width: 640px) { .stats { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; } }
-    .stat-num { font-size: 2rem; font-weight: 800; color: #2dd4bf; }
-    .stat-label { font-size: 0.85rem; opacity: 0.8; margin-top: 0.25rem; }
-    .section { padding: 4rem 1.5rem; max-width: 1100px; margin: 0 auto; }
-    .section h2 { font-size: 1.65rem; font-weight: 800; text-align: center; margin-bottom: 0.5rem; color: var(--navy); }
-    .section .sub { text-align: center; color: var(--muted); margin-bottom: 2rem; }
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1rem;
-    }
-    .svc {
-      border: 1px solid #e2e8f0;
-      border-radius: 12px;
-      padding: 1.5rem;
-      text-align: center;
-      transition: box-shadow 0.2s, transform 0.15s;
-    }
-    .svc:hover { box-shadow: 0 8px 24px rgba(0,0,0,0.08); transform: translateY(-2px); }
-    .svc .icon { font-size: 2.25rem; margin-bottom: 0.75rem; }
-    .svc h3 { font-size: 1rem; margin-bottom: 0.35rem; }
-    .svc p { font-size: 0.85rem; color: var(--muted); }
-    .reviews {
-      background: #f8fafc;
-      padding: 4rem 1.5rem;
-    }
-    .google-badge {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      background: #fff;
-      border: 1px solid #e2e8f0;
-      padding: 0.5rem 1rem;
-      border-radius: 8px;
-      font-size: 0.85rem;
-      font-weight: 600;
-      margin: 0 auto 2rem;
-      width: fit-content;
-    }
-    .google-badge .g { color: #4285f4; font-weight: 800; font-size: 1.1rem; }
-    .review-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.25rem;
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-    .review {
-      background: #fff;
-      padding: 1.5rem;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-      border: 1px solid #f1f5f9;
-    }
-    .stars { color: #fbbf24; margin-bottom: 0.5rem; }
-    .review p { font-size: 0.95rem; color: var(--muted); margin-bottom: 0.75rem; font-style: italic; }
-    .review .name { font-weight: 600; font-size: 0.9rem; }
-    .areas {
-      background: #f0fdfa;
-      padding: 3rem 1.5rem;
-      text-align: center;
-    }
-    .areas h2 { font-size: 1.4rem; font-weight: 800; color: var(--navy); margin-bottom: 0.75rem; }
-    .areas p { color: var(--muted); max-width: 600px; margin: 0 auto; }
-    .tags {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 0.5rem;
-      margin-top: 1.25rem;
-    }
-    .tag {
-      background: #fff;
-      border: 1px solid #99f6e4;
-      padding: 0.4rem 0.9rem;
-      border-radius: 999px;
-      font-size: 0.85rem;
-      font-weight: 500;
-    }
-    .faq { max-width: 700px; margin: 0 auto; }
-    .faq-item {
-      border-bottom: 1px solid #e2e8f0;
-      padding: 1.25rem 0;
-    }
-    .faq-item h3 { font-size: 1rem; margin-bottom: 0.4rem; color: var(--navy); }
-    .faq-item p { color: var(--muted); font-size: 0.9rem; }
-    .cta-band {
-      background: linear-gradient(135deg, var(--teal) 0%, var(--teal-dark) 100%);
-      color: #fff;
-      text-align: center;
-      padding: 3.5rem 1.5rem;
-    }
-    .cta-band h2 { font-size: 1.85rem; margin-bottom: 0.75rem; font-weight: 800; }
-    .cta-band p { margin-bottom: 1.5rem; opacity: 0.95; }
-    .cta-band .call-btn {
-      display: inline-block;
-      background: #fff;
-      color: var(--teal-dark);
-      font-size: 1.05rem;
-      padding: 0.9rem 1.75rem;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-    }
-    footer {
-      background: var(--navy);
-      color: rgba(255,255,255,0.75);
-      text-align: center;
-      padding: 2rem 1.5rem;
-      font-size: 0.85rem;
-    }
-    .float-call {
-      display: none;
-      position: fixed;
-      bottom: 1.25rem;
-      right: 1.25rem;
-      background: var(--teal);
-      color: #fff;
-      padding: 0.85rem 1.25rem;
-      border-radius: 999px;
-      font-weight: 700;
-      text-decoration: none;
-      box-shadow: 0 4px 20px rgba(13,148,136,0.45);
-      z-index: 200;
-      font-size: 0.9rem;
-    }
-    @media (max-width: 768px) { .float-call { display: block; } }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ProFix Plumbing · 24/7 Emergency Plumber in Phoenix, AZ · About an Hour Away</title>
+  <meta name="description" content="Licensed Phoenix plumbers on call 24/7. Burst pipes, drains, water heaters, slab leaks. Flat-rate price in writing before work starts, no overtime charges. Call (602) 555-0147.">
+  <meta name="theme-color" content="#14171c">
+  <link rel="canonical" href="https://djoguzhan1.github.io/web-dev-portfolio/demos/plumbing-landing/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='9' fill='%23c81e1e'/%3E%3Cpath d='M20 7c-4.5 6.5-9 11-9 16.5a9 9 0 0 0 18 0C29 18 24.5 13.5 20 7z' fill='%23fff'/%3E%3Ccircle cx='23.5' cy='25' r='2.4' fill='%23f5b70a'/%3E%3C/svg%3E">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ProFix Plumbing · 24/7 Emergency Plumber in Phoenix">
+  <meta property="og:description" content="A licensed plumber at your door in about an hour. Flat-rate price in writing before we start. No overtime charges.">
+  <meta property="og:image" content="https://djoguzhan1.github.io/web-dev-portfolio/demos/plumbing-landing/img/og-image.jpg">
+  <meta property="og:url" content="https://djoguzhan1.github.io/web-dev-portfolio/demos/plumbing-landing/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preload" href="fonts/archivo-variable-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" as="image" type="image/avif" imagesrcset="img/hero-pipe-wrenches-512.avif 511w, img/hero-pipe-wrenches-768.avif 768w, img/hero-pipe-wrenches-1024.avif 1024w" imagesizes="(min-width: 64em) 58vw, 100vw">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Plumber",
+    "name": "ProFix Plumbing",
+    "image": "https://djoguzhan1.github.io/web-dev-portfolio/demos/plumbing-landing/img/hero-pipe-wrenches-1024.webp",
+    "url": "https://djoguzhan1.github.io/web-dev-portfolio/demos/plumbing-landing/",
+    "telephone": "+1-602-555-0147",
+    "email": "hello@profixaz.com",
+    "priceRange": "$$",
+    "foundingDate": "2013",
+    "address": { "@type": "PostalAddress", "streetAddress": "4021 E Broadway Rd", "addressLocality": "Phoenix", "addressRegion": "AZ", "postalCode": "85040", "addressCountry": "US" },
+    "geo": { "@type": "GeoCoordinates", "latitude": 33.4074, "longitude": -111.9970 },
+    "areaServed": ["Phoenix", "Scottsdale", "Tempe", "Mesa", "Chandler", "Gilbert", "Glendale", "Peoria", "Paradise Valley", "Queen Creek", "Cave Creek"],
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], "opens": "00:00", "closes": "23:59" }
+    ],
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "386" }
+  }
+  </script>
 </head>
 <body>
-  <div class="demo-bar">Portfolio demo · <a href="../../index.html">Back to portfolio</a></div>
-  <div class="emergency-bar">🚨 24/7 Emergency Service — <a href="tel:+16025550147">Call (602) 555-0147 now</a></div>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <header>
-    <nav>
-      <div class="brand">Pro<span>Fix</span> Plumbing</div>
-      <a class="call-btn" href="tel:+16025550147">📞 (602) 555-0147</a>
-    </nav>
-  </header>
-
-  <section class="hero">
-    <div>
-      <div class="hero-badge">🚨 Emergency Plumber Available Now</div>
-      <h1>Phoenix's #1 Rated Emergency Plumber — On-Site in 60 Minutes</h1>
-      <p>Leaks, clogs, water heaters, and burst pipes. Licensed, insured, and ready to fix it today — not next week.</p>
-      <ul class="hero-features">
-        <li>Upfront pricing — no surprise bills</li>
-        <li>Available 24 hours, 7 days a week</li>
-        <li>100% satisfaction guarantee</li>
-      </ul>
-      <a class="call-btn" href="tel:+16025550147" style="display:inline-block;">Get a Free Quote</a>
-    </div>
-    <div class="hero-visual">
-      🔧
-      <div class="badge">On-site in 60 min · Phoenix metro</div>
-    </div>
-  </section>
-
-  <div class="stats">
-    <div>
-      <div class="stat-num">15+</div>
-      <div class="stat-label">Years in Business</div>
-    </div>
-    <div>
-      <div class="stat-num">4.9★</div>
-      <div class="stat-label">Google Rating</div>
-    </div>
-    <div>
-      <div class="stat-num">60min</div>
-      <div class="stat-label">Average Response</div>
-    </div>
-    <div>
-      <div class="stat-num">3,200+</div>
-      <div class="stat-label">Jobs Completed</div>
+  <div class="demo-ribbon" role="note">
+    <div class="container">
+      <span>Demo website · ProFix Plumbing is a fictional company built to show what your site could look like.</span>
+      <span class="links">
+        <a href="../../index.html">Portfolio</a>
+        <a href="https://www.upwork.com/freelancers/~01f40a508feb14b1ee" rel="noopener" target="_blank">Hire me on Upwork</a>
+      </span>
     </div>
   </div>
 
-  <section class="section">
-    <h2>Plumbing Services We Offer</h2>
-    <p class="sub">Residential and commercial — fixed right the first time</p>
-    <div class="services">
-      <div class="svc">
-        <div class="icon">💧</div>
-        <h3>Leak Repair</h3>
-        <p>Fast detection and permanent fixes</p>
+  <div class="emergency-bar">
+    <div class="container">
+      <span class="pulse" aria-hidden="true"></span>
+      <span id="eta-note">Plumbers on call now, 24/7</span>
+      <a href="tel:+16025550147">(602) 555-0147</a>
+      <span class="eta">· Average arrival this week: 62 min</span>
+    </div>
+  </div>
+
+  <header class="site-header" id="top">
+    <nav class="container nav" aria-label="Primary">
+      <a class="brand" href="#top">
+        <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="9" fill="#c81e1e"/><path d="M20 7c-4.5 6.5-9 11-9 16.5a9 9 0 0 0 18 0C29 18 24.5 13.5 20 7z" fill="#fff"/><circle cx="23.5" cy="25" r="2.4" fill="#f5b70a"/></svg>
+        <span class="brand-name">ProFix<small>Plumbing · Phoenix</small></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#work">Recent work</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#areas">Areas</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a class="nav-text" href="sms:+16025550147?body=Hi%20ProFix%2C%20I%20need%20help%20with%3A%20"><svg class="ic"><use href="#i-message-square-text"/></svg> Text us a photo</a>
+        <a class="btn btn-red nav-call" href="tel:+16025550147"><svg class="ic"><use href="#i-phone"/></svg> (602) 555-0147</a>
+        <a class="icon-btn call" href="tel:+16025550147" aria-label="Call (602) 555-0147"><svg class="ic"><use href="#i-phone"/></svg></a>
+        <button class="icon-btn menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <svg class="ic ic-menu"><use href="#i-menu"/></svg>
+          <svg class="ic ic-close"><use href="#i-x"/></svg>
+        </button>
       </div>
-      <div class="svc">
-        <div class="icon">🚿</div>
-        <h3>Drain Cleaning</h3>
-        <p>Clogged sinks, showers, and sewers</p>
-      </div>
-      <div class="svc">
-        <div class="icon">🔥</div>
-        <h3>Water Heaters</h3>
-        <p>Repair and replacement all brands</p>
-      </div>
-      <div class="svc">
-        <div class="icon">🚽</div>
-        <h3>Toilet Repair</h3>
-        <p>Running, clogged, or broken toilets</p>
-      </div>
-      <div class="svc">
-        <div class="icon">🏗️</div>
-        <h3>Pipe Replacement</h3>
-        <p>Copper, PVC, and repiping services</p>
-      </div>
-      <div class="svc">
-        <div class="icon">🏠</div>
-        <h3>Commercial</h3>
-        <p>Restaurants, offices, and retail</p>
+    </nav>
+    <div class="mobile-menu" id="mobile-menu">
+      <div class="container">
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#work">Recent work</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#areas">Service area</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+        <a class="btn btn-red btn-block" href="#quick">Request a plumber</a>
       </div>
     </div>
-  </section>
+  </header>
 
-  <section class="reviews">
-    <div class="section" style="padding-top:0;padding-bottom:0;">
-      <h2>What Phoenix Homeowners Say</h2>
-      <p class="sub">Trusted by thousands across the metro area</p>
-      <div class="google-badge"><span class="g">G</span> 4.9 · 380+ Google Reviews</div>
-      <div class="review-grid">
-        <div class="review">
-          <div class="stars">★★★★★</div>
-          <p>"Called at midnight with a burst pipe. They were here in 45 minutes and had it fixed before sunrise. Lifesavers."</p>
-          <div class="name">— Robert M., Scottsdale</div>
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">24/7 emergency &amp; everyday plumbing · Phoenix metro</p>
+          <h1>Plumbing emergency? A plumber is on the way <em>in about an hour.</em></h1>
+          <p class="lead">ProFix runs nine trucks across the Valley, around the clock. Burst pipes, sewer backups, water heaters that quit on a Sunday. You get a flat price in writing before we touch anything, and there is no overtime charge. Ever.</p>
+          <div class="hero-actions">
+            <a class="btn btn-red btn-lg" href="tel:+16025550147"><svg class="ic"><use href="#i-phone"/></svg> Call (602) 555-0147</a>
+            <a class="btn btn-ghost btn-lg" href="sms:+16025550147?body=Hi%20ProFix%2C%20I%20need%20help%20with%3A%20"><svg class="ic"><use href="#i-camera"/></svg> Text us a photo</a>
+          </div>
+          <ul class="trust-chips">
+            <li><svg class="ic"><use href="#i-shield-check"/></svg> AZ ROC 339112 · bonded &amp; insured</li>
+            <li><span class="stars" aria-hidden="true">★★★★★</span> 4.9 · 386 Google reviews</li>
+            <li><svg class="ic"><use href="#i-check"/></svg> No after-hours fees</li>
+          </ul>
         </div>
-        <div class="review">
-          <div class="stars">★★★★★</div>
-          <p>"Honest pricing, no upselling. Fixed our water heater same day. Already recommended to two neighbors."</p>
-          <div class="name">— Sarah L., Tempe</div>
-        </div>
-        <div class="review">
-          <div class="stars">★★★★★</div>
-          <p>"Professional crew, cleaned up after the job. Best plumber we've used in 10 years of owning our home."</p>
-          <div class="name">— David K., Mesa</div>
+        <div class="hero-media">
+          <picture>
+            <source type="image/avif" srcset="img/hero-pipe-wrenches-512.avif 511w, img/hero-pipe-wrenches-768.avif 768w, img/hero-pipe-wrenches-1024.avif 1024w" sizes="(min-width: 64em) 58vw, 100vw">
+            <img src="img/hero-pipe-wrenches-768.webp" srcset="img/hero-pipe-wrenches-512.webp 511w, img/hero-pipe-wrenches-768.webp 768w, img/hero-pipe-wrenches-1024.webp 1024w" sizes="(min-width: 64em) 58vw, 100vw" width="1024" height="683" alt="Two pipe wrenches tightening a threaded galvanized pipe fitting on a workbench" fetchpriority="high" decoding="async">
+          </picture>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="areas">
-    <h2>Service Areas</h2>
-    <p>Proudly serving Phoenix and the greater metro area</p>
-    <div class="tags">
-      <span class="tag">Phoenix</span>
-      <span class="tag">Scottsdale</span>
-      <span class="tag">Tempe</span>
-      <span class="tag">Mesa</span>
-      <span class="tag">Glendale</span>
-      <span class="tag">Chandler</span>
-    </div>
-  </section>
-
-  <section class="section">
-    <h2>Common Questions</h2>
-    <p class="sub">Quick answers before you call</p>
-    <div class="faq">
-      <div class="faq-item">
-        <h3>Do you charge extra for emergency calls?</h3>
-        <p>We offer upfront pricing on every job. You'll know the cost before we start — no hidden emergency fees.</p>
+      <div class="quick" id="quick">
+        <form id="quick-form" novalidate>
+          <h2>Need someone today?</h2>
+          <p class="hint">Tell us what's going on. A dispatcher calls you back within 5 minutes, day or night.</p>
+          <div class="quick-grid">
+            <div class="field full">
+              <label for="q-problem">What's the problem?</label>
+              <select id="q-problem" name="problem" required>
+                <option value="">Choose one…</option>
+                <option value="burst">Burst or leaking pipe</option>
+                <option value="drain">Clogged drain or sewer backup</option>
+                <option value="heater">No hot water / water heater</option>
+                <option value="fixture">Toilet, faucet or fixture</option>
+                <option value="slab">Slab leak or high water bill</option>
+                <option value="other">Something else</option>
+              </select>
+              <p class="error">Pick the closest match so we send the right truck.</p>
+            </div>
+            <div class="field">
+              <label for="q-phone">Phone</label>
+              <input id="q-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(602) 555-0123" required>
+              <p class="error">Enter a 10-digit phone number.</p>
+            </div>
+            <div class="field">
+              <label for="q-zip">ZIP code</label>
+              <input id="q-zip" name="zip" inputmode="numeric" maxlength="5" autocomplete="postal-code" placeholder="85040" required>
+              <p class="error">Enter a 5-digit ZIP.</p>
+            </div>
+            <label class="hp" aria-hidden="true">Leave this empty <input type="text" name="company" tabindex="-1" autocomplete="off"></label>
+            <div class="field full">
+              <button class="btn btn-red btn-block" type="submit">Request a plumber</button>
+            </div>
+          </div>
+          <p class="fine">Water actively pouring in? Calling is faster: <a href="tel:+16025550147">(602) 555-0147</a>. Demo form: nothing is sent.</p>
+        </form>
+        <div class="success" role="status" aria-live="polite">
+          <svg class="ic"><use href="#i-circle-check"/></svg>
+          <h3 id="q-success-title">Got it. A dispatcher is calling you back.</h3>
+          <p id="q-success-text">Expect the call within 5 minutes. If it's pouring in right now, shut off the main and call (602) 555-0147.</p>
+        </div>
       </div>
-      <div class="faq-item">
-        <h3>How fast can you arrive?</h3>
-        <p>Average response time is 60 minutes across the Phoenix metro. True emergencies get priority dispatch.</p>
+    </section>
+
+    <!-- Emergency tiles -->
+    <section class="tiles" aria-labelledby="tiles-heading">
+      <div class="container">
+        <h2 id="tiles-heading" class="sr-only">Common emergencies and what to do first</h2>
+        <div class="tiles-grid">
+          <div class="tile"><svg class="ic"><use href="#i-siren"/></svg><strong>Burst or leaking pipe</strong><span>Shut off the main. It's usually by the street or on the side of the house. Then call, and we're moving.</span></div>
+          <div class="tile"><svg class="ic"><use href="#i-waves"/></svg><strong>Sewer backup or overflow</strong><span>Stop running water and skip the bleach. Every truck carries a jetter and a camera.</span></div>
+          <div class="tile"><svg class="ic"><use href="#i-heater"/></svg><strong>No hot water</strong><span>Hard water kills most heaters here in 8–12 years. Same-day replacement, tank or tankless.</span></div>
+          <div class="tile warn"><svg class="ic"><use href="#i-triangle-alert"/></svg><strong>Smell gas?</strong><span>Leave the house first. Call Southwest Gas at 877-860-6020, then call us for the repair.</span></div>
+        </div>
       </div>
-      <div class="faq-item">
-        <h3>Are you licensed and insured?</h3>
-        <p>Yes — fully licensed (ROC #PLB-3391) and insured. All work meets Arizona code requirements.</p>
+    </section>
+
+    <!-- Pricing -->
+    <section class="section" id="pricing">
+      <div class="container pricing-grid">
+        <div>
+          <p class="eyebrow">Upfront pricing</p>
+          <h2>You'll know the exact price before we start. Not an estimate. The price.</h2>
+          <p>Every ProFix plumber works from the same printed price book. Your tech shows you the page, you say yes or no, and the number doesn't move.</p>
+          <ul class="pricing-points">
+            <li><svg class="ic"><use href="#i-receipt"/></svg><div><strong>Flat-rate, in writing</strong><span>Same price at 2 AM on a Sunday as on a Tuesday at noon. No hourly clock, no "it took longer than expected".</span></div></li>
+            <li><svg class="ic"><use href="#i-banknote"/></svg><div><strong>$0 dispatch fee when we do the work</strong><span>Decline the quote and you pay $79 for the trip and diagnosis. That's the only fee that exists.</span></div></li>
+            <li><svg class="ic"><use href="#i-shield-check"/></svg><div><strong>2-year parts and labor warranty</strong><span>On every repair. Lifetime on whole-home repipes.</span></div></li>
+          </ul>
+          <h3 style="margin-top:2rem">Typical prices</h3>
+          <ul class="price-table">
+            <li><span>Drain clearing (kitchen, tub, laundry)</span><span>from $149</span></li>
+            <li><span>Main sewer line clearing</span><span>from $289</span></li>
+            <li><span>Toilet repair or rebuild</span><span>$129–$289</span></li>
+            <li><span>Water heater replacement, 40–50 gal</span><span>from $1,450</span></li>
+            <li><span>Tankless water heater install</span><span>from $3,900</span></li>
+            <li><span>Slab leak detection</span><span>$299 · credited to repair</span></li>
+            <li><span>Water softener install</span><span>from $1,650</span></li>
+          </ul>
+          <p class="price-note">Prices include labor, parts and cleanup. Your plumber confirms the exact number on-site before any work starts.</p>
+        </div>
+        <article class="ticket" aria-label="Example of a ProFix flat-rate estimate">
+          <header>
+            <div><strong>ProFix Plumbing · Estimate #26-04117</strong><span>Sept 24 · 10:38 AM · Mesa, AZ 85201</span></div>
+            <span class="stamp">Approved</span>
+          </header>
+          <ul>
+            <li><div>Trip &amp; camera inspection<small>Waived with repair</small></div><span class="amt free">$0</span></li>
+            <li><div>Main line hydro-jetting, up to 100 ft<small>Roots at 42 ft, cleared and re-inspected</small></div><span class="amt">$489</span></li>
+            <li><div>Cleanout cap, brass<small>Old cap cracked</small></div><span class="amt">$65</span></li>
+          </ul>
+          <div class="total"><span>Flat-rate total · tax included</span><strong>$554</strong></div>
+          <footer>
+            <div><svg class="ic"><use href="#i-check"/></svg> Approved by homeowner at 10:42 AM</div>
+            <div><svg class="ic"><use href="#i-check"/></svg> Work started 10:45 AM · finished 12:10 PM</div>
+            <div><svg class="ic"><use href="#i-check"/></svg> 2-year warranty on file</div>
+          </footer>
+        </article>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section soft" id="services">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Services</p>
+          <h2>Residential plumbing, start to finish</h2>
+          <p>Homes and small commercial across the Valley. If we don't do it, we'll say so and give you the name of someone who does.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service">
+            <div class="icon-wrap"><svg class="ic ic-lg"><use href="#i-siren"/></svg></div>
+            <h3>Emergency repairs</h3>
+            <p>Burst pipes, major leaks, sewage backups, no water at all. A plumber is dispatched the moment you hang up, any hour, any day.</p>
+            <div class="meta"><span class="price">No after-hours fee</span><a class="link" href="tel:+16025550147">Call now <svg class="ic"><use href="#i-arrow-right"/></svg></a></div>
+          </article>
+          <article class="service">
+            <div class="icon-wrap"><svg class="ic ic-lg"><use href="#i-waves"/></svg></div>
+            <h3>Drains &amp; sewer lines</h3>
+            <p>Snaking, hydro-jetting and camera inspection. You watch the video with us, so you know whether it's grease, roots or a broken pipe.</p>
+            <div class="meta"><span class="price">From $149</span><a class="link" href="#quick" data-problem="drain">Book <svg class="ic"><use href="#i-arrow-right"/></svg></a></div>
+          </article>
+          <article class="service">
+            <div class="icon-wrap"><svg class="ic ic-lg"><use href="#i-heater"/></svg></div>
+            <h3>Water heaters</h3>
+            <p>Repair and same-day replacement, tank or tankless. Hard water shortens their life here; we'll tell you honestly whether yours is worth fixing.</p>
+            <div class="meta"><span class="price">From $1,450 <small>installed</small></span><a class="link" href="#quick" data-problem="heater">Book <svg class="ic"><use href="#i-arrow-right"/></svg></a></div>
+          </article>
+          <article class="service">
+            <div class="icon-wrap"><svg class="ic ic-lg"><use href="#i-search"/></svg></div>
+            <h3>Leak detection &amp; slab leaks</h3>
+            <p>Acoustic and thermal detection instead of guesswork. When rerouting through the attic beats cutting concrete, that's what we recommend.</p>
+            <div class="meta"><span class="price">$299 <small>credited to repair</small></span><a class="link" href="#quick" data-problem="slab">Book <svg class="ic"><use href="#i-arrow-right"/></svg></a></div>
+          </article>
+          <article class="service">
+            <div class="icon-wrap"><svg class="ic ic-lg"><use href="#i-toilet"/></svg></div>
+            <h3>Toilets, faucets &amp; fixtures</h3>
+            <p>Running toilets, dripping faucets, garbage disposals, shut-off valves, hose bibs. Usually fixed in one visit with parts from the truck.</p>
+            <div class="meta"><span class="price">From $129</span><a class="link" href="#quick" data-problem="fixture">Book <svg class="ic"><use href="#i-arrow-right"/></svg></a></div>
+          </article>
+          <article class="service">
+            <div class="icon-wrap"><svg class="ic ic-lg"><use href="#i-droplet"/></svg></div>
+            <h3>Softeners &amp; filtration</h3>
+            <p>Phoenix water runs 12–18 grains hard. Softeners and reverse-osmosis systems installed with a proper drain, bypass and permit.</p>
+            <div class="meta"><span class="price">From $1,650</span><a class="link" href="#quick" data-problem="other">Ask us <svg class="ic"><use href="#i-arrow-right"/></svg></a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recent work -->
+    <section class="section" id="work">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Recent work</p>
+          <h2>Three jobs from the last few weeks</h2>
+          <p>Real scope, real timing. This is what "same day" looks like in practice.</p>
+        </div>
+        <div class="jobs-grid">
+          <article class="job">
+            <picture>
+              <source type="image/avif" srcset="img/job-faucet-scottsdale-480.avif 480w, img/job-faucet-scottsdale-720.avif 720w" sizes="(min-width: 48em) 33vw, calc(100vw - 2.5rem)">
+              <img src="img/job-faucet-scottsdale-720.webp" srcset="img/job-faucet-scottsdale-480.webp 480w, img/job-faucet-scottsdale-720.webp 720w" sizes="(min-width: 48em) 33vw, calc(100vw - 2.5rem)" width="720" height="540" alt="Plumber installing a new kitchen faucet at a stainless steel sink" loading="lazy" decoding="async">
+            </picture>
+            <div class="body">
+              <strong>Kitchen faucet &amp; under-sink filter</strong>
+              <span>Scottsdale · 1 hr 10 min</span>
+              <p>Old faucet seized. Replaced it with a pull-down model and added a filter. Leak-tested, cabinet left dry.</p>
+            </div>
+          </article>
+          <article class="job">
+            <picture>
+              <source type="image/avif" srcset="img/job-tankless-tempe-480.avif 480w, img/job-tankless-tempe-720.avif 720w" sizes="(min-width: 48em) 33vw, calc(100vw - 2.5rem)">
+              <img src="img/job-tankless-tempe-720.webp" srcset="img/job-tankless-tempe-480.webp 480w, img/job-tankless-tempe-720.webp 720w" sizes="(min-width: 48em) 33vw, calc(100vw - 2.5rem)" width="720" height="540" alt="Wall-mounted tankless water heater with copper supply lines and shut-off valves" loading="lazy" decoding="async">
+            </picture>
+            <div class="body">
+              <strong>Tank to tankless conversion</strong>
+              <span>Tempe · same day</span>
+              <p>50-gallon tank failed on a Saturday morning. New Navien tankless, gas line and venting done by 5 PM.</p>
+            </div>
+          </article>
+          <article class="job text">
+            <div>
+              <svg class="ic"><use href="#i-search"/></svg>
+              <strong>Slab leak reroute</strong>
+              <span>Mesa · 1 day</span>
+              <p>Hot-water line leaking under the slab. Found it with acoustic gear in 40 minutes and rerouted through the attic. No jackhammer, no torn-up floor.</p>
+            </div>
+            <a href="#quick" data-problem="slab">Ask about slab leaks <svg class="ic"><use href="#i-arrow-right"/></svg></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- How a call goes -->
+    <section class="section dark" id="how">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">How a call goes</p>
+          <h2>From your call to a fixed pipe</h2>
+        </div>
+        <ol class="timeline">
+          <li class="tl"><span class="when" aria-hidden="true">0m</span><h3><small>You call</small>A dispatcher answers. Not a call center.</h3><p>They ask three questions, tell you whether to shut the water off, and give you a real ETA.</p></li>
+          <li class="tl"><span class="when" aria-hidden="true">~60</span><h3><small>On the way</small>Your plumber texts before arriving.</h3><p>Name, photo and a live ETA. Marked van, shoe covers, drop cloths.</p></li>
+          <li class="tl"><span class="when" aria-hidden="true">✓</span><h3><small>Before any work</small>Flat price in writing. You say go or no.</h3><p>If it's a no, it's $79 for the trip and you owe nothing else.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="section soft" id="reviews">
+      <div class="container">
+        <div class="reviews-head">
+          <div class="section-head" style="margin-bottom:0">
+            <p class="eyebrow">Reviews</p>
+            <h2>What Valley homeowners say</h2>
+          </div>
+          <div class="rating-summary">
+            <span class="big">4.9</span>
+            <div><span class="stars" aria-hidden="true">★★★★★</span><small>386 Google reviews · <a href="#" aria-disabled="true">Read all on Google</a></small></div>
+          </div>
+        </div>
+        <div class="review-grid">
+          <article class="review">
+            <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+            <p>Water heater died Friday night. Called at 9:40 PM, Eddie was here by 10:45. Quoted $1,650 for a new 50-gallon, in writing, before touching anything. Hot water by 1 AM. No after-hours upcharge, which I honestly didn't believe until I saw the invoice.</p>
+            <footer><span class="avatar">M</span><div class="who"><strong>Marisol G.</strong><span>Chandler · 3 weeks ago</span></div><span class="via"><span class="g">G</span> Google</span></footer>
+          </article>
+          <article class="review">
+            <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+            <p>Two other companies wanted to jackhammer our kitchen floor for a slab leak. ProFix found it in about 40 minutes and rerouted the line through the attic. Done in a day, and $1,100 less than the lowest other quote.</p>
+            <footer><span class="avatar" style="background:#7c3a12">D</span><div class="who"><strong>Dave &amp; Kim P.</strong><span>Glendale · 2 months ago</span></div><span class="via"><span class="g">G</span> Google</span></footer>
+          </article>
+          <article class="review">
+            <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+            <p>Main line backed up during the monsoon. They ran the camera and showed me the roots on the screen instead of just telling me. Jetted it, flagged a belly in the line to keep an eye on, and didn't push a $9k replacement. Straight shooters.</p>
+            <footer><span class="avatar" style="background:#1f4e79">A</span><div class="who"><strong>Anthony R.</strong><span>Tempe · 4 months ago</span></div><span class="via"><span class="g">G</span> Google</span></footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service area -->
+    <section class="section dark" id="areas">
+      <div class="container area-grid">
+        <div>
+          <p class="eyebrow">Service area</p>
+          <h2>Phoenix and the East Valley, mostly within the hour</h2>
+          <p>Our shop is off Broadway Road near the I-10, so most of the Valley is 20 to 40 minutes out. Farther is fine. You'll get an honest ETA on the phone, not a sales pitch.</p>
+          <ul class="city-list">
+            <li><svg class="ic"><use href="#i-map-pin"/></svg> Phoenix</li>
+            <li><svg class="ic"><use href="#i-map-pin"/></svg> Scottsdale</li>
+            <li><svg class="ic"><use href="#i-map-pin"/></svg> Tempe</li>
+            <li><svg class="ic"><use href="#i-map-pin"/></svg> Mesa</li>
+            <li><svg class="ic"><use href="#i-map-pin"/></svg> Chandler</li>
+            <li><svg class="ic"><use href="#i-map-pin"/></svg> Gilbert</li>
+            <li><svg class="ic"><use href="#i-map-pin"/></svg> Glendale</li>
+            <li><svg class="ic"><use href="#i-map-pin"/></svg> Peoria</li>
+            <li><svg class="ic"><use href="#i-map-pin"/></svg> Paradise Valley</li>
+            <li><svg class="ic"><use href="#i-map-pin"/></svg> Ahwatukee</li>
+            <li><svg class="ic"><use href="#i-map-pin"/></svg> Queen Creek</li>
+            <li><svg class="ic"><use href="#i-map-pin"/></svg> Cave Creek</li>
+          </ul>
+          <div class="zip-check">
+            <form id="zip-form" novalidate>
+              <label for="zip">Check your ZIP code</label>
+              <div class="zip-form">
+                <input id="zip" name="zip" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" placeholder="85254" autocomplete="postal-code" aria-describedby="zip-result">
+                <button class="btn btn-light" type="submit">Check</button>
+              </div>
+              <p class="zip-result" id="zip-result" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+        <div class="map-wrap" id="map" data-map-src="https://www.google.com/maps?q=Phoenix%2C+AZ&amp;z=10&amp;output=embed" data-map-title="Map of ProFix Plumbing service area around Phoenix, Arizona">
+          <div class="map-facade">
+            <svg class="ic"><use href="#i-map-pin"/></svg>
+            <strong>ProFix Plumbing · Phoenix, AZ</strong>
+            <span>4021 E Broadway Rd · Phoenix, AZ 85040</span>
+            <a class="btn btn-light" href="https://www.google.com/maps/search/?api=1&amp;query=4021+E+Broadway+Rd+Phoenix+AZ+85040" rel="noopener" target="_blank">Open in Google Maps</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow">Questions</p>
+          <h2>Things people ask before they call</h2>
+        </div>
+        <div class="faq">
+          <details open>
+            <summary>Do you charge more for nights, weekends or holidays? <svg class="ic"><use href="#i-chevron-down"/></svg></summary>
+            <p>No. Same flat-rate price book, 24/7. The only fee that exists is the $79 trip charge if you decline the quote, and that's waived when we do the work.</p>
+          </details>
+          <details>
+            <summary>How fast can you really get here? <svg class="ic"><use href="#i-chevron-down"/></svg></summary>
+            <p>Across Phoenix and the East Valley, about an hour is typical, often less. Farther out (Cave Creek, Queen Creek) plan on 60 to 90 minutes. The dispatcher gives you a real ETA on the phone, and your plumber texts a live one.</p>
+          </details>
+          <details>
+            <summary>My water bill jumped. Is it a slab leak? <svg class="ic"><use href="#i-chevron-down"/></svg></summary>
+            <p>Maybe. Hot-water lines under post-tension slabs are a common culprit in the Valley. So are running toilets and irrigation leaks. We check the meter first, then use acoustic detection. $299, credited toward the repair if you go with us.</p>
+          </details>
+          <details>
+            <summary>Why do water heaters fail so fast here? <svg class="ic"><use href="#i-chevron-down"/></svg></summary>
+            <p>Hard water. Phoenix runs 12 to 18 grains, so sediment builds up and eats the tank from the inside. Flushing yearly helps; a softener helps more. Most tanks here last 8 to 12 years.</p>
+          </details>
+          <details>
+            <summary>Are you licensed and insured? <svg class="ic"><use href="#i-chevron-down"/></svg></summary>
+            <p>Yes. Arizona ROC 339112 (CR-37 Plumbing), bonded and insured. Every plumber on our trucks is a W-2 employee and background-checked, and we pull permits when the city requires one.</p>
+          </details>
+          <details>
+            <summary>What's the warranty? <svg class="ic"><use href="#i-chevron-down"/></svg></summary>
+            <p>Two years, parts and labor, on every repair. Lifetime on whole-home repipes. If something we fixed fails, we come back and make it right, with no trip fee.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Guarantee band -->
+    <section class="guarantee">
+      <div class="container">
+        <div>
+          <h2>Fixed right, or we come back for free.</h2>
+          <p>2-year parts and labor warranty on every repair. Lifetime on repipes. And a dispatcher who picks up at 3 AM.</p>
+        </div>
+        <div class="actions">
+          <a class="btn btn-light btn-lg" href="tel:+16025550147"><svg class="ic"><use href="#i-phone"/></svg> (602) 555-0147</a>
+          <a class="btn btn-ghost btn-lg" href="#quick">Request a callback</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="#top">
+            <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="9" fill="#c81e1e"/><path d="M20 7c-4.5 6.5-9 11-9 16.5a9 9 0 0 0 18 0C29 18 24.5 13.5 20 7z" fill="#fff"/><circle cx="23.5" cy="25" r="2.4" fill="#f5b70a"/></svg>
+            <span class="brand-name">ProFix<small>Plumbing · Phoenix</small></span>
+          </a>
+          <address>4021 E Broadway Rd<br>Phoenix, AZ 85040<br><a href="tel:+16025550147">(602) 555-0147</a><br><a href="mailto:hello@profixaz.com">hello@profixaz.com</a></address>
+          <p style="margin-top:1rem">AZ ROC 339112 · CR-37 Plumbing · Bonded &amp; insured</p>
+        </div>
+        <div>
+          <h3>Services</h3>
+          <ul>
+            <li><a href="#services">Emergency repairs</a></li>
+            <li><a href="#services">Drains &amp; sewer</a></li>
+            <li><a href="#services">Water heaters</a></li>
+            <li><a href="#services">Leak detection</a></li>
+            <li><a href="#services">Fixtures &amp; toilets</a></li>
+            <li><a href="#services">Softeners &amp; filtration</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#work">Recent work</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#areas">Service area</a></li>
+            <li><a href="#">Careers — hiring journeyman plumbers</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Hours</h3>
+          <ul class="hours">
+            <li><span>Emergency dispatch</span><span>24 hours, 7 days</span></li>
+            <li><span>Office</span><span>Mon – Fri, 7 AM – 6 PM</span></li>
+            <li><span>Scheduled work</span><span>Mon – Sat, 7 AM – 7 PM</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p style="margin:0">© <span id="year">2026</span> ProFix Plumbing. This is a demonstration website: the company, phone numbers, reviews and license numbers are fictional. Design &amp; build by <a href="../../index.html">Oğuzhan Salatan</a>.</p>
+        <p style="margin:0">Photos: <a href="https://www.flickr.com/photos/188454520@N02/49917730697" rel="noopener">chimpwithcan</a> (CC BY 2.0), <a href="https://www.flickr.com/photos/188296186@N07/49860563406" rel="noopener">Aqua Science Arizona</a> (CC BY-SA 2.0), <a href="https://www.flickr.com/photos/28648582@N02/8747024384" rel="noopener">Kevin Shorter</a> (CC BY 2.0). Icons: Lucide (ISC).</p>
       </div>
     </div>
-  </section>
-
-  <section class="cta-band">
-    <h2>Plumbing Emergency? We're Ready 24/7</h2>
-    <p>Free quotes · Upfront pricing · Licensed plumbers on every call</p>
-    <a class="call-btn" href="tel:+16025550147">📞 Call (602) 555-0147</a>
-  </section>
-
-  <footer>
-    <p>© 2026 ProFix Plumbing · Phoenix, AZ · ROC #PLB-3391</p>
-    <p style="margin-top:0.5rem;">Demo site for portfolio purposes only</p>
   </footer>
 
-  <a class="float-call" href="tel:+16025550147">📞 Call Now</a>
+  <div class="mobile-bar">
+    <a class="btn btn-red" href="tel:+16025550147"><svg class="ic"><use href="#i-phone"/></svg> Call now</a>
+    <a class="btn btn-ghost" href="sms:+16025550147?body=Hi%20ProFix%2C%20I%20need%20help%20with%3A%20"><svg class="ic"><use href="#i-message-square-text"/></svg> Text us</a>
+  </div>
+
+  <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false">
+    <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+    <symbol id="i-banknote" viewBox="0 0 24 24"><rect width="20" height="12" x="2" y="6" rx="2"/><circle cx="12" cy="12" r="2"/><path d="M6 12h.01M18 12h.01"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24"><path d="M13.997 4a2 2 0 0 1 1.76 1.05l.486.9A2 2 0 0 0 18.003 7H20a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h1.997a2 2 0 0 0 1.759-1.048l.489-.904A2 2 0 0 1 10.004 4z"/><circle cx="12" cy="13" r="3"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-circle-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16 9-5.5 5.5L8 12"/></symbol>
+    <symbol id="i-droplet" viewBox="0 0 24 24"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></symbol>
+    <symbol id="i-heater" viewBox="0 0 24 24"><path d="M11 8c2-3-2-3 0-6"/><path d="M15.5 8c2-3-2-3 0-6"/><path d="M6 10h.01"/><path d="M6 14h.01"/><path d="M10 16v-4"/><path d="M14 16v-4"/><path d="M18 16v-4"/><path d="M20 6a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h3"/><path d="M5 20v2"/><path d="M19 20v2"/></symbol>
+    <symbol id="i-map-pin" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></symbol>
+    <symbol id="i-message-square-text" viewBox="0 0 24 24"><path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"/><path d="M7 11h10"/><path d="M7 15h6"/><path d="M7 7h8"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></symbol>
+    <symbol id="i-receipt" viewBox="0 0 24 24"><path d="M12 17V7"/><path d="M16 8h-6a2 2 0 0 0 0 4h4a2 2 0 0 1 0 4H8"/><path d="M4 3a1 1 0 0 1 1-1 1.3 1.3 0 0 1 .7.2l.933.6a1.3 1.3 0 0 0 1.4 0l.934-.6a1.3 1.3 0 0 1 1.4 0l.933.6a1.3 1.3 0 0 0 1.4 0l.933-.6a1.3 1.3 0 0 1 1.4 0l.934.6a1.3 1.3 0 0 0 1.4 0l.933-.6A1.3 1.3 0 0 1 19 2a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1 1.3 1.3 0 0 1-.7-.2l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.934.6a1.3 1.3 0 0 1-1.4 0l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-1.4 0l-.934-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-.7.2 1 1 0 0 1-1-1z"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></symbol>
+    <symbol id="i-shield-check" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-siren" viewBox="0 0 24 24"><path d="M7 18v-6a5 5 0 1 1 10 0v6"/><path d="M5 21a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-1a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2z"/><path d="M21 12h1"/><path d="M18.5 4.5 18 5"/><path d="M2 12h1"/><path d="M12 2v1"/><path d="m4.929 4.929.707.707"/><path d="M12 12v6"/></symbol>
+    <symbol id="i-toilet" viewBox="0 0 24 24"><path d="M7 12h13a1 1 0 0 1 1 1 5 5 0 0 1-5 5h-.598a.5.5 0 0 0-.424.765l1.544 2.47a.5.5 0 0 1-.424.765H5.402a.5.5 0 0 1-.424-.765L7 18"/><path d="M8 18a5 5 0 0 1-5-5V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8"/></symbol>
+    <symbol id="i-triangle-alert" viewBox="0 0 24 24"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/></symbol>
+    <symbol id="i-waves" viewBox="0 0 24 24"><path d="M2 12q2.5 2 5 0t5 0 5 0 5 0"/><path d="M2 19q2.5 2 5 0t5 0 5 0 5 0"/><path d="M2 5q2.5 2 5 0t5 0 5 0 5 0"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+  </svg>
+  <script src="main.js" defer></script>
 </body>
 </html>

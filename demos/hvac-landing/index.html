@@ -1,486 +1,571 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CoolAir HVAC | AC Repair & Installation — Dallas, TX</title>
-  <meta name="description" content="Licensed HVAC repair and installation in Dallas. Same-day service. Free estimates. Call (214) 555-0198.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --blue: #0369a1;
-      --blue-dark: #0c4a6e;
-      --orange: #ea580c;
-      --orange-dark: #c2410c;
-      --text: #0f172a;
-      --muted: #64748b;
-      --light: #f0f9ff;
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: Inter, system-ui, sans-serif; color: var(--text); line-height: 1.6; }
-    .demo-bar {
-      background: #1e293b;
-      color: #94a3b8;
-      text-align: center;
-      padding: 0.5rem;
-      font-size: 0.8rem;
-    }
-    .demo-bar a { color: #38bdf8; }
-    .top-bar {
-      background: var(--orange);
-      color: #fff;
-      text-align: center;
-      padding: 0.55rem;
-      font-size: 0.85rem;
-      font-weight: 600;
-    }
-    .top-bar a { color: #fff; text-decoration: underline; }
-    header {
-      background: #fff;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 1.5rem;
-      max-width: 1100px;
-      margin: 0 auto;
-      flex-wrap: wrap;
-      gap: 1rem;
-    }
-    .brand { font-weight: 800; font-size: 1.35rem; color: var(--blue-dark); }
-    .brand span { color: var(--orange); }
-    .nav-phone {
-      background: var(--orange);
-      color: #fff;
-      padding: 0.65rem 1.25rem;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 700;
-      font-size: 0.95rem;
-      transition: background 0.2s, transform 0.15s;
-    }
-    .nav-phone:hover { background: var(--orange-dark); transform: translateY(-1px); }
-    .hero {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      max-width: 1100px;
-      margin: 0 auto;
-      gap: 2.5rem;
-      padding: 3.5rem 1.5rem 4rem;
-      align-items: center;
-    }
-    @media (max-width: 768px) {
-      .hero { grid-template-columns: 1fr; text-align: center; padding-top: 2rem; }
-    }
-    .hero-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      background: #ecfdf5;
-      color: #047857;
-      font-size: 0.8rem;
-      font-weight: 600;
-      padding: 0.35rem 0.85rem;
-      border-radius: 999px;
-      margin-bottom: 1rem;
-      border: 1px solid #a7f3d0;
-    }
-    .hero h1 {
-      font-size: clamp(1.85rem, 4vw, 2.65rem);
-      font-weight: 800;
-      line-height: 1.15;
-      margin-bottom: 1rem;
-      color: var(--blue-dark);
-    }
-    .hero p { color: var(--muted); font-size: 1.05rem; margin-bottom: 1.25rem; }
-    .hero-features { list-style: none; margin-bottom: 1.75rem; }
-    .hero-features li {
-      padding: 0.3rem 0;
-      font-weight: 500;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      font-size: 0.95rem;
-    }
-    @media (max-width: 768px) { .hero-features li { justify-content: center; } }
-    .hero-features li::before { content: "✓"; color: var(--orange); font-weight: 800; }
-    .hero-btns { display: flex; gap: 0.75rem; flex-wrap: wrap; }
-    @media (max-width: 768px) { .hero-btns { justify-content: center; } }
-    .btn {
-      display: inline-block;
-      padding: 0.9rem 1.6rem;
-      border-radius: 8px;
-      font-weight: 700;
-      text-decoration: none;
-      font-size: 1rem;
-      transition: transform 0.15s, box-shadow 0.2s;
-    }
-    .btn:hover { transform: translateY(-2px); }
-    .btn-primary {
-      background: var(--orange);
-      color: #fff;
-      box-shadow: 0 4px 14px rgba(234, 88, 12, 0.35);
-    }
-    .btn-primary:hover { background: var(--orange-dark); }
-    .btn-outline {
-      background: #fff;
-      color: var(--blue-dark);
-      border: 2px solid #e2e8f0;
-    }
-    .hero-visual {
-      background: linear-gradient(145deg, var(--blue-dark) 0%, var(--blue) 60%, #0284c7 100%);
-      border-radius: 16px;
-      aspect-ratio: 4/3;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      color: #fff;
-      box-shadow: 0 24px 48px rgba(3, 105, 161, 0.3);
-      position: relative;
-      overflow: hidden;
-    }
-    .hero-visual::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(circle at 30% 20%, rgba(255,255,255,0.12), transparent 50%);
-    }
-    .hero-visual .icon { font-size: 4.5rem; margin-bottom: 0.5rem; position: relative; }
-    .hero-visual .rating {
-      position: relative;
-      background: rgba(255,255,255,0.15);
-      backdrop-filter: blur(8px);
-      padding: 0.75rem 1.25rem;
-      border-radius: 12px;
-      text-align: center;
-      margin-top: 0.5rem;
-    }
-    .hero-visual .rating strong { font-size: 1.5rem; display: block; }
-    .hero-visual .rating span { font-size: 0.8rem; opacity: 0.9; }
-    .stats {
-      background: var(--blue-dark);
-      color: #fff;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      text-align: center;
-      padding: 2rem 1.5rem;
-    }
-    @media (max-width: 640px) { .stats { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; } }
-    .stat-num { font-size: 1.85rem; font-weight: 800; color: #fdba74; }
-    .stat-label { font-size: 0.8rem; opacity: 0.85; margin-top: 0.2rem; }
-    .section { padding: 4rem 1.5rem; max-width: 1100px; margin: 0 auto; }
-    .section h2 { font-size: 1.75rem; font-weight: 800; text-align: center; margin-bottom: 0.5rem; color: var(--blue-dark); }
-    .section .sub { text-align: center; color: var(--muted); margin-bottom: 2.5rem; }
-    .why-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 1.25rem;
-      margin-bottom: 1rem;
-    }
-    .why-card {
-      text-align: center;
-      padding: 1.75rem 1.25rem;
-      border-radius: 12px;
-      border: 1px solid #e2e8f0;
-      background: #fff;
-    }
-    .why-card .icon { font-size: 2.25rem; margin-bottom: 0.75rem; }
-    .why-card h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
-    .why-card p { color: var(--muted); font-size: 0.88rem; }
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 1.25rem;
-    }
-    .service-card {
-      background: var(--light);
-      border-radius: 12px;
-      padding: 1.75rem;
-      border: 1px solid #e0f2fe;
-      transition: box-shadow 0.2s, transform 0.15s;
-    }
-    .service-card:hover { box-shadow: 0 8px 24px rgba(3,105,161,0.12); transform: translateY(-2px); }
-    .service-card .icon { font-size: 2rem; margin-bottom: 0.75rem; }
-    .service-card h3 { font-size: 1.1rem; margin-bottom: 0.5rem; }
-    .service-card p { color: var(--muted); font-size: 0.9rem; }
-    .reviews {
-      background: #f8fafc;
-      padding: 4rem 1.5rem;
-    }
-    .google-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      background: #fff;
-      border: 1px solid #e2e8f0;
-      padding: 0.5rem 1rem;
-      border-radius: 8px;
-      font-size: 0.85rem;
-      font-weight: 600;
-      margin: 0 auto 2rem;
-      display: flex;
-      width: fit-content;
-    }
-    .google-badge .g { color: #4285f4; font-weight: 800; font-size: 1.1rem; }
-    .review-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.25rem;
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-    .review {
-      background: #fff;
-      padding: 1.5rem;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-      border: 1px solid #f1f5f9;
-    }
-    .stars { color: #fbbf24; margin-bottom: 0.5rem; letter-spacing: 1px; }
-    .review p { font-size: 0.95rem; color: var(--muted); margin-bottom: 0.75rem; font-style: italic; }
-    .review .name { font-weight: 600; font-size: 0.9rem; }
-    .areas {
-      background: var(--light);
-      padding: 3rem 1.5rem;
-      text-align: center;
-    }
-    .areas h2 { font-size: 1.4rem; font-weight: 800; color: var(--blue-dark); margin-bottom: 0.5rem; }
-    .areas p { color: var(--muted); }
-    .tags {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 0.5rem;
-      margin-top: 1.25rem;
-    }
-    .tag {
-      background: #fff;
-      border: 1px solid #bae6fd;
-      padding: 0.4rem 0.9rem;
-      border-radius: 999px;
-      font-size: 0.85rem;
-      font-weight: 500;
-      color: var(--blue-dark);
-    }
-    .faq { max-width: 700px; margin: 0 auto; }
-    .faq-item {
-      border-bottom: 1px solid #e2e8f0;
-      padding: 1.25rem 0;
-    }
-    .faq-item h3 { font-size: 1rem; margin-bottom: 0.4rem; color: var(--blue-dark); }
-    .faq-item p { color: var(--muted); font-size: 0.9rem; }
-    .cta-band {
-      background: linear-gradient(135deg, var(--orange) 0%, var(--orange-dark) 100%);
-      color: #fff;
-      text-align: center;
-      padding: 3.5rem 1.5rem;
-    }
-    .cta-band h2 { font-size: 1.85rem; margin-bottom: 0.75rem; font-weight: 800; }
-    .cta-band p { margin-bottom: 1.5rem; opacity: 0.95; font-size: 1.05rem; }
-    .cta-band .btn { background: #fff; color: var(--orange); box-shadow: 0 4px 20px rgba(0,0,0,0.15); }
-    footer {
-      background: var(--blue-dark);
-      color: rgba(255,255,255,0.7);
-      text-align: center;
-      padding: 2rem 1.5rem;
-      font-size: 0.85rem;
-    }
-    .float-call {
-      display: none;
-      position: fixed;
-      bottom: 1.25rem;
-      right: 1.25rem;
-      background: var(--orange);
-      color: #fff;
-      padding: 0.85rem 1.25rem;
-      border-radius: 999px;
-      font-weight: 700;
-      text-decoration: none;
-      box-shadow: 0 4px 20px rgba(234,88,12,0.45);
-      z-index: 200;
-      font-size: 0.9rem;
-    }
-    @media (max-width: 768px) { .float-call { display: block; } }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CoolAir HVAC · Same-Day AC Repair &amp; Installation in Dallas–Fort Worth</title>
+  <meta name="description" content="Same-day AC repair, heating and new system installation across Dallas–Fort Worth. Flat-rate pricing before work starts, 1-year repair warranty, 4.9★ from 500+ Google reviews. Call (214) 555-0198.">
+  <meta name="theme-color" content="#0f2a47">
+  <link rel="canonical" href="https://djoguzhan1.github.io/web-dev-portfolio/demos/hvac-landing/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%230f2a47'/%3E%3Cg stroke='%23fff' stroke-width='3' stroke-linecap='round'%3E%3Cpath d='M20 9v22M10.5 14.5l19 11M10.5 25.5l19-11'/%3E%3C/g%3E%3Ccircle cx='20' cy='20' r='3.2' fill='%23f97316'/%3E%3C/svg%3E">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="CoolAir HVAC · Same-Day AC Repair in Dallas–Fort Worth">
+  <meta property="og:description" content="Flat-rate pricing before we start. 1-year repair warranty. Technicians on site today.">
+  <meta property="og:image" content="https://djoguzhan1.github.io/web-dev-portfolio/demos/hvac-landing/img/og-image.jpg">
+  <meta property="og:url" content="https://djoguzhan1.github.io/web-dev-portfolio/demos/hvac-landing/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preload" href="fonts/barlow-800-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" as="image" type="image/avif" imagesrcset="img/hero-tech-condenser-480.avif 480w, img/hero-tech-condenser-640.avif 640w, img/hero-tech-condenser-800.avif 800w, img/hero-tech-condenser-1024.avif 1024w" imagesizes="(min-width: 76.5em) 517px, (min-width: 64em) 38vw, calc(100vw - 2.5rem)">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HVACBusiness",
+    "name": "CoolAir HVAC",
+    "image": "https://djoguzhan1.github.io/web-dev-portfolio/demos/hvac-landing/img/hero-tech-condenser-1024.webp",
+    "url": "https://djoguzhan1.github.io/web-dev-portfolio/demos/hvac-landing/",
+    "telephone": "+1-214-555-0198",
+    "email": "hello@coolairdfw.com",
+    "priceRange": "$$",
+    "foundingDate": "2011",
+    "address": { "@type": "PostalAddress", "streetAddress": "2140 Regal Row, Suite 120", "addressLocality": "Dallas", "addressRegion": "TX", "postalCode": "75235", "addressCountry": "US" },
+    "geo": { "@type": "GeoCoordinates", "latitude": 32.8364, "longitude": -96.8825 },
+    "areaServed": ["Dallas", "Plano", "Richardson", "Garland", "Irving", "Carrollton", "Frisco", "McKinney", "Allen", "Mesquite", "Grand Prairie", "Arlington"],
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], "opens": "07:00", "closes": "20:00" }
+    ],
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "512" },
+    "sameAs": []
+  }
+  </script>
 </head>
 <body>
-  <div class="demo-bar">Portfolio demo · <a href="../../index.html">Back to portfolio</a></div>
-  <div class="top-bar">⚡ Same-day emergency AC repair — <a href="tel:+12145550198">Call (214) 555-0198</a></div>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <header>
-    <nav>
-      <div class="brand">Cool<span>Air</span> HVAC</div>
-      <a class="nav-phone" href="tel:+12145550198">📞 (214) 555-0198</a>
-    </nav>
-  </header>
-
-  <section class="hero">
-    <div>
-      <div class="hero-badge">★ 4.9 Google Rating · 500+ Reviews</div>
-      <h1>AC Broken? We'll Fix It Today — Dallas's Most Trusted HVAC Team</h1>
-      <p>Licensed technicians on-site in hours, not days. Free estimates, upfront pricing, and a 100% satisfaction guarantee on every job.</p>
-      <ul class="hero-features">
-        <li>Same-day & 24/7 emergency service</li>
-        <li>All brands — repair, install, maintain</li>
-        <li>Financing available on new systems</li>
-      </ul>
-      <div class="hero-btns">
-        <a class="btn btn-primary" href="tel:+12145550198">Call for Free Estimate</a>
-        <a class="btn btn-outline" href="#services">View Services</a>
-      </div>
-    </div>
-    <div class="hero-visual">
-      <div class="icon">❄️</div>
-      <div class="rating">
-        <strong>4.9 ★★★★★</strong>
-        <span>Trusted by 500+ Dallas homeowners</span>
-      </div>
-    </div>
-  </section>
-
-  <div class="stats">
-    <div>
-      <div class="stat-num">14+</div>
-      <div class="stat-label">Years Experience</div>
-    </div>
-    <div>
-      <div class="stat-num">4.9★</div>
-      <div class="stat-label">Google Rating</div>
-    </div>
-    <div>
-      <div class="stat-num">2hr</div>
-      <div class="stat-label">Avg. Response Time</div>
-    </div>
-    <div>
-      <div class="stat-num">100%</div>
-      <div class="stat-label">Satisfaction Guarantee</div>
+  <div class="demo-ribbon" role="note">
+    <div class="container">
+      <span>Demo website · CoolAir HVAC is a fictional company built to show what your site could look like.</span>
+      <span class="links">
+        <a href="../../index.html">Portfolio</a>
+        <a href="https://www.upwork.com/freelancers/~01f40a508feb14b1ee" rel="noopener" target="_blank">Hire me on Upwork</a>
+      </span>
     </div>
   </div>
 
-  <section class="section">
-    <h2>Why Dallas Homeowners Choose CoolAir</h2>
-    <p class="sub">Licensed, insured, and committed to getting your home comfortable fast</p>
-    <div class="why-grid">
-      <div class="why-card">
-        <div class="icon">⚡</div>
-        <h3>Same-Day Service</h3>
-        <p>Most repairs completed the day you call. Emergency slots available 24/7.</p>
+  <div class="utility">
+    <div class="container">
+      <ul>
+        <li><svg class="ic"><use href="#i-clock"/></svg> Mon–Sat 7:00 AM – 8:00 PM · 24/7 emergency line</li>
+        <li><span class="status" id="open-status" aria-live="polite">Checking hours…</span></li>
+      </ul>
+      <ul>
+        <li><svg class="ic"><use href="#i-map-pin"/></svg> Serving Dallas–Fort Worth since 2011</li>
+        <li><svg class="ic"><use href="#i-shield-check"/></svg> TX Lic. TACLA64821C</li>
+      </ul>
+    </div>
+  </div>
+
+  <header class="site-header" id="top">
+    <nav class="container nav" aria-label="Primary">
+      <a class="brand" href="#top">
+        <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="10" fill="#0f2a47"/><g stroke="#fff" stroke-width="3" stroke-linecap="round"><path d="M20 9v22M10.5 14.5l19 11M10.5 25.5l19-11"/></g><circle cx="20" cy="20" r="3.2" fill="#f97316"/></svg>
+        <span class="brand-name">CoolAir<small>Heating &amp; Air · DFW</small></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#specials">Specials</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#areas">Service Area</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a class="nav-phone" href="tel:+12145550198"><svg class="ic"><use href="#i-phone"/></svg><span>(214) 555-0198<small>Call or text</small></span></a>
+        <a class="btn btn-primary" href="#book">Book online</a>
+        <a class="icon-btn call" href="tel:+12145550198" aria-label="Call (214) 555-0198"><svg class="ic"><use href="#i-phone"/></svg></a>
+        <button class="icon-btn menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <svg class="ic ic-menu"><use href="#i-menu"/></svg>
+          <svg class="ic ic-close"><use href="#i-x"/></svg>
+        </button>
       </div>
-      <div class="why-card">
-        <div class="icon">💰</div>
-        <h3>Upfront Pricing</h3>
-        <p>Free estimates before work starts. No hidden fees or surprise charges.</p>
-      </div>
-      <div class="why-card">
-        <div class="icon">🛡️</div>
-        <h3>Licensed & Insured</h3>
-        <p>Texas-licensed technicians. Full liability coverage on every job site.</p>
+    </nav>
+    <div class="mobile-menu" id="mobile-menu">
+      <div class="container">
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#specials">Specials &amp; coupons</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#areas">Service area</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+        <a class="btn btn-primary btn-block" href="#book">Book online · $25 off</a>
       </div>
     </div>
-  </section>
+  </header>
 
-  <section class="section" id="services">
-    <h2>Our Services</h2>
-    <p class="sub">Complete heating and cooling solutions for homes and businesses</p>
-    <div class="services-grid">
-      <div class="service-card">
-        <div class="icon">❄️</div>
-        <h3>AC Repair</h3>
-        <p>Fast diagnosis and repair for all brands. Most jobs completed same day.</p>
-      </div>
-      <div class="service-card">
-        <div class="icon">🔥</div>
-        <h3>Furnace Repair</h3>
-        <p>Keep your home warm all winter. Emergency furnace service available.</p>
-      </div>
-      <div class="service-card">
-        <div class="icon">🏠</div>
-        <h3>New Installation</h3>
-        <p>Energy-efficient systems installed by certified technicians. Financing available.</p>
-      </div>
-      <div class="service-card">
-        <div class="icon">🛠️</div>
-        <h3>Maintenance Plans</h3>
-        <p>Annual tune-ups to prevent breakdowns and lower energy bills up to 20%.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="reviews">
-    <div class="section" style="padding-top:0;">
-      <h2>What Our Customers Say</h2>
-      <p class="sub">Real reviews from Dallas-area homeowners</p>
-      <div class="google-badge"><span class="g">G</span> 4.9 · 500+ Google Reviews</div>
-      <div class="review-grid">
-        <div class="review">
-          <div class="stars">★★★★★</div>
-          <p>"Technician arrived within 2 hours on a Saturday. Fixed our AC and saved us from a miserable weekend. Highly recommend!"</p>
-          <div class="name">— Maria G., Plano TX</div>
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">AC repair · Heating · New systems — Dallas–Fort Worth</p>
+          <h1>AC out? We'll have a technician at your door <em>today.</em></h1>
+          <p class="lead">Same-day repair across DFW. You get a flat-rate price in writing before we touch anything, and a 1-year warranty on every repair.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-lg" href="tel:+12145550198"><svg class="ic"><use href="#i-phone"/></svg> Call (214) 555-0198</a>
+            <a class="btn btn-secondary btn-lg" href="#book"><svg class="ic"><use href="#i-calendar-check"/></svg> Book online &amp; save $25</a>
+          </div>
+          <ul class="trust-row">
+            <li><span class="g-badge"><span class="g">G</span> <span class="stars" aria-hidden="true">★★★★★</span> 4.9 · 512 Google reviews</span></li>
+            <li><svg class="ic"><use href="#i-shield-check"/></svg> Licensed &amp; insured</li>
+            <li><svg class="ic"><use href="#i-check"/></svg> No overtime fees, ever</li>
+          </ul>
         </div>
-        <div class="review">
-          <div class="stars">★★★★★</div>
-          <p>"Fair pricing, no upselling. They explained everything clearly. Our new unit runs quieter and our bill dropped 20%."</p>
-          <div class="name">— James T., Dallas TX</div>
+        <div class="hero-media">
+          <picture>
+            <source type="image/avif" srcset="img/hero-tech-condenser-480.avif 480w, img/hero-tech-condenser-640.avif 640w, img/hero-tech-condenser-800.avif 800w, img/hero-tech-condenser-1024.avif 1024w" sizes="(min-width: 76.5em) 517px, (min-width: 64em) 38vw, calc(100vw - 2.5rem)">
+            <img class="hero-photo" src="img/hero-tech-condenser-800.webp" srcset="img/hero-tech-condenser-480.webp 480w, img/hero-tech-condenser-640.webp 640w, img/hero-tech-condenser-800.webp 800w, img/hero-tech-condenser-1024.webp 1024w" sizes="(min-width: 76.5em) 517px, (min-width: 64em) 38vw, calc(100vw - 2.5rem)" width="1024" height="768" alt="CoolAir technician checking refrigerant pressure on a residential condenser unit beside a Dallas home" fetchpriority="high" decoding="async">
+          </picture>
+          <div class="float-card review" aria-hidden="true">
+            <span class="stars">★★★★★</span>
+            “Fixed the same afternoon. Quoted $189, charged $189.”
+            <span>— Dana R., Plano</span>
+          </div>
+          <div class="float-card avail">
+            <div class="dot"><svg class="ic"><use href="#i-calendar-check"/></svg></div>
+            <div><strong id="avail-day">Same-day appointments</strong><span>2 afternoon slots left · 2–4 PM, 4–6 PM</span></div>
+          </div>
         </div>
-        <div class="review">
-          <div class="stars">★★★★★</div>
-          <p>"Best HVAC company in Dallas. Professional, on time, and they cleaned up after themselves. Will use again."</p>
-          <div class="name">— Linda K., Irving TX</div>
+      </div>
+    </section>
+
+    <!-- Trust strip -->
+    <div class="trust-strip">
+      <ul class="container">
+        <li><strong>15 yrs</strong><span>Serving Dallas–Fort Worth</span></li>
+        <li><strong>12,400+</strong><span>Homes serviced</span></li>
+        <li><strong>4.9 ★</strong><span>512 Google reviews</span></li>
+        <li><strong>NATE</strong><span>Certified technicians</span></li>
+      </ul>
+    </div>
+
+    <!-- Services -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Services</p>
+          <h2>What we repair, install and maintain</h2>
+          <p>Residential heating and cooling only. That focus is why our trucks carry the right parts and our techs have seen your problem before.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service">
+            <div class="icon-wrap"><svg class="ic ic-lg"><use href="#i-snowflake"/></svg></div>
+            <h3>AC repair</h3>
+            <p>Not cooling, tripping the breaker, frozen coil, water on the floor, a noise that wasn't there last week. We diagnose on the first visit and carry the parts that fail most in Texas heat.</p>
+            <div class="meta"><span class="price">$89 diagnostic <small>· waived with repair</small></span><a class="link" href="#book" data-service="ac-repair">Book <svg class="ic"><use href="#i-arrow-right"/></svg></a></div>
+          </article>
+          <article class="service">
+            <div class="icon-wrap"><svg class="ic ic-lg"><use href="#i-house"/></svg></div>
+            <h3>AC replacement &amp; installation</h3>
+            <p>Right-sized systems from Lennox, Trane, Carrier and Goodman. We do a real load calculation instead of guessing tonnage. Permit, haul-away and a 10-year parts warranty included.</p>
+            <div class="meta"><span class="price">Free in-home quote</span><a class="link" href="#book" data-service="new-system">Get a quote <svg class="ic"><use href="#i-arrow-right"/></svg></a></div>
+          </article>
+          <article class="service">
+            <div class="icon-wrap"><svg class="ic ic-lg"><use href="#i-flame"/></svg></div>
+            <h3>Heating &amp; furnace</h3>
+            <p>Furnace and heat pump repair, tune-ups and replacements. Every furnace call includes a carbon monoxide check, no extra charge.</p>
+            <div class="meta"><span class="price">$89 diagnostic <small>· waived with repair</small></span><a class="link" href="#book" data-service="heating">Book <svg class="ic"><use href="#i-arrow-right"/></svg></a></div>
+          </article>
+          <article class="service">
+            <div class="icon-wrap"><svg class="ic ic-lg"><use href="#i-badge-check"/></svg></div>
+            <h3>Comfort Club maintenance plan</h3>
+            <p>Two tune-ups a year (spring and fall), priority scheduling, 15% off repairs and no overtime fees. We call you to book it, so you don't have to remember.</p>
+            <div class="meta"><span class="price">$14 <small>/ month</small></span><a class="link" href="#book" data-service="maintenance">Join <svg class="ic"><use href="#i-arrow-right"/></svg></a></div>
+          </article>
+          <article class="service">
+            <div class="icon-wrap"><svg class="ic ic-lg"><use href="#i-wind"/></svg></div>
+            <h3>Indoor air quality</h3>
+            <p>Media filter cabinets, UV lights, whole-home dehumidifiers and duct sealing. Useful if someone in the house has allergies or the upstairs never feels right.</p>
+            <div class="meta"><span class="price">From $249 <small>installed</small></span><a class="link" href="#book" data-service="air-quality">Ask us <svg class="ic"><use href="#i-arrow-right"/></svg></a></div>
+          </article>
+          <article class="service">
+            <div class="icon-wrap"><svg class="ic ic-lg"><use href="#i-fan"/></svg></div>
+            <h3>Ductless mini-splits</h3>
+            <p>Garages, additions, casitas and sunrooms without running new ductwork. Mitsubishi and Daikin systems, usually installed in one day.</p>
+            <div class="meta"><span class="price">Free in-home quote</span><a class="link" href="#book" data-service="mini-split">Get a quote <svg class="ic"><use href="#i-arrow-right"/></svg></a></div>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="areas">
-    <h2>Service Areas</h2>
-    <p>Proudly serving Dallas and surrounding communities</p>
-    <div class="tags">
-      <span class="tag">Dallas</span>
-      <span class="tag">Plano</span>
-      <span class="tag">Irving</span>
-      <span class="tag">Frisco</span>
-      <span class="tag">Garland</span>
-      <span class="tag">Richardson</span>
-    </div>
-  </section>
-
-  <section class="section">
-    <h2>Common Questions</h2>
-    <p class="sub">Quick answers before you call</p>
-    <div class="faq">
-      <div class="faq-item">
-        <h3>How fast can you get here?</h3>
-        <p>Same-day appointments for most calls. Emergency service available 24/7 with typical arrival within 2 hours.</p>
+    <!-- Why us -->
+    <section class="section bg-soft" id="why">
+      <div class="container why-grid">
+        <div class="why-media">
+          <picture>
+            <source type="image/avif" srcset="img/technician-gauges-400.avif 400w, img/technician-gauges-546.avif 546w" sizes="(min-width: 76.5em) 462px, (min-width: 64em) 34vw, calc(100vw - 2.5rem)">
+            <img src="img/technician-gauges-546.webp" srcset="img/technician-gauges-400.webp 400w, img/technician-gauges-546.webp 546w" sizes="(min-width: 76.5em) 462px, (min-width: 64em) 34vw, calc(100vw - 2.5rem)" width="546" height="683" alt="CoolAir HVAC technician in uniform holding a refrigerant gauge set" loading="lazy" decoding="async">
+          </picture>
+          <div class="caption"><strong>Every tech is a CoolAir employee</strong>Drug-tested, background-checked, NATE-certified, and you'll know their name before they arrive.</div>
+        </div>
+        <div>
+          <p class="eyebrow">Why homeowners call us</p>
+          <h2>Straight answers, a fair price, and a tech who shows up when we said.</h2>
+          <ul class="checklist">
+            <li><svg class="ic"><use href="#i-circle-check"/></svg><div><strong>Flat-rate pricing you approve first</strong><span>The price is in writing before work starts. If the job takes longer, that's on us, not your bill.</span></div></li>
+            <li><svg class="ic"><use href="#i-circle-check"/></svg><div><strong>Most repairs finished in one visit</strong><span>Our trucks carry the 40 parts that fail most in DFW: capacitors, contactors, fan motors, control boards, thermostats.</span></div></li>
+            <li><svg class="ic"><use href="#i-circle-check"/></svg><div><strong>A text before the truck arrives</strong><span>You get your technician's name, photo and ETA. No four-hour window and no strangers at the door.</span></div></li>
+            <li><svg class="ic"><use href="#i-circle-check"/></svg><div><strong>Warranties we actually honor</strong><span>1-year labor warranty on repairs. 10-year parts warranty on new systems, registered for you.</span></div></li>
+            <li><svg class="ic"><use href="#i-circle-check"/></svg><div><strong>No overtime charges</strong><span>Evenings and Saturdays cost the same as Tuesday morning. A broken AC in August isn't a reason to charge more.</span></div></li>
+          </ul>
+          <blockquote class="owner-note">
+            <p>“We started with one truck in 2011. The rule then is the rule now: fix what's broken, tell people the truth about what isn't, and pick up the phone.”</p>
+            <cite>— Ray Delgado, owner</cite>
+          </blockquote>
+        </div>
       </div>
-      <div class="faq-item">
-        <h3>Do you offer free estimates?</h3>
-        <p>Yes — every job starts with a free, no-obligation estimate. You'll know the cost before we begin work.</p>
+    </section>
+
+    <!-- Specials -->
+    <section class="section" id="specials">
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow">Current specials</p>
+          <h2>This season's offers</h2>
+          <p>Mention the code when you call, or it's applied automatically when you book online.</p>
+        </div>
+        <div class="coupons">
+          <article class="coupon">
+            <span class="tag">Most used</span>
+            <div class="amount">$25 off</div>
+            <h3>Any repair</h3>
+            <p>Good on any residential AC or heating repair. One per household, can't be combined with Comfort Club discount.</p>
+            <div class="fine"><span>Code <span class="code">WEB25</span></span><span>Expires Dec 31, 2026</span></div>
+          </article>
+          <article class="coupon">
+            <div class="amount">$0</div>
+            <h3>Diagnostic with repair</h3>
+            <p>The $89 diagnostic fee is waived when you approve the repair on the same visit. Applied automatically, nothing to remember.</p>
+            <div class="fine"><span>No code needed</span><span>Always on</span></div>
+          </article>
+          <article class="coupon">
+            <span class="tag">New systems</span>
+            <div class="amount">$500 off</div>
+            <h3>A new system + 0% APR</h3>
+            <p>$500 off any complete system, plus 0% APR for 18 months with approved credit. Includes load calculation and permit.</p>
+            <div class="fine"><span>Code <span class="code">NEW500</span></span><span>Expires Nov 30, 2026</span></div>
+          </article>
+        </div>
+        <p class="coupons-note"><svg class="ic"><use href="#i-scissors"/></svg> No need to print anything. Just mention the code.</p>
       </div>
-      <div class="faq-item">
-        <h3>What brands do you service?</h3>
-        <p>All major brands including Carrier, Trane, Lennox, Goodman, Rheem, and more.</p>
+    </section>
+
+    <!-- Process -->
+    <section class="section bg-navy" id="process">
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow" style="color:#8ec5ff">What happens when you call</p>
+          <h2>Three steps, no runaround</h2>
+        </div>
+        <ol class="steps">
+          <li class="step"><h3>Call or book online</h3><p>A person answers, 7 AM to 8 PM. After hours, a live dispatcher takes emergency calls and gets a tech moving.</p></li>
+          <li class="step"><h3>We text you an ETA</h3><p>You'll get your technician's name and photo, plus a 30-minute arrival window. If we're running late, you hear it from us first.</p></li>
+          <li class="step"><h3>Diagnose, quote, fix</h3><p>Your tech shows you what failed and the flat-rate price in writing. Nothing happens until you say go.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="section bg-soft" id="reviews">
+      <div class="container">
+        <div class="reviews-head">
+          <div class="section-head" style="margin-bottom:0">
+            <p class="eyebrow">Reviews</p>
+            <h2>What Dallas homeowners say</h2>
+          </div>
+          <div class="rating-summary">
+            <span class="big">4.9</span>
+            <div><span class="stars" aria-hidden="true">★★★★★</span><small>512 Google reviews · <a href="#" aria-disabled="true">Read all on Google</a></small></div>
+          </div>
+        </div>
+        <div class="review-grid">
+          <article class="review">
+            <header><span class="avatar" style="background:#1a5fb4">D</span><div class="who"><strong>Dana R.</strong><span>Plano · 2 weeks ago</span></div></header>
+            <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+            <p>Our AC quit on a Saturday in August. Called at 9, Marcus was at the house by 11:30. Bad capacitor, running again in under an hour. He showed me the reading on the old part so I knew it wasn't a made-up problem. $189 total, exactly what he quoted before he started.</p>
+            <span class="via"><span class="g">G</span> Posted on Google</span>
+          </article>
+          <article class="review">
+            <header><span class="avatar" style="background:#0f766e">T</span><div class="who"><strong>Terrence W.</strong><span>Richardson · 1 month ago</span></div></header>
+            <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+            <p>Got three quotes for a new system. CoolAir wasn't the cheapest, but they were the only ones who measured the house instead of guessing the tonnage. Install took one day and the crew left the garage cleaner than they found it. July electric bill was $84 lower than last year.</p>
+            <span class="via"><span class="g">G</span> Posted on Google</span>
+          </article>
+          <article class="review">
+            <header><span class="avatar" style="background:#b45309">P</span><div class="who"><strong>Priya S.</strong><span>Irving · 3 months ago</span></div></header>
+            <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+            <p>Comfort Club is worth it. They call me to schedule the tune-up. Caught a small refrigerant leak this spring before it turned into a summer emergency.</p>
+            <span class="via"><span class="g">G</span> Posted on Google</span>
+          </article>
+          <article class="review">
+            <header><span class="avatar" style="background:#6d28d9">M</span><div class="who"><strong>Mike &amp; Carol H.</strong><span>Garland · 5 months ago</span></div></header>
+            <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+            <p>Told us the furnace had a couple of good years left and did a $120 repair instead of pushing a $6k replacement. That's who we'll call when it is time.</p>
+            <span class="via"><span class="g">G</span> Posted on Google</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service area -->
+    <section class="section" id="areas">
+      <div class="container area-grid">
+        <div>
+          <p class="eyebrow">Service area</p>
+          <h2>Dallas and the northern suburbs</h2>
+          <p>Our shop is on Regal Row, so most of DFW is within 35 minutes. Same-day service is available in every city below.</p>
+          <ul class="city-list">
+            <li><svg class="ic"><use href="#i-map-pin"/></svg> Dallas</li>
+            <li><svg class="ic"><use href="#i-map-pin"/></svg> Plano</li>
+            <li><svg class="ic"><use href="#i-map-pin"/></svg> Richardson</li>
+            <li><svg class="ic"><use href="#i-map-pin"/></svg> Garland</li>
+            <li><svg class="ic"><use href="#i-map-pin"/></svg> Irving</li>
+            <li><svg class="ic"><use href="#i-map-pin"/></svg> Carrollton</li>
+            <li><svg class="ic"><use href="#i-map-pin"/></svg> Frisco</li>
+            <li><svg class="ic"><use href="#i-map-pin"/></svg> McKinney</li>
+            <li><svg class="ic"><use href="#i-map-pin"/></svg> Allen</li>
+            <li><svg class="ic"><use href="#i-map-pin"/></svg> Mesquite</li>
+            <li><svg class="ic"><use href="#i-map-pin"/></svg> Grand Prairie</li>
+            <li><svg class="ic"><use href="#i-map-pin"/></svg> Arlington</li>
+          </ul>
+          <div class="zip-check">
+            <form class="zip-form-wrap" id="zip-form" novalidate>
+              <label for="zip">Not sure? Check your ZIP code</label>
+              <div class="zip-form">
+                <input id="zip" name="zip" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" placeholder="75024" autocomplete="postal-code" aria-describedby="zip-result">
+                <button class="btn btn-secondary" type="submit">Check</button>
+              </div>
+              <p class="zip-result" id="zip-result" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+        <div class="map-wrap" id="map" data-map-src="https://www.google.com/maps?q=Dallas%2C+TX&amp;z=10&amp;output=embed" data-map-title="Map of CoolAir HVAC service area around Dallas, Texas">
+          <div class="map-facade">
+            <svg class="ic"><use href="#i-map-pin"/></svg>
+            <strong>CoolAir HVAC · Dallas, TX</strong>
+            <span>2140 Regal Row, Suite 120 · Dallas, TX 75235</span>
+            <a class="btn btn-secondary" href="https://www.google.com/maps/search/?api=1&amp;query=2140+Regal+Row+Dallas+TX+75235" rel="noopener" target="_blank">Open in Google Maps</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section bg-soft" id="faq">
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow">Questions</p>
+          <h2>Things people ask before they call</h2>
+        </div>
+        <div class="faq">
+          <details open>
+            <summary>How fast can you get here? <svg class="ic"><use href="#i-chevron-down"/></svg></summary>
+            <p>Same-day for calls that come in before 2 PM, most days including Saturday. After hours, a live dispatcher (not voicemail) answers the emergency line and sends the on-call tech.</p>
+          </details>
+          <details>
+            <summary>What does a service call cost? <svg class="ic"><use href="#i-chevron-down"/></svg></summary>
+            <p>$89 for the diagnostic visit. That fee disappears when you approve the repair. You'll get the repair price in writing, flat-rate, before any work starts, so there's no clock running.</p>
+          </details>
+          <details>
+            <summary>Do you work on my brand? <svg class="ic"><use href="#i-chevron-down"/></svg></summary>
+            <p>Yes. Carrier, Trane, Lennox, Goodman, Rheem, American Standard, Amana, Daikin and most others. If a part isn't available same-day, we'll tell you the realistic timeline instead of guessing.</p>
+          </details>
+          <details>
+            <summary>Repair or replace? <svg class="ic"><use href="#i-chevron-down"/></svg></summary>
+            <p>The rule of thumb we use: if the repair costs more than a third of a new system and the unit is over 12 years old, replacement usually wins. We'll put both numbers in front of you and let you decide. Nobody works on commission here.</p>
+          </details>
+          <details>
+            <summary>Do you offer financing? <svg class="ic"><use href="#i-chevron-down"/></svg></summary>
+            <p>0% APR for 18 months on complete systems, with approved credit through our financing partner. The application takes about five minutes and can be done at the kitchen table.</p>
+          </details>
+          <details>
+            <summary>Are your technicians employees or subcontractors? <svg class="ic"><use href="#i-chevron-down"/></svg></summary>
+            <p>Employees. Every technician is drug-tested, background-checked, NATE-certified and drives a marked CoolAir truck. We don't send subcontractors to your home.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking -->
+    <section class="section bg-navy" id="book">
+      <div class="container book-grid">
+        <div class="book-aside">
+          <p class="eyebrow" style="color:#8ec5ff">Book online</p>
+          <h2>Tell us what's going on. We'll call you back within 15 minutes.</h2>
+          <p>Business hours are 7 AM to 8 PM, Monday through Saturday. If your AC is out right now, calling is faster.</p>
+          <ul>
+            <li><svg class="ic"><use href="#i-message-square-text"/></svg><div><strong>Real person, not a bot.</strong> Our dispatcher reads every request and calls you back.</div></li>
+            <li><svg class="ic"><use href="#i-ticket-percent"/></svg><div><strong>$25 off applied automatically</strong> to any repair booked through this form.</div></li>
+            <li><svg class="ic"><use href="#i-receipt"/></svg><div><strong>No obligation.</strong> You can say no to the quote and only pay the diagnostic.</div></li>
+          </ul>
+          <div class="call-big"><span>Prefer to talk?</span><a href="tel:+12145550198">(214) 555-0198</a></div>
+        </div>
+        <div class="form-card" id="form-card">
+          <form id="book-form" novalidate>
+            <h3>Request service</h3>
+            <p class="hint">Takes about a minute. Fields marked <span style="color:var(--cta)">*</span> are required.</p>
+            <div class="form-grid">
+              <div class="field">
+                <label for="f-name">Your name <span class="req">*</span></label>
+                <input id="f-name" name="name" type="text" autocomplete="name" required>
+                <p class="error">Please enter your name.</p>
+              </div>
+              <div class="field">
+                <label for="f-phone">Phone <span class="req">*</span></label>
+                <input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="(214) 555-0123" required>
+                <p class="error">Enter a 10-digit phone number.</p>
+              </div>
+              <div class="field">
+                <label for="f-zip">ZIP code <span class="req">*</span></label>
+                <input id="f-zip" name="zip" inputmode="numeric" maxlength="5" autocomplete="postal-code" required>
+                <p class="error">Enter a 5-digit ZIP.</p>
+              </div>
+              <div class="field">
+                <label for="f-service">What do you need? <span class="req">*</span></label>
+                <select id="f-service" name="service" required>
+                  <option value="">Choose one…</option>
+                  <option value="ac-repair">AC repair — not cooling / noise / leak</option>
+                  <option value="emergency">No cooling at all — urgent</option>
+                  <option value="heating">Heating or furnace repair</option>
+                  <option value="new-system">Quote for a new system</option>
+                  <option value="maintenance">Tune-up / Comfort Club</option>
+                  <option value="air-quality">Indoor air quality</option>
+                  <option value="mini-split">Ductless mini-split</option>
+                  <option value="other">Something else</option>
+                </select>
+                <p class="error">Please pick a service.</p>
+              </div>
+              <div class="field full">
+                <label for="f-time">When works for you?</label>
+                <select id="f-time" name="time">
+                  <option value="asap">As soon as possible — today</option>
+                  <option value="tomorrow-am">Tomorrow morning</option>
+                  <option value="tomorrow-pm">Tomorrow afternoon</option>
+                  <option value="week">This week, I'm flexible</option>
+                </select>
+              </div>
+              <div class="field full">
+                <label for="f-notes">Anything we should know?</label>
+                <textarea id="f-notes" name="notes" placeholder="e.g. Upstairs unit, blowing warm air since last night. Gate code 4412."></textarea>
+              </div>
+              <label class="hp" aria-hidden="true">Leave this empty <input type="text" name="company" tabindex="-1" autocomplete="off"></label>
+              <div class="field full">
+                <button class="btn btn-primary btn-lg btn-block" type="submit">Request a callback</button>
+                <p class="consent">By submitting, you agree that CoolAir may call or text this number about your request. No marketing lists, ever.</p>
+              </div>
+            </div>
+          </form>
+          <div class="success" role="status" aria-live="polite">
+            <svg class="ic"><use href="#i-circle-check"/></svg>
+            <h3 id="success-title">Got it. We'll call you shortly.</h3>
+            <p id="success-text">Expect a call within 15 minutes during business hours. If your AC is completely out, don't wait on us: call (214) 555-0198.</p>
+          </div>
+          <p class="form-note">Demo form: nothing is sent. On a live site this connects to your inbox, CRM or dispatch software.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA band -->
+    <section class="cta-band">
+      <div class="container">
+        <h2>Hot house? Cold house? Let's fix it today.</h2>
+        <p>Flat-rate pricing · 1-year repair warranty · Same-day across Dallas–Fort Worth</p>
+        <div class="actions">
+          <a class="btn btn-light btn-lg" href="tel:+12145550198"><svg class="ic"><use href="#i-phone"/></svg> (214) 555-0198</a>
+          <a class="btn btn-outline btn-lg" href="#book">Book online</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="#top">
+            <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="10" fill="#1a5fb4"/><g stroke="#fff" stroke-width="3" stroke-linecap="round"><path d="M20 9v22M10.5 14.5l19 11M10.5 25.5l19-11"/></g><circle cx="20" cy="20" r="3.2" fill="#f97316"/></svg>
+            <span class="brand-name">CoolAir<small>Heating &amp; Air · DFW</small></span>
+          </a>
+          <address>2140 Regal Row, Suite 120<br>Dallas, TX 75235<br><a href="tel:+12145550198">(214) 555-0198</a><br><a href="mailto:hello@coolairdfw.com">hello@coolairdfw.com</a></address>
+          <p style="margin-top:1rem">TX License TACLA64821C · Insured · EPA 608 certified</p>
+        </div>
+        <div>
+          <h3>Services</h3>
+          <ul>
+            <li><a href="#services">AC repair</a></li>
+            <li><a href="#services">AC installation</a></li>
+            <li><a href="#services">Heating &amp; furnace</a></li>
+            <li><a href="#services">Comfort Club plan</a></li>
+            <li><a href="#services">Indoor air quality</a></li>
+            <li><a href="#services">Ductless mini-splits</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#why">About us</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#specials">Specials</a></li>
+            <li><a href="#areas">Service area</a></li>
+            <li><a href="#">Careers — we're hiring techs</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Hours</h3>
+          <ul class="hours">
+            <li><span>Monday – Friday</span><span>7:00 AM – 8:00 PM</span></li>
+            <li><span>Saturday</span><span>7:00 AM – 8:00 PM</span></li>
+            <li><span>Sunday</span><span>Emergency calls only</span></li>
+            <li><span>Emergency line</span><span>24 / 7</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p style="margin:0">© <span id="year">2026</span> CoolAir HVAC. This is a demonstration website: the company, phone numbers, reviews and license numbers are fictional. Design &amp; build by <a href="../../index.html">Oğuzhan Salatan</a>.</p>
+        <p style="margin:0">Photos: <a href="https://www.flickr.com/photos/192720500@N06/51282276312" rel="noopener">SuperTech HVAC Services</a> (CC BY-SA 2.0), Wake Tech CC (CC0), Pexels. Icons: Lucide (ISC).</p>
       </div>
     </div>
-  </section>
-
-  <section class="cta-band">
-    <h2>Don't Sweat It — Call CoolAir Today</h2>
-    <p>Free estimates · No hidden fees · Licensed technicians on every job</p>
-    <a class="btn" href="tel:+12145550198">📞 Call (214) 555-0198</a>
-  </section>
-
-  <footer>
-    <p>© 2026 CoolAir HVAC · Dallas, TX · Licensed #HVAC-8842</p>
-    <p style="margin-top:0.5rem;">Demo site for portfolio purposes only</p>
   </footer>
 
-  <a class="float-call" href="tel:+12145550198">📞 Call Now</a>
+  <div class="mobile-bar">
+    <a class="btn btn-primary" href="tel:+12145550198"><svg class="ic"><use href="#i-phone"/></svg> Call now</a>
+    <a class="btn btn-secondary" href="#book"><svg class="ic"><use href="#i-calendar-check"/></svg> Book online</a>
+  </div>
+
+  <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false">
+    <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+    <symbol id="i-badge-check" viewBox="0 0 24 24"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/><path d="m16 9-5.5 5.5L8 12"/></symbol>
+    <symbol id="i-calendar-check" viewBox="0 0 24 24"><path d="M8 2v3"/><path d="M16 2v3"/><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="m9 15 2 2 4-4"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-circle-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16 9-5.5 5.5L8 12"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+    <symbol id="i-fan" viewBox="0 0 24 24"><path d="M10.827 16.379a6.082 6.082 0 0 1-8.618-7.002l5.412 1.45a6.082 6.082 0 0 1 7.002-8.618l-1.45 5.412a6.082 6.082 0 0 1 8.618 7.002l-5.412-1.45a6.082 6.082 0 0 1-7.002 8.618l1.45-5.412Z"/><path d="M12 12v.01"/></symbol>
+    <symbol id="i-flame" viewBox="0 0 24 24"><path d="M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0 5 5 0 0 1 1-3 1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4"/></symbol>
+    <symbol id="i-house" viewBox="0 0 24 24"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></symbol>
+    <symbol id="i-map-pin" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></symbol>
+    <symbol id="i-message-square-text" viewBox="0 0 24 24"><path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"/><path d="M7 11h10"/><path d="M7 15h6"/><path d="M7 7h8"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></symbol>
+    <symbol id="i-receipt" viewBox="0 0 24 24"><path d="M12 17V7"/><path d="M16 8h-6a2 2 0 0 0 0 4h4a2 2 0 0 1 0 4H8"/><path d="M4 3a1 1 0 0 1 1-1 1.3 1.3 0 0 1 .7.2l.933.6a1.3 1.3 0 0 0 1.4 0l.934-.6a1.3 1.3 0 0 1 1.4 0l.933.6a1.3 1.3 0 0 0 1.4 0l.933-.6a1.3 1.3 0 0 1 1.4 0l.934.6a1.3 1.3 0 0 0 1.4 0l.933-.6A1.3 1.3 0 0 1 19 2a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1 1.3 1.3 0 0 1-.7-.2l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.934.6a1.3 1.3 0 0 1-1.4 0l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-1.4 0l-.934-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-.7.2 1 1 0 0 1-1-1z"/></symbol>
+    <symbol id="i-scissors" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><path d="M8.12 8.12 12 12"/><path d="M20 4 8.12 15.88"/><circle cx="6" cy="18" r="3"/><path d="M14.8 14.8 20 20"/></symbol>
+    <symbol id="i-shield-check" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-snowflake" viewBox="0 0 24 24"><path d="m10 20-1.25-2.5L6 18"/><path d="M10 4 8.75 6.5 6 6"/><path d="m14 20 1.25-2.5L18 18"/><path d="m14 4 1.25 2.5L18 6"/><path d="m17 21-3-6h-4"/><path d="m17 3-3 6 1.5 3"/><path d="M2 12h6.5L10 9"/><path d="m20 10-1.5 2 1.5 2"/><path d="M22 12h-6.5L14 15"/><path d="m4 10 1.5 2L4 14"/><path d="m7 21 3-6-1.5-3"/><path d="m7 3 3 6h4"/></symbol>
+    <symbol id="i-ticket-percent" viewBox="0 0 24 24"><path d="M2 9a3 3 0 1 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 1 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M9 9h.01"/><path d="m15 9-6 6"/><path d="M15 15h.01"/></symbol>
+    <symbol id="i-wind" viewBox="0 0 24 24"><path d="M12.8 19.6A2 2 0 1 0 14 16H2"/><path d="M17.5 8a2.5 2.5 0 1 1 2 4H2"/><path d="M9.8 4.4A2 2 0 1 1 11 8H2"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+  </svg>
+  <script src="main.js" defer></script>
 </body>
 </html>

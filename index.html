@@ -1,603 +1,393 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Oğuzhan Salatan — Web Developer | Business Websites</title>
-  <meta name="description" content="Fast, professional websites for local businesses. Landing pages, WordPress fixes, and web support. 48-hour delivery.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,w9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg: #0a0f1a;
-      --surface: #111827;
-      --surface2: #1a2234;
-      --border: #1f2937;
-      --text: #f3f4f6;
-      --muted: #9ca3af;
-      --accent: #3b82f6;
-      --accent-hover: #2563eb;
-      --green: #22c55e;
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: "DM Sans", system-ui, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-    .container { max-width: 1000px; margin: 0 auto; padding: 0 1.25rem; }
-    header {
-      padding: 1.25rem 0;
-      border-bottom: 1px solid var(--border);
-      position: sticky;
-      top: 0;
-      background: rgba(10, 15, 26, 0.92);
-      backdrop-filter: blur(12px);
-      z-index: 100;
-    }
-    header .container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 1rem;
-    }
-    .logo { font-weight: 700; font-size: 1.1rem; letter-spacing: -0.02em; }
-    .logo span { color: var(--accent); }
-    .header-right { display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; }
-    .badge {
-      font-size: 0.75rem;
-      background: rgba(34, 197, 94, 0.15);
-      color: var(--green);
-      padding: 0.35rem 0.75rem;
-      border-radius: 999px;
-      font-weight: 600;
-      border: 1px solid rgba(34, 197, 94, 0.25);
-    }
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.75rem 1.25rem;
-      border-radius: 8px;
-      font-weight: 600;
-      font-size: 0.95rem;
-      text-decoration: none;
-      transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
-      border: none;
-      cursor: pointer;
-    }
-    .btn:hover { transform: translateY(-1px); }
-    .btn-primary {
-      background: var(--accent);
-      color: #fff;
-      box-shadow: 0 4px 14px rgba(59, 130, 246, 0.3);
-    }
-    .btn-primary:hover { background: var(--accent-hover); }
-    .btn-ghost {
-      background: transparent;
-      color: var(--text);
-      border: 1px solid var(--border);
-    }
-    .btn-ghost:hover { border-color: var(--muted); }
-    .btn-sm { padding: 0.55rem 1rem; font-size: 0.85rem; }
-    .hero {
-      padding: 4.5rem 0 3rem;
-      position: relative;
-      overflow: hidden;
-    }
-    .hero::before {
-      content: "";
-      position: absolute;
-      top: -40%;
-      right: -20%;
-      width: 60%;
-      height: 120%;
-      background: radial-gradient(circle, rgba(59,130,246,0.12) 0%, transparent 65%);
-      pointer-events: none;
-    }
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 3rem;
-      align-items: center;
-      position: relative;
-    }
-    @media (max-width: 768px) {
-      .hero-grid { grid-template-columns: 1fr; gap: 2rem; }
-    }
-    .hero-tag {
-      display: inline-block;
-      font-size: 0.8rem;
-      font-weight: 600;
-      color: var(--accent);
-      background: rgba(59, 130, 246, 0.1);
-      border: 1px solid rgba(59, 130, 246, 0.25);
-      padding: 0.35rem 0.85rem;
-      border-radius: 999px;
-      margin-bottom: 1rem;
-    }
-    .hero h1 {
-      font-size: clamp(2rem, 5vw, 2.85rem);
-      font-weight: 700;
-      letter-spacing: -0.03em;
-      line-height: 1.12;
-      margin-bottom: 1rem;
-    }
-    .hero p {
-      font-size: 1.1rem;
-      color: var(--muted);
-      max-width: 480px;
-      margin-bottom: 1.5rem;
-    }
-    .hero-list {
-      list-style: none;
-      margin-bottom: 2rem;
-    }
-    .hero-list li {
-      padding: 0.3rem 0;
-      font-size: 0.95rem;
-      color: var(--muted);
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-    .hero-list li::before {
-      content: "✓";
-      color: var(--green);
-      font-weight: 700;
-    }
-    .cta-row { display: flex; gap: 0.75rem; flex-wrap: wrap; }
-    .hero-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 1.75rem;
-      box-shadow: 0 20px 50px rgba(0,0,0,0.3);
-    }
-    .hero-card h3 {
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--muted);
-      margin-bottom: 1.25rem;
-    }
-    .stat-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1rem;
-    }
-    .stat-box {
-      background: var(--surface2);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 1.1rem;
-      text-align: center;
-    }
-    .stat-box strong {
-      display: block;
-      font-size: 1.5rem;
-      color: var(--text);
-      margin-bottom: 0.15rem;
-    }
-    .stat-box span { font-size: 0.78rem; color: var(--muted); }
-    .stats-bar {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 1rem;
-      padding: 2rem 0;
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-      margin-top: 3rem;
-    }
-    @media (max-width: 640px) { .stats-bar { grid-template-columns: repeat(2, 1fr); } }
-    .stats-bar .item { text-align: center; }
-    .stats-bar strong { display: block; font-size: 1.35rem; color: var(--accent); }
-    .stats-bar span { font-size: 0.8rem; color: var(--muted); }
-    section { padding: 3.5rem 0; }
-    .section-head { margin-bottom: 2rem; }
-    .section-head h2 {
-      font-size: 1.65rem;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      margin-bottom: 0.4rem;
-    }
-    .section-head p { color: var(--muted); font-size: 0.95rem; }
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1rem;
-    }
-    .card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 1.75rem;
-      transition: border-color 0.2s, transform 0.15s;
-    }
-    .card:hover {
-      border-color: rgba(59, 130, 246, 0.4);
-      transform: translateY(-2px);
-    }
-    .card .icon { font-size: 1.75rem; margin-bottom: 0.75rem; }
-    .card h3 { font-size: 1.05rem; margin-bottom: 0.5rem; }
-    .card p { color: var(--muted); font-size: 0.9rem; margin-bottom: 1rem; line-height: 1.55; }
-    .price { font-weight: 700; color: var(--green); font-size: 1.15rem; }
-    .price span { font-size: 0.8rem; color: var(--muted); font-weight: 400; }
-    .demos { display: grid; gap: 1.5rem; }
-    .demo-card {
-      display: grid;
-      grid-template-columns: 1.1fr 1fr;
-      gap: 0;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      overflow: hidden;
-      transition: border-color 0.2s, box-shadow 0.2s;
-    }
-    .demo-card:hover {
-      border-color: rgba(59, 130, 246, 0.35);
-      box-shadow: 0 12px 40px rgba(0,0,0,0.25);
-    }
-    @media (max-width: 700px) { .demo-card { grid-template-columns: 1fr; } }
-    .demo-preview {
-      min-height: 220px;
-      padding: 1.5rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      position: relative;
-      overflow: hidden;
-    }
-    .demo-preview.hvac {
-      background: linear-gradient(145deg, #0c4a6e 0%, #0369a1 60%, #0284c7 100%);
-    }
-    .demo-preview.plumbing {
-      background: linear-gradient(145deg, #1e3a5f 0%, #0d9488 100%);
-    }
-    .demo-preview .mock-nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 0.75rem;
-      font-weight: 700;
-      color: #fff;
-    }
-    .demo-preview .mock-btn {
-      background: #ea580c;
-      color: #fff;
-      padding: 0.3rem 0.65rem;
-      border-radius: 5px;
-      font-size: 0.65rem;
-    }
-    .demo-preview.plumbing .mock-btn { background: #0d9488; }
-    .demo-preview .mock-hero {
-      color: #fff;
-      margin-top: 1rem;
-    }
-    .demo-preview .mock-hero h4 {
-      font-size: 0.95rem;
-      font-weight: 800;
-      line-height: 1.25;
-      margin-bottom: 0.5rem;
-    }
-    .demo-preview .mock-hero .mock-cta {
-      display: inline-block;
-      background: #ea580c;
-      color: #fff;
-      padding: 0.4rem 0.8rem;
-      border-radius: 6px;
-      font-size: 0.7rem;
-      font-weight: 700;
-      margin-top: 0.5rem;
-    }
-    .demo-preview.plumbing .mock-cta { background: #0d9488; }
-    .demo-preview .mock-stats {
-      display: flex;
-      gap: 0.75rem;
-      margin-top: 1rem;
-    }
-    .demo-preview .mock-stat {
-      background: rgba(255,255,255,0.12);
-      padding: 0.35rem 0.6rem;
-      border-radius: 6px;
-      font-size: 0.65rem;
-      color: #fff;
-      font-weight: 600;
-    }
-    .demo-info { padding: 1.75rem; display: flex; flex-direction: column; justify-content: center; }
-    .demo-info h3 { font-size: 1.1rem; margin-bottom: 0.5rem; }
-    .demo-info p { color: var(--muted); font-size: 0.9rem; margin-bottom: 1rem; line-height: 1.55; }
-    .tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1.25rem; }
-    .tag {
-      font-size: 0.72rem;
-      font-weight: 600;
-      padding: 0.25rem 0.6rem;
-      border-radius: 999px;
-      background: var(--surface2);
-      border: 1px solid var(--border);
-      color: var(--muted);
-    }
-    .process {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1rem;
-    }
-    .step {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 1.5rem;
-      text-align: center;
-    }
-    .step .num {
-      width: 36px;
-      height: 36px;
-      background: rgba(59, 130, 246, 0.15);
-      color: var(--accent);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 700;
-      font-size: 0.9rem;
-      margin: 0 auto 0.75rem;
-    }
-    .step h3 { font-size: 0.95rem; margin-bottom: 0.35rem; }
-    .step p { font-size: 0.85rem; color: var(--muted); }
-    .faq { max-width: 680px; }
-    .faq-item {
-      border-bottom: 1px solid var(--border);
-      padding: 1.25rem 0;
-    }
-    .faq-item h3 { font-size: 0.95rem; margin-bottom: 0.35rem; }
-    .faq-item p { font-size: 0.88rem; color: var(--muted); }
-    .cta-band {
-      background: linear-gradient(135deg, #1d4ed8 0%, #3b82f6 100%);
-      border-radius: 16px;
-      padding: 3rem 2rem;
-      text-align: center;
-      margin: 0 1.25rem 3rem;
-      max-width: 1000px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .cta-band h2 { font-size: 1.65rem; margin-bottom: 0.5rem; }
-    .cta-band p { color: rgba(255,255,255,0.85); margin-bottom: 1.5rem; font-size: 1rem; }
-    .cta-band .btn { background: #fff; color: #1d4ed8; }
-    .cta-band .btn:hover { background: #f0f9ff; }
-    footer {
-      padding: 2rem 0;
-      border-top: 1px solid var(--border);
-      text-align: center;
-      color: var(--muted);
-      font-size: 0.85rem;
-    }
-    footer a { color: var(--accent); text-decoration: none; }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Oğuzhan Salatan — Landing pages and WordPress fixes for local service businesses</title>
+  <meta name="description" content="Web developer in Bursa, Turkey working with US and UK clients. One-page landing sites for HVAC, plumbing and other local trades from $129, WordPress bug and speed fixes from $49, spreadsheet cleanup from $35. Two live demos you can click through before you hire.">
+  <meta name="theme-color" content="#0b0d11">
+  <link rel="canonical" href="https://djoguzhan1.github.io/web-dev-portfolio/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b0d11'/%3E%3Cpath d='M20 22h24M20 32h24M20 42h14' stroke='%235b9dff' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Oğuzhan Salatan — web developer for local service businesses">
+  <meta property="og:description" content="Landing pages for HVAC, plumbing and other trades, WordPress fixes, spreadsheet cleanup. Two live demos, Lighthouse 99–100, fixed quotes before work starts.">
+  <meta property="og:url" content="https://djoguzhan1.github.io/web-dev-portfolio/">
+  <meta property="og:image" content="https://djoguzhan1.github.io/web-dev-portfolio/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preload" href="fonts/archivo-variable-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" as="image" type="image/avif" fetchpriority="high" imagesrcset="img/demo-hvac-720.avif 720w, img/demo-hvac-1280.avif 1280w" imagesizes="(min-width: 76.5em) 491px, (min-width: 64em) 40vw, calc(100vw - 5rem)">
+  <link rel="stylesheet" href="styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Oğuzhan Salatan",
+    "jobTitle": "Web developer",
+    "url": "https://djoguzhan1.github.io/web-dev-portfolio/",
+    "email": "mailto:salatanoguzhan901@gmail.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Bursa", "addressCountry": "TR" },
+    "knowsLanguage": ["en", "tr"],
+    "sameAs": [
+      "https://github.com/djoguzhan1",
+      "https://www.upwork.com/freelancers/~01f40a508feb14b1ee"
+    ]
+  }
+  </script>
 </head>
 <body>
-  <header>
+<a class="skip-link" href="#main">Skip to content</a>
+<svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false">
+  <symbol id="i-gauge" viewBox="0 0 24 24"><path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/></symbol>
+  <symbol id="i-timer" viewBox="0 0 24 24"><line x1="10" x2="14" y1="2" y2="2"/><line x1="12" x2="15" y1="14" y2="11"/><circle cx="12" cy="14" r="8"/></symbol>
+  <symbol id="i-badge-check" viewBox="0 0 24 24"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/><path d="m16 9-5.5 5.5L8 12"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+  <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+  <symbol id="i-external-link" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+  <symbol id="i-github" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z"/></symbol>
+  <symbol id="i-layout-template" viewBox="0 0 24 24"><rect width="18" height="7" x="3" y="3" rx="1"/><rect width="9" height="7" x="3" y="14" rx="1"/><rect width="5" height="7" x="16" y="14" rx="1"/></symbol>
+  <symbol id="i-file-spreadsheet" viewBox="0 0 24 24"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"/><path d="M14 2v5a1 1 0 0 0 1 1h5"/><path d="M8 13h2"/><path d="M14 13h2"/><path d="M8 17h2"/><path d="M14 17h2"/></symbol>
+  <symbol id="i-map-pin" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-languages" viewBox="0 0 24 24"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></symbol>
+  <symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></symbol>
+</svg>
+
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a class="brand" href="#top"><strong>Oğuzhan Salatan</strong><small>Web developer · Bursa, Turkey</small></a>
+    <ul class="nav">
+      <li><a href="#demos">Demos</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#process">How I work</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <a class="btn btn-upwork" href="https://www.upwork.com/freelancers/~01f40a508feb14b1ee" target="_blank" rel="noopener">Hire me on Upwork</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero">
     <div class="container">
-      <div class="logo">Oğuzhan <span>Salatan</span></div>
-      <div class="header-right">
-        <span class="badge">● Available for hire</span>
-        <a class="btn btn-primary btn-sm" href="mailto:salatanoguzhan901@gmail.com?subject=Website%20Project%20Inquiry">Get a quote</a>
+      <div class="hero-grid">
+        <div>
+          <p class="eyebrow">Landing pages · WordPress fixes · Spreadsheets</p>
+          <h1>Landing pages that make the phone ring. <span>WordPress sites that stop breaking.</span></h1>
+          <p class="lede">I build one-page sites for HVAC companies, plumbers and other local trades, and I fix slow or broken WordPress sites. The two demos below are live and fully working. Open them on your phone before you hire anyone, including me.</p>
+          <div class="cta-row">
+            <a class="btn btn-upwork" href="https://www.upwork.com/freelancers/~01f40a508feb14b1ee" target="_blank" rel="noopener">Hire me on Upwork</a>
+            <a class="btn btn-ghost" href="#demos">See the two demos <svg class="ic ic-sm" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+          </div>
+        </div>
+
+        <div class="stage">
+          <div class="window">
+            <div class="window-bar" aria-hidden="true"><i></i><i></i><i></i><span class="url">djoguzhan1.github.io/web-dev-portfolio/demos/hvac-landing/</span></div>
+            <picture>
+              <source type="image/avif" srcset="img/demo-hvac-720.avif 720w, img/demo-hvac-1280.avif 1280w" sizes="(min-width: 76.5em) 491px, (min-width: 64em) 40vw, calc(100vw - 5rem)">
+              <img src="img/demo-hvac-1280.webp" srcset="img/demo-hvac-720.webp 720w, img/demo-hvac-1280.webp 1280w" sizes="(min-width: 76.5em) 491px, (min-width: 64em) 40vw, calc(100vw - 5rem)" width="1280" height="800" alt="Desktop view of the CoolAir HVAC demo: dark navy header with a call button, hero photo of a technician at a condenser, and a same-day booking form." fetchpriority="high">
+            </picture>
+          </div>
+          <div class="phone">
+            <picture>
+              <source type="image/avif" srcset="img/demo-plumbing-mobile-220.avif 220w, img/demo-plumbing-mobile-390.avif 390w" sizes="(min-width: 64em) 10rem, 7rem">
+              <img src="img/demo-plumbing-mobile-390.webp" srcset="img/demo-plumbing-mobile-220.webp 220w, img/demo-plumbing-mobile-390.webp 390w" sizes="(min-width: 64em) 10rem, 7rem" width="390" height="780" alt="Mobile view of the ProFix Plumbing demo with a red emergency bar and a call button." loading="lazy" decoding="async">
+            </picture>
+          </div>
+          <p class="stage-note">Both demos: hand-written HTML/CSS, no page builders, Lighthouse 99–100.</p>
+        </div>
       </div>
     </div>
-  </header>
+  </section>
 
-  <main>
-    <section class="hero">
-      <div class="container">
-        <div class="hero-grid">
-          <div>
-            <div class="hero-tag">Web Developer · Local Business Sites</div>
-            <h1>Websites that turn visitors into paying customers.</h1>
-            <p>I build fast, mobile-friendly sites for HVAC, plumbing, and local service businesses — delivered in 48 hours with clear communication.</p>
-            <ul class="hero-list">
-              <li>WordPress fixes, landing pages, spreadsheet cleanup</li>
-              <li>Live demos you can click before hiring</li>
-              <li>US & UK clients · English communication</li>
-            </ul>
-            <div class="cta-row">
-              <a class="btn btn-primary" href="mailto:salatanoguzhan901@gmail.com?subject=Website%20Project%20Inquiry">Get a free quote</a>
-              <a class="btn btn-ghost" href="#demos">View live demos</a>
-            </div>
-          </div>
-          <div class="hero-card">
-            <h3>At a glance</h3>
-            <div class="stat-grid">
-              <div class="stat-box">
-                <strong>48h</strong>
-                <span>Typical delivery</span>
-              </div>
-              <div class="stat-box">
-                <strong>2</strong>
-                <span>Live demo sites</span>
-              </div>
-              <div class="stat-box">
-                <strong>$49</strong>
-                <span>Starting price</span>
-              </div>
-              <div class="stat-box">
-                <strong>1hr</strong>
-                <span>Response time</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="stats-bar">
-          <div class="item"><strong>48h</strong><span>Delivery</span></div>
-          <div class="item"><strong>Mobile</strong><span>First design</span></div>
-          <div class="item"><strong>Clean</strong><span>Code</span></div>
-          <div class="item"><strong>English</strong><span>Communication</span></div>
-        </div>
-      </div>
-    </section>
+  <div class="container">
+    <ul class="facts">
+      <li><svg class="ic" aria-hidden="true"><use href="#i-gauge"/></svg><div><strong>Lighthouse 99–100</strong><span>on both demos, mobile and desktop</span></div></li>
+      <li><svg class="ic" aria-hidden="true"><use href="#i-timer"/></svg><div><strong>First draft in 48 hours</strong><span>for one-page landing sites</span></div></li>
+      <li><svg class="ic" aria-hidden="true"><use href="#i-badge-check"/></svg><div><strong>Fixed quote first</strong><span>price and scope in writing before work starts</span></div></li>
+      <li><svg class="ic" aria-hidden="true"><use href="#i-clock"/></svg><div><strong>Replies within an hour</strong><span>during working hours, 9 am – 11 pm GMT+3</span></div></li>
+    </ul>
+  </div>
 
-    <section>
-      <div class="container">
-        <div class="section-head">
-          <h2>Services & pricing</h2>
-          <p>Clear scope, upfront pricing, no surprises.</p>
-        </div>
-        <div class="services">
-          <div class="card">
-            <div class="icon">🔧</div>
-            <h3>WordPress Bug / Speed Fix</h3>
-            <p>Broken layout, slow load, plugin conflicts, mobile issues. Root-cause fix with speed check after.</p>
-            <div class="price">From $49 <span>/ project</span></div>
-          </div>
-          <div class="card">
-            <div class="icon">🌐</div>
-            <h3>1-Page Landing Site</h3>
-            <p>Professional single-page site for HVAC, plumbing, auto repair, and local services. Click-to-call, reviews, SEO.</p>
-            <div class="price">From $129 <span>/ site</span></div>
-          </div>
-          <div class="card">
-            <div class="icon">📊</div>
-            <h3>Excel / Sheets Cleanup</h3>
-            <p>Data formatting, formulas, dashboards, and automation for small teams. Delivered in 1–2 days.</p>
-            <div class="price">From $35 <span>/ file</span></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="demos">
-      <div class="container">
-        <div class="section-head">
-          <h2>Live demo projects</h2>
-          <p>Click and explore — real sites, not mockups.</p>
-        </div>
-        <div class="demos">
-          <div class="demo-card">
-            <div class="demo-preview hvac">
-              <div class="mock-nav">
-                <span>CoolAir HVAC</span>
-                <span class="mock-btn">📞 Call Now</span>
-              </div>
-              <div class="mock-hero">
-                <h4>AC Broken? We'll Fix It Today</h4>
-                <span class="mock-cta">Free Estimate</span>
-              </div>
-              <div class="mock-stats">
-                <span class="mock-stat">4.9★</span>
-                <span class="mock-stat">Same-Day</span>
-                <span class="mock-stat">Licensed</span>
-              </div>
-            </div>
-            <div class="demo-info">
-              <h3>CoolAir HVAC — Landing Page</h3>
-              <p>Full conversion-focused site: split hero, stats bar, reviews, FAQ, service areas, and mobile call button.</p>
-              <div class="tags">
-                <span class="tag">Mobile-first</span>
-                <span class="tag">Click-to-call</span>
-                <span class="tag">Reviews</span>
-                <span class="tag">FAQ</span>
-              </div>
-              <a class="btn btn-primary" href="demos/hvac-landing/" target="_blank">Open live demo →</a>
-            </div>
-          </div>
-          <div class="demo-card">
-            <div class="demo-preview plumbing">
-              <div class="mock-nav">
-                <span>ProFix Plumbing</span>
-                <span class="mock-btn">📞 Call Now</span>
-              </div>
-              <div class="mock-hero">
-                <h4>24/7 Emergency Plumber — 60 Min Response</h4>
-                <span class="mock-cta">Free Quote</span>
-              </div>
-              <div class="mock-stats">
-                <span class="mock-stat">4.9★</span>
-                <span class="mock-stat">24/7</span>
-                <span class="mock-stat">3,200+ Jobs</span>
-              </div>
-            </div>
-            <div class="demo-info">
-              <h3>ProFix Plumbing — Landing Page</h3>
-              <p>Emergency plumbing site with red alert bar, sticky header, stats, reviews, service areas, and FAQ.</p>
-              <div class="tags">
-                <span class="tag">Emergency CTA</span>
-                <span class="tag">Sticky header</span>
-                <span class="tag">Stats bar</span>
-                <span class="tag">Reviews</span>
-              </div>
-              <a class="btn btn-primary" href="demos/plumbing-landing/" target="_blank">Open live demo →</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <div class="section-head">
-          <h2>How I work</h2>
-          <p>Simple process, no agency runaround.</p>
-        </div>
-        <div class="process">
-          <div class="step">
-            <div class="num">1</div>
-            <h3>Message me</h3>
-            <p>Tell me your business type, goals, and timeline. I reply within 1 hour.</p>
-          </div>
-          <div class="step">
-            <div class="num">2</div>
-            <h3>Scope & quote</h3>
-            <p>Clear price and delivery date before any work starts. No hidden fees.</p>
-          </div>
-          <div class="step">
-            <div class="num">3</div>
-            <h3>Build & deliver</h3>
-            <p>First version in 48 hours. Revisions included per package.</p>
-          </div>
-          <div class="step">
-            <div class="num">4</div>
-            <h3>Launch support</h3>
-            <p>Files delivered + hosting setup guidance if you need it.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <div class="section-head">
-          <h2>Common questions</h2>
-        </div>
-        <div class="faq">
-          <div class="faq-item">
-            <h3>Can I see examples before ordering?</h3>
-            <p>Yes — both demo sites above are live and clickable. They're built to the same standard I deliver to clients.</p>
-          </div>
-          <div class="faq-item">
-            <h3>How fast is delivery?</h3>
-            <p>WordPress fixes: 24–48 hours. Landing pages: 48 hours on standard orders. Excel cleanup: 1–2 days.</p>
-          </div>
-          <div class="faq-item">
-            <h3>Do you provide hosting?</h3>
-            <p>I deliver the website files. I can guide you to free or low-cost hosting (Netlify, GitHub Pages) or install on your existing host.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="cta-band">
-      <h2>Ready to get your business online?</h2>
-      <p>Send me your project details — I'll reply with a quote within 1 hour.</p>
-      <a class="btn" href="mailto:salatanoguzhan901@gmail.com?subject=Website%20Project%20Inquiry">Get a free quote →</a>
-    </div>
-  </main>
-
-  <footer>
+  <section class="section" id="demos">
     <div class="container">
-      <p>© 2026 Oğuzhan Salatan · <a href="mailto:salatanoguzhan901@gmail.com">salatanoguzhan901@gmail.com</a></p>
+      <div class="section-head">
+        <p class="eyebrow">Live demos</p>
+        <h2>Two sites you can actually click through.</h2>
+        <p>Fictional companies, real code. The forms validate, the opening hours follow the local clock, the map loads, the call button dials. Resize the window or open them on your phone.</p>
+      </div>
+
+      <article class="demo">
+        <div class="demo-visual hvac">
+          <div class="window">
+            <div class="window-bar" aria-hidden="true"><i></i><i></i><i></i><span class="url">demos/hvac-landing/</span></div>
+            <picture>
+              <source type="image/avif" srcset="img/demo-hvac-tall-600.avif 600w, img/demo-hvac-tall-720.avif 720w, img/demo-hvac-tall-1280.avif 1280w" sizes="(min-width: 76.5em) 581px, (min-width: 64em) 48vw, calc(100vw - 5.5rem)">
+              <img src="img/demo-hvac-tall-1280.webp" srcset="img/demo-hvac-tall-600.webp 600w, img/demo-hvac-tall-720.webp 720w, img/demo-hvac-tall-1280.webp 1280w" sizes="(min-width: 76.5em) 581px, (min-width: 64em) 48vw, calc(100vw - 5.5rem)" width="1280" height="1440" alt="CoolAir HVAC demo on desktop: header with open-now status, hero with a $0 diagnostic offer and booking form." loading="lazy" decoding="async">
+            </picture>
+          </div>
+          <div class="phone">
+            <picture>
+              <source type="image/avif" srcset="img/demo-hvac-mobile-220.avif 220w, img/demo-hvac-mobile-390.avif 390w" sizes="(min-width: 64em) 10rem, 7rem">
+              <img src="img/demo-hvac-mobile-390.webp" srcset="img/demo-hvac-mobile-220.webp 220w, img/demo-hvac-mobile-390.webp 390w" sizes="(min-width: 64em) 10rem, 7rem" width="390" height="780" alt="CoolAir HVAC demo on a phone." loading="lazy" decoding="async">
+            </picture>
+          </div>
+        </div>
+        <div class="demo-body">
+          <p class="kicker">Demo 01 · Residential HVAC · Dallas, TX</p>
+          <h3>CoolAir Heating &amp; Air</h3>
+          <p>A booking-focused page for a residential HVAC company. The header tells the visitor whether the shop is open right now in Dallas time, the hero pushes same-day service and a $0 diagnostic, and the request form asks only what a dispatcher actually needs.</p>
+          <ul class="features">
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Open / closed status from the real clock, with the 24/7 emergency line as the fallback</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Three coupons with codes, a three-step process and a review block with a 4.9-star summary</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Service-area ZIP checker and a Google Map that loads only when you scroll to it</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Booking form with live phone formatting, inline validation and a spam trap</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>HVACBusiness schema, Open Graph tags, print stylesheet, sticky call bar on phones</li>
+          </ul>
+          <div class="scores" role="group" aria-label="Lighthouse scores, mobile">
+            <div class="score"><span class="ring">99</span>Perf</div>
+            <div class="score"><span class="ring">100</span>A11y</div>
+            <div class="score"><span class="ring">100</span>Best pr.</div>
+            <div class="score"><span class="ring">100</span>SEO</div>
+            <p class="note">Lighthouse 12, mobile preset. 210 KB transferred, 10 requests, 0 ms blocking time. Desktop scores 100 across the board.</p>
+          </div>
+          <div class="actions">
+            <a class="btn btn-light" href="demos/hvac-landing/" target="_blank" rel="noopener">Open live demo <svg class="ic ic-sm" aria-hidden="true"><use href="#i-external-link"/></svg></a>
+            <a class="btn btn-ghost" href="https://github.com/djoguzhan1/web-dev-portfolio/tree/master/demos/hvac-landing" target="_blank" rel="noopener"><svg class="ic ic-sm ic-fill" aria-hidden="true"><use href="#i-github"/></svg> View the code</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="demo">
+        <div class="demo-visual plumbing">
+          <div class="window">
+            <div class="window-bar" aria-hidden="true"><i></i><i></i><i></i><span class="url">demos/plumbing-landing/</span></div>
+            <picture>
+              <source type="image/avif" srcset="img/demo-plumbing-tall-600.avif 600w, img/demo-plumbing-tall-720.avif 720w, img/demo-plumbing-tall-1280.avif 1280w" sizes="(min-width: 76.5em) 581px, (min-width: 64em) 48vw, calc(100vw - 5.5rem)">
+              <img src="img/demo-plumbing-tall-1280.webp" srcset="img/demo-plumbing-tall-600.webp 600w, img/demo-plumbing-tall-720.webp 720w, img/demo-plumbing-tall-1280.webp 1280w" sizes="(min-width: 76.5em) 581px, (min-width: 64em) 48vw, calc(100vw - 5.5rem)" width="1280" height="1440" alt="ProFix Plumbing demo on desktop: red emergency bar, dark header with a call button, hero photo of pipe wrenches and a three-field quick request form." loading="lazy" decoding="async">
+            </picture>
+          </div>
+          <div class="phone">
+            <picture>
+              <source type="image/avif" srcset="img/demo-plumbing-mobile-220.avif 220w, img/demo-plumbing-mobile-390.avif 390w" sizes="(min-width: 64em) 10rem, 7rem">
+              <img src="img/demo-plumbing-mobile-390.webp" srcset="img/demo-plumbing-mobile-220.webp 220w, img/demo-plumbing-mobile-390.webp 390w" sizes="(min-width: 64em) 10rem, 7rem" width="390" height="780" alt="ProFix Plumbing demo on a phone." loading="lazy" decoding="async">
+            </picture>
+          </div>
+        </div>
+        <div class="demo-body">
+          <p class="kicker">Demo 02 · Emergency plumber · Phoenix, AZ</p>
+          <h3>ProFix Plumbing</h3>
+          <p>Built for someone standing in water. The emergency bar, the call button and the “text us a photo” link are reachable with one thumb, the quick form asks three questions, and a sample estimate ticket shows the flat-rate pricing so nobody has to guess.</p>
+          <ul class="features">
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Red emergency bar with the current Phoenix time and a “plumbers on call now” line</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Quick request: problem, phone, ZIP. Burst pipes and backups get shut-off advice on submit</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Typical-prices table next to a printed-style estimate ticket</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Recent-work photos with proper licence credits in the footer</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Plumber schema, service-area ZIP check, sticky call / text bar on phones</li>
+          </ul>
+          <div class="scores" role="group" aria-label="Lighthouse scores, mobile">
+            <div class="score"><span class="ring">100</span>Perf</div>
+            <div class="score"><span class="ring">100</span>A11y</div>
+            <div class="score"><span class="ring">100</span>Best pr.</div>
+            <div class="score"><span class="ring">100</span>SEO</div>
+            <p class="note">Lighthouse 12, mobile preset. 88 KB transferred, 5 requests. The whole page, hero photo included, is lighter than most single stock images.</p>
+          </div>
+          <div class="actions">
+            <a class="btn btn-light" href="demos/plumbing-landing/" target="_blank" rel="noopener">Open live demo <svg class="ic ic-sm" aria-hidden="true"><use href="#i-external-link"/></svg></a>
+            <a class="btn btn-ghost" href="https://github.com/djoguzhan1/web-dev-portfolio/tree/master/demos/plumbing-landing" target="_blank" rel="noopener"><svg class="ic ic-sm ic-fill" aria-hidden="true"><use href="#i-github"/></svg> View the code</a>
+          </div>
+        </div>
+      </article>
     </div>
-  </footer>
+  </section>
+
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Services &amp; pricing</p>
+        <h2>Three things I do, priced up front.</h2>
+        <p>These are starting prices for typical jobs. You get an exact quote after I've seen your site or brief, and it doesn't change unless the scope does.</p>
+      </div>
+
+      <div class="services">
+        <article class="service">
+          <div class="icon"><svg class="ic" aria-hidden="true"><use href="#i-wrench"/></svg></div>
+          <h3>WordPress bug &amp; speed fix</h3>
+          <p class="price">From $49<small>per fix</small></p>
+          <p>Layout broke after an update, a plugin conflict, a white screen, pages that take five seconds to load, something that only happens on phones. I find the cause instead of patching the symptom, then send you a short before-and-after report.</p>
+          <ul class="features">
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Full backup before I touch anything</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Root cause fixed, not hidden with more plugins</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Before / after PageSpeed report</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Usually done in 24–48 hours</li>
+          </ul>
+          <a class="btn btn-ghost btn-sm" href="https://www.upwork.com/freelancers/~01f40a508feb14b1ee" target="_blank" rel="noopener">Get a quote for a fix</a>
+        </article>
+
+        <article class="service">
+          <div class="icon"><svg class="ic" aria-hidden="true"><use href="#i-layout-template"/></svg></div>
+          <h3>One-page landing site</h3>
+          <p class="price">From $129<small>per site</small></p>
+          <p>A site like the two demos, with your business name, photos, prices and service area. Click-to-call, quote form, reviews, FAQ, map, schema markup. Hand-written HTML and CSS, so it loads fast and can be hosted for free.</p>
+          <ul class="features">
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>First draft in 48 hours</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Two rounds of revisions included</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Mobile-first, checked on phone and desktop</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>All files are yours; hosting help included</li>
+          </ul>
+          <a class="btn btn-ghost btn-sm" href="https://www.upwork.com/freelancers/~01f40a508feb14b1ee" target="_blank" rel="noopener">Get a quote for a site</a>
+        </article>
+
+        <article class="service">
+          <div class="icon"><svg class="ic" aria-hidden="true"><use href="#i-file-spreadsheet"/></svg></div>
+          <h3>Excel / Google Sheets cleanup</h3>
+          <p class="price">From $35<small>per file</small></p>
+          <p>Exports full of duplicates, formulas that broke when someone inserted a column, a summary tab that should update itself, a sheet ten people edit and nobody trusts. I clean it up and leave notes so it stays that way.</p>
+          <ul class="features">
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Duplicates, formatting and data types fixed</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Formulas rebuilt and explained in plain English</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Simple dashboards and summary tabs</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Delivered in 1–2 days</li>
+          </ul>
+          <a class="btn btn-ghost btn-sm" href="https://www.upwork.com/freelancers/~01f40a508feb14b1ee" target="_blank" rel="noopener">Get a quote for a sheet</a>
+        </article>
+      </div>
+
+      <ul class="included">
+        <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Fixed quote in writing</li>
+        <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>You own every file</li>
+        <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Small fixes free for 7 days after delivery</li>
+        <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Plain English, no jargon</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="process">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">How I work</p>
+        <h2>Simple, and in writing.</h2>
+        <p>No discovery calls you have to book a week out, no account manager in between. You talk to the person doing the work.</p>
+      </div>
+      <ol class="steps">
+        <li>
+          <h3>Send the brief</h3>
+          <p>Your business type, what the page or fix needs to do, and any deadline. A link or a few screenshots help. You'll hear back within an hour during my working day.</p>
+        </li>
+        <li>
+          <h3>Fixed quote</h3>
+          <p>Price, scope and delivery date in writing before anything starts. If the job isn't a good fit, I'll say so instead of taking it.</p>
+        </li>
+        <li>
+          <h3>Build and review</h3>
+          <p>Landing pages: first draft in 48 hours. Fixes: usually same or next day. You review on your phone and your desktop, and I make the changes.</p>
+        </li>
+        <li>
+          <h3>Handover</h3>
+          <p>All files plus a short walkthrough. I put it live on your hosting, or set up free hosting on Netlify or GitHub Pages and connect your domain.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="container about">
+      <div class="about-text">
+        <div class="section-head">
+          <p class="eyebrow">About</p>
+          <h2>Briefly, about me.</h2>
+        </div>
+        <p>I'm Oğuzhan Salatan, a web developer in Bursa, Turkey. I'm new to Upwork, so my profile has no reviews yet. That's exactly why the two demos above exist: open them, tap around, run them through PageSpeed Insights. That is the standard I work to, and the code is public so you can check how it's built.</p>
+        <p>I work in English and Turkish and I'm online from about 9 am to 11 pm Turkey time (GMT+3), which covers the whole UK working day and the US East Coast until mid-afternoon. You always talk to me directly. No account managers, no hand-offs.</p>
+      </div>
+      <aside class="about-card" aria-label="Quick facts">
+        <div class="monogram" aria-hidden="true">OS</div>
+        <ul class="facts-list">
+          <li><svg class="ic" aria-hidden="true"><use href="#i-map-pin"/></svg><div><span class="k">Based in</span><span class="v">Bursa, Turkey · GMT+3</span></div></li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-languages"/></svg><div><span class="k">Languages</span><span class="v">English, Turkish</span></div></li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-clock"/></svg><div><span class="k">Online</span><span class="v">9 am – 11 pm GMT+3, Mon–Sat</span></div></li>
+          <li><svg class="ic ic-fill" aria-hidden="true"><use href="#i-github"/></svg><div><span class="k">Code</span><span class="v"><a href="https://github.com/djoguzhan1/web-dev-portfolio" target="_blank" rel="noopener">github.com/djoguzhan1</a></span></div></li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Questions</p>
+        <h2>Things people ask before hiring.</h2>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>Can I see your work before hiring you? <svg class="ic" aria-hidden="true"><use href="#i-chevron-down"/></svg></summary>
+          <p>Yes. Both demos on this page are live sites, not screenshots. The businesses are fictional, but the code is real and public on GitHub. If you want to see how I'd approach your specific site, send me the link and I'll reply with a short, free assessment of what I'd change and what it would cost.</p>
+        </details>
+        <details>
+          <summary>Why are your prices lower than most? <svg class="ic" aria-hidden="true"><use href="#i-chevron-down"/></svg></summary>
+          <p>I'm new on Upwork. Right now, good reviews are worth more to me than margin, so the first clients get introductory prices. The scope and the quality aren't reduced; only the price is. It won't stay this low once the profile has a track record.</p>
+        </details>
+        <details>
+          <summary>Do you build with WordPress or hand-coded? <svg class="ic" aria-hidden="true"><use href="#i-chevron-down"/></svg></summary>
+          <p>Both. For one-page landing sites I default to hand-written HTML, CSS and a little JavaScript, because it loads faster, breaks less and can be hosted for free. If you need to edit the content yourself, I can deliver the same design as a lightweight WordPress theme; ask for a quote. Fixes are done on your existing WordPress site.</p>
+        </details>
+        <details>
+          <summary>What do you need from me to start? <svg class="ic" aria-hidden="true"><use href="#i-chevron-down"/></svg></summary>
+          <p>For a fix: the site link, what's wrong and where you see it, and temporary admin access once we've agreed the job. I'll explain how to create a separate user for me that you delete afterwards.</p>
+          <p>For a landing page: business name, services, service area, phone number, a few photos if you have them, and any reviews you want shown. I can write the copy from a few messages; you don't need to prepare a document.</p>
+        </details>
+        <details>
+          <summary>Who handles hosting and the domain? <svg class="ic" aria-hidden="true"><use href="#i-chevron-down"/></svg></summary>
+          <p>You keep ownership of both. I deploy to your existing host, or set up free hosting on Netlify or GitHub Pages and connect your domain. I'll show you where everything lives so you're never dependent on me to make a change.</p>
+        </details>
+        <details>
+          <summary>What if I don't like the first draft? <svg class="ic" aria-hidden="true"><use href="#i-chevron-down"/></svg></summary>
+          <p>You see it early, before most of the polish work, so changes are cheap. Two rounds of revisions are included on landing pages, and I don't call a job finished until it looks right on your phone and your desktop. If something is off, say it plainly; I'd rather fix it than have you accept it.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="cta">
+        <h2>A site that needs fixing, or a business that needs one?</h2>
+        <p>Send the brief on Upwork. During working hours you'll get questions or a fixed quote back within the hour.</p>
+        <div class="cta-row">
+          <a class="btn btn-upwork" href="https://www.upwork.com/freelancers/~01f40a508feb14b1ee" target="_blank" rel="noopener">Hire me on Upwork</a>
+          <a class="btn btn-ghost" href="mailto:salatanoguzhan901@gmail.com?subject=Website%20project"><svg class="ic ic-sm" aria-hidden="true"><use href="#i-mail"/></svg> Email me instead</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <p>© <span id="year">2026</span> Oğuzhan Salatan · Bursa, Turkey</p>
+      <ul class="footer-links">
+        <li><a href="mailto:salatanoguzhan901@gmail.com">salatanoguzhan901@gmail.com</a></li>
+        <li><a href="https://github.com/djoguzhan1/web-dev-portfolio" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.upwork.com/freelancers/~01f40a508feb14b1ee" target="_blank" rel="noopener">Upwork profile</a></li>
+      </ul>
+    </div>
+    <p class="small-print">CoolAir HVAC and ProFix Plumbing are fictional companies created for the demos; phone numbers, licences and reviews on those pages are placeholders. Demo photos come from Pexels, Wake Tech (CC0) and Flickr (CC BY 2.0 / CC BY-SA 2.0), credited on each page. Icons: <a href="https://lucide.dev" target="_blank" rel="noopener">Lucide</a> (ISC), GitHub mark via <a href="https://simpleicons.org" target="_blank" rel="noopener">Simple Icons</a> (CC0).</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  var header = document.querySelector('.site-header');
+  var onScroll = function () { header.classList.toggle('scrolled', window.scrollY > 8); };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  requestAnimationFrame(onScroll);
+</script>
 </body>
 </html>

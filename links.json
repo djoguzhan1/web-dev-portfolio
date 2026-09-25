@@ -1,0 +1,10 @@
+{
+  "updated": "2026-09-25",
+  "official": {
+    "hub": "https://djoguzhan1.github.io/web-dev-portfolio/",
+    "hvac_demo": "https://djoguzhan1.github.io/web-dev-portfolio/demos/hvac-landing/",
+    "plumbing_demo": "https://djoguzhan1.github.io/web-dev-portfolio/demos/plumbing-landing/"
+  },
+  "setup": "SETUP-LIVE.md",
+  "repo": "https://github.com/djoguzhan1/web-dev-portfolio"
+}
